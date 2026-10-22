@@ -1,0 +1,2 @@
+# Preserve exact release bytes so clone/checkout matches SOURCE-MANIFEST.json.
+* -text

@@ -1,0 +1,33 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Verify source inventory
+        run: python -B tools/verify_source_release.py
+      - name: Check publication gate failure cases
+        run: python -B -m unittest discover -s tools/tests -v
+      - name: Check folder inventory utility
+        working-directory: tools/game-tree-exporter
+        run: python -B -m unittest discover -s tests -v
+      - name: Check diagnostics summarizer
+        run: ./spt/CodexDiagnostics/tests/Test-Summary.ps1
+      - name: Check telemetry summarizer
+        run: ./spt/QuakeBrain/tests/Test-Summary.ps1
+      - name: Check console request policy
+        run: ./spt/ScavLifeConsole/Test-ConsoleSecurity.ps1
+      - name: Check Fika wrappers with synthetic files
+        run: ./spt/FikaHeadless/Test-FikaHeadless.ps1
+      - name: Check process observer with synthetic processes
+        run: ./tools/process-exit-observer/tests/Test-Observer.ps1 -PythonPath (Get-Command python.exe).Source
+      - name: Check dashboard JavaScript
+        run: node --check ./spt/ScavLifeConsole/www/app.js

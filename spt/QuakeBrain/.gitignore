@@ -1,0 +1,8 @@
+bin/
+obj/
+.validation/
+*.dll
+*.pdb
+*.exe
+*.log
+*.jsonl

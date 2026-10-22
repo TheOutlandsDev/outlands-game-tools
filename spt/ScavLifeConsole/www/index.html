@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPT Build Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>SPT Build Dashboard</h1>
+        <div class="subline" id="serverLine">Waiting for console...</div>
+      </div>
+      <div class="top-actions">
+        <span class="status-pill" id="connectionPill">offline</span>
+        <button id="refreshButton" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <section class="control-strip">
+      <label>
+        <span>Profile</span>
+        <input id="profileInput" type="text" autocomplete="off" spellcheck="false">
+      </label>
+      <label>
+        <span>Map</span>
+        <select id="mapSelect"></select>
+      </label>
+      <div class="tabs" role="tablist" aria-label="Console views">
+        <button class="tab is-active" data-view="overview" type="button">Overview</button>
+        <button class="tab" data-view="health" type="button">Health</button>
+        <button class="tab" data-view="systems" type="button">Systems</button>
+        <button class="tab" data-view="performance" type="button">Performance</button>
+        <button class="tab" data-view="mods" type="button">Mods</button>
+        <button class="tab" data-view="logs" type="button">Logs</button>
+        <button class="tab" data-view="customize" type="button">Customize</button>
+        <button class="tab" data-view="debug" type="button">Post-Raid</button>
+      </div>
+    </section>
+
+    <main>
+      <section class="view is-active" id="overviewView">
+        <div class="overview-grid">
+          <section class="panel identity-panel">
+            <div class="panel-heading">
+              <h2 id="scavName">Unknown Scav</h2>
+              <span class="status-pill muted" id="deployPill">unknown</span>
+            </div>
+            <div class="summary" id="dossierSummary">No dossier loaded.</div>
+            <dl class="stat-grid">
+              <div><dt>Level</dt><dd id="levelValue">-</dd></div>
+              <div><dt>XP</dt><dd id="xpValue">-</dd></div>
+              <div><dt>Condition</dt><dd id="conditionValue">-</dd></div>
+              <div><dt>Streak</dt><dd id="streakValue">-</dd></div>
+              <div><dt>Trust</dt><dd id="trustValue">-</dd></div>
+              <div><dt>Stress</dt><dd id="stressValue">-</dd></div>
+              <div><dt>Fatigue</dt><dd id="fatigueValue">-</dd></div>
+              <div><dt>Last Map</dt><dd id="lastMapValue">-</dd></div>
+            </dl>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Raid Plan</h2>
+              <span class="status-pill" id="riskPill">risk</span>
+            </div>
+            <dl class="plan-meta">
+              <div><dt>Map</dt><dd id="planMap">-</dd></div>
+              <div><dt>Role</dt><dd id="planRole">-</dd></div>
+              <div><dt>Extract</dt><dd id="planExtract">-</dd></div>
+            </dl>
+            <div class="two-column-list">
+              <div>
+                <h3>Objectives</h3>
+                <ul id="objectivesList"></ul>
+              </div>
+              <div>
+                <h3>Avoid</h3>
+                <ul id="avoidList"></ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Loadout Preference</h2>
+            <span id="budgetTier" class="status-pill muted">-</span>
+          </div>
+          <dl class="stat-grid compact">
+            <div><dt>Primary</dt><dd id="loadoutPrimary">-</dd></div>
+            <div><dt>Armor</dt><dd id="loadoutArmor">-</dd></div>
+            <div><dt>Backpack</dt><dd id="loadoutBackpack">-</dd></div>
+            <div><dt>Medical</dt><dd id="loadoutMedical">-</dd></div>
+            <div><dt>Loot</dt><dd id="loadoutLoot">-</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Build Snapshot</h2>
+            <span id="buildHealthPill" class="status-pill muted">unknown</span>
+          </div>
+          <dl class="stat-grid compact">
+            <div><dt>SPT</dt><dd id="sptProcessValue">-</dd></div>
+            <div><dt>Game</dt><dd id="gameProcessValue">-</dd></div>
+            <div><dt>Server Mods</dt><dd id="serverModCountValue">-</dd></div>
+            <div><dt>Client Plugins</dt><dd id="clientPluginCountValue">-</dd></div>
+            <div><dt>Log Signals</dt><dd id="logSignalValue">-</dd></div>
+          </dl>
+        </section>
+      </section>
+
+      <section class="view" id="healthView">
+        <div class="overview-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Issue Queue</h2>
+              <span id="issuePill" class="status-pill muted">-</span>
+            </div>
+            <ul class="issue-list" id="issueList"></ul>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Profile Health</h2>
+              <span id="profileHealthPill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid">
+              <div><dt>PMC</dt><dd id="pmcNameValue">-</dd></div>
+              <div><dt>PMC Level</dt><dd id="pmcLevelValue">-</dd></div>
+              <div><dt>Scav</dt><dd id="profileScavNameValue">-</dd></div>
+              <div><dt>Scav Level</dt><dd id="profileScavLevelValue">-</dd></div>
+              <div><dt>Known Traders</dt><dd id="knownTraderCountValue">-</dd></div>
+              <div><dt>Profile Traders</dt><dd id="profileTraderCountValue">-</dd></div>
+              <div><dt>Invalid Traders</dt><dd id="invalidTraderCountValue">-</dd></div>
+              <div><dt>Fixer Flags</dt><dd id="fixerFlagsValue">-</dd></div>
+            </dl>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Profile Counters</h2>
+          </div>
+          <dl class="stat-grid compact">
+            <div><dt>PMC Sessions</dt><dd id="pmcSessionsValue">-</dd></div>
+            <div><dt>PMC Kills</dt><dd id="pmcKillsValue">-</dd></div>
+            <div><dt>PMC Deaths</dt><dd id="pmcDeathsValue">-</dd></div>
+            <div><dt>Scav Sessions</dt><dd id="profileScavSessionsValue">-</dd></div>
+            <div><dt>Scav Survived</dt><dd id="profileScavSurvivedValue">-</dd></div>
+            <div><dt>Scav Killed</dt><dd id="profileScavKilledValue">-</dd></div>
+            <div><dt>Scav Kills</dt><dd id="profileScavKillsValue">-</dd></div>
+            <div><dt>Scav Deaths</dt><dd id="profileScavDeathsValue">-</dd></div>
+          </dl>
+        </section>
+      </section>
+
+      <section class="view" id="customizeView">
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Identity</h2>
+            <div class="button-row">
+              <button id="randomizeButton" type="button">Randomize</button>
+              <button id="applyButton" type="button">Apply</button>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label><span>Nickname</span><input id="nicknameInput" type="text" maxlength="24"></label>
+            <label><span>Archetype</span><select id="archetypeSelect"></select></label>
+            <label><span>Home Map</span><select id="homeMapSelect"></select></label>
+            <label><span>Temperament</span><select id="temperamentSelect"></select></label>
+            <label><span>Voice</span><select id="voiceSelect"></select></label>
+            <label><span>Outfit</span><select id="outfitSelect"></select></label>
+            <label class="wide"><span>Tags</span><input id="tagsInput" type="text" spellcheck="false"></label>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Kit Preferences</h2>
+          </div>
+          <div class="form-grid">
+            <label><span>Primary</span><select id="primarySelect"></select></label>
+            <label><span>Armor</span><select id="armorSelect"></select></label>
+            <label><span>Backpack</span><select id="backpackSelect"></select></label>
+            <label><span>Medical</span><select id="medicalSelect"></select></label>
+            <label><span>Loot Focus</span><select id="lootFocusSelect"></select></label>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="systemsView">
+        <div class="systems-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Core Systems</h2>
+              <span id="systemsPill" class="status-pill muted">-</span>
+            </div>
+            <div class="system-chip-grid" id="systemsList"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Trader Rotation</h2>
+              <span id="traderPill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid compact">
+              <div><dt>Location</dt><dd id="traderLocationValue">-</dd></div>
+              <div><dt>Source</dt><dd id="traderSourceValue">-</dd></div>
+              <div><dt>Raid</dt><dd id="traderRaidCounterValue">-</dd></div>
+              <div><dt>Mode</dt><dd id="traderModeValue">-</dd></div>
+              <div><dt>Transits</dt><dd id="transitsValue">-</dd></div>
+            </dl>
+            <div class="chip-row" id="availableTradersList"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Diagnostics</h2>
+              <span id="diagnosticsPill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid compact">
+              <div><dt>Avg FPS</dt><dd id="diagAvgFps">-</dd></div>
+              <div><dt>Min FPS</dt><dd id="diagMinFps">-</dd></div>
+              <div><dt>Worst Frame</dt><dd id="diagWorstFrame">-</dd></div>
+              <div><dt>Hitches</dt><dd id="diagHitches">-</dd></div>
+              <div><dt>Max Bots</dt><dd id="diagMaxBots">-</dd></div>
+            </dl>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>QuakeBrain</h2>
+              <span id="quakePill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid compact">
+              <div><dt>Map</dt><dd id="quakeMap">-</dd></div>
+              <div><dt>Events</dt><dd id="quakeEvents">-</dd></div>
+              <div><dt>Snapshots</dt><dd id="quakeSnapshots">-</dd></div>
+              <div><dt>Max Bots</dt><dd id="quakeMaxBots">-</dd></div>
+              <div><dt>Dropped</dt><dd id="quakeDropped">-</dd></div>
+            </dl>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Recent Server Signals</h2>
+            <span id="sptLogPill" class="status-pill muted">-</span>
+          </div>
+          <ul class="signal-list" id="serverSignalsList"></ul>
+        </section>
+      </section>
+
+      <section class="view" id="performanceView">
+        <div class="systems-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Frame Health</h2>
+              <span id="frameHealthPill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid compact">
+              <div><dt>Avg FPS</dt><dd id="perfAvgFps">-</dd></div>
+              <div><dt>Min FPS</dt><dd id="perfMinFps">-</dd></div>
+              <div><dt>Worst Frame</dt><dd id="perfWorstFrame">-</dd></div>
+              <div><dt>Worst P95</dt><dd id="perfWorstP95">-</dd></div>
+              <div><dt>Hitches</dt><dd id="perfHitches">-</dd></div>
+            </dl>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Telemetry</h2>
+              <span id="telemetryPill" class="status-pill muted">-</span>
+            </div>
+            <dl class="stat-grid compact">
+              <div><dt>Diag Events</dt><dd id="diagEventCount">-</dd></div>
+              <div><dt>Unity Warn</dt><dd id="unityWarningCount">-</dd></div>
+              <div><dt>Unity Err</dt><dd id="unityErrorCount">-</dd></div>
+              <div><dt>QB Events</dt><dd id="qbEventCount">-</dd></div>
+              <div><dt>QB Files</dt><dd id="qbFileCount">-</dd></div>
+            </dl>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Worst Hitches</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Frame</th><th>Scene</th><th>Location</th><th>Bots</th><th>CPU</th><th>Memory</th></tr></thead>
+              <tbody id="hitchTable"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Unity Messages</h2>
+          </div>
+          <ul class="signal-list" id="unityMessageList"></ul>
+        </section>
+      </section>
+
+      <section class="view" id="modsView">
+        <div class="systems-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Server Mods</h2>
+              <span id="serverModsPill" class="status-pill muted">-</span>
+            </div>
+            <div class="table-wrap table-tall">
+              <table>
+                <thead><tr><th>Name</th><th>DLL</th><th>Config</th><th>Updated</th></tr></thead>
+                <tbody id="serverModsTable"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Client Plugins</h2>
+              <span id="clientPluginsPill" class="status-pill muted">-</span>
+            </div>
+            <div class="table-wrap table-tall">
+              <table>
+                <thead><tr><th>Plugin</th><th>Folder</th><th>Size</th></tr></thead>
+                <tbody id="clientPluginsTable"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Custom Tools And Disabled Archives</h2>
+            <span id="disabledArchivePill" class="status-pill muted">-</span>
+          </div>
+          <div class="systems-grid">
+            <div class="chip-row" id="customToolsList"></div>
+            <div class="chip-row" id="disabledArchivesList"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="logsView">
+        <div class="systems-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>SPT Routes</h2>
+              <span id="routePill" class="status-pill muted">-</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Route</th><th>Count</th></tr></thead>
+                <tbody id="routeTable"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Recent Errors</h2>
+              <span id="recentErrorsPill" class="status-pill muted">-</span>
+            </div>
+            <ul class="signal-list" id="recentErrorsList"></ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="debugView">
+        <section class="panel">
+          <div class="panel-heading">
+            <h2>Post-Raid Capture</h2>
+            <div class="button-row">
+              <button id="resetButton" class="danger" type="button">Reset</button>
+            </div>
+          </div>
+          <dl class="stat-grid compact">
+            <div><dt>Outcome</dt><dd id="lastOutcomeValue">-</dd></div>
+            <div><dt>Source</dt><dd id="lastCaptureSourceValue">-</dd></div>
+            <div><dt>Loot Value</dt><dd id="lastLootValue">-</dd></div>
+            <div><dt>Items</dt><dd id="lastItemsValue">-</dd></div>
+            <div><dt>Kills</dt><dd id="lastKillsValue">-</dd></div>
+            <div><dt>Last Seen</dt><dd id="lastSeenValue">-</dd></div>
+          </dl>
+        </section>
+      </section>
+    </main>
+
+    <footer class="event-log" id="eventLog" aria-live="polite"></footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

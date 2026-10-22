@@ -1,0 +1,34 @@
+# Dependency and license scope
+
+The root MIT license applies to this collection's original tool and mod source,
+documentation, and synthetic tests. The public copies were prepared from local,
+assistant-assisted projects for Connor O'Shea (TheOutlandsDev). Existing metadata
+in several server mods already selected MIT. The publication review found no
+third-party implementation headers or bundled dependencies in the selected source;
+this is a bounded source review, not a proof of originality of every expression.
+
+External dependencies retain their own terms. This repository does not contain
+Escape from Tarkov, SPT, Fika, Unity, BepInEx, Harmony, a game installation, game
+assemblies, mods from other authors, downloaded installers, artwork, or real saves.
+Build references point to dependencies supplied by the user on their own machine.
+The MIT license here does not relicense those dependencies or their assets.
+
+Obtain the game and dependencies through their respective maintainers:
+
+- [Escape from Tarkov](https://www.escapefromtarkov.com/)
+- [SPT server source and its license](https://github.com/sp-tarkov/server-csharp)
+- [Fika](https://github.com/project-fika)
+- [BepInEx](https://github.com/BepInEx/BepInEx)
+- [Harmony](https://github.com/pardeike/Harmony)
+- [Unity](https://unity.com/)
+
+This collection is unofficial and is not endorsed by those projects or companies.
+Runtime names, API names, identifiers, and references describe interoperability.
+Review the relevant dependency versions and terms before distributing a compiled
+package. Preserve applicable dependency notices if a future distribution includes
+anything beyond this original source collection.
+
+The separate GAMMA Clear Sky Warfare repository remains outside this collection
+and retains its existing license. No source from that AGPL publication is copied
+into this MIT collection. The generic process observer is adapted from an earlier
+locally authored diagnostic helper, not from that publication tree.

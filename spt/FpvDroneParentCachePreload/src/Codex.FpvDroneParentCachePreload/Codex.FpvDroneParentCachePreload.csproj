@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Codex.FpvDroneParentCachePreload</AssemblyName>
+    <RootNamespace>Codex.FpvDroneParentCachePreload</RootNamespace>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <Target Name="RequireGameRoot" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(GameRoot)' == ''" Text="Supply /p:GameRoot=path-to-your-installed-SPT-game." />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(GameRoot)\SPT\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(GameRoot)\SPT\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Reflection">
+      <HintPath>$(GameRoot)\SPT\SPTarkov.Reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(GameRoot)\SPT\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "developmentMode": false,
+  "startingScav": {
+    "nickname": "Local Runner",
+    "level": 1,
+    "experience": 0
+  },
+  "stash": {
+    "width": 6,
+    "height": 4,
+    "captureSurvivedHauls": true,
+    "autoStoreSurvivedHauls": false,
+    "maxPendingHauls": 8,
+    "maxStoredItemTrees": 120
+  },
+  "cooldowns": {
+    "survivedMinutes": 0,
+    "deathMinutes": 20
+  },
+  "progression": {
+    "survivedRunExperience": 120,
+    "deathRunExperience": 15,
+    "lootValueToExperienceRatio": 0.01
+  },
+  "customization": {
+    "syncToLivePlayerScav": false,
+    "applyLevelAndExperienceToLiveScav": false
+  },
+  "diagnostics": {
+    "writePostRaidAudit": false,
+    "maxPostRaidAuditFiles": 30
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "license": "MIT",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 87,
+      "sha256": "e38a20af2894227ad4804dff6ec5c41947fdf4c4eac96a2faa5190dc15a22539"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 3743,
+      "sha256": "2d06128c6b4b8ff641e04d4c3668e148d0cd407722ef677a12104357fdfbe27c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 28,
+      "sha256": "235ef33cba9b7f437e163dcbb6d446607258451210383d8b295d93752646c4ac"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_or_suggestion.yml",
+      "bytes": 2532,
+      "sha256": "8db1b2f667dfc42b4bcf12ddb3d5a9b9e3b62dae1c9b7fa45654bfe9dd848236"
+    },
+    {
+      "path": ".github/workflows/source-checks.yml",
+      "bytes": 1339,
+      "sha256": "254057e83fd39ed6c9bf702509948427e441f2b499a0b191bbe2276bf9c46f4c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 275,
+      "sha256": "28c1ac92e59ed8bf906b4faa2fc2e309e3639583e509135ba1df7501ec69f9ca"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1357,
+      "sha256": "2fd787bf4be4ef56475cc0e945a10d907b12ba39a9a8bf6eb8f4c03ec9d7e030"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 8353,
+      "sha256": "69b0820b95edca9edf21bc384c0599252b356690b18041cb2fa53719db803d2c"
+    },
+    {
+      "path": "docs/FAQ.md",
+      "bytes": 12780,
+      "sha256": "42c7be0101dacd8de7e71eb0ed82f27b3106c92687c27bc0e39871f2e2281194"
+    },
+    {
+      "path": "docs/GETTING-STARTED.md",
+      "bytes": 10878,
+      "sha256": "71368b739b9cb955ab465482b2eadd21ebdb8c84604aa851dbcec133c265fc4b"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 6782,
+      "sha256": "5bb7d879e44a9cac9f274a2f6f901e1a05041150a6933cd5138bffe7606d5694"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1104,
+      "sha256": "865b2b98e99ebe5f268452428ff664f59904ea0b82e8dabb93cb49b485b9e4b7"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 2926,
+      "sha256": "b8b07ee888bd83cb030cf3cb10b2cd82438613fc98e655477362c0b1da5c832a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4099,
+      "sha256": "71ea47eaabd8c0f750154e3299252be7328f1cc34fffbe2512eb192b9ecac817"
+    },
+    {
+      "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
+      "bytes": 716,
+      "sha256": "3325ed99d642281ded8eb221c573c8e6ebe797072eb6bab0680625284c722526"
+    },
+    {
+      "path": "spt/AiPopulationTuning/config/config.json",
+      "bytes": 5361,
+      "sha256": "c8eb905b44544dfb2c3275a6d8f18035f94fcbb68a0b339865087cb2f4850c3f"
+    },
+    {
+      "path": "spt/AiPopulationTuning/NuGet.Config",
+      "bytes": 113,
+      "sha256": "22fd0c2a0eb49bde6e0118232de5718c21ffc967a557adf7476e10cb0baa389c"
+    },
+    {
+      "path": "spt/AiPopulationTuning/README.md",
+      "bytes": 2152,
+      "sha256": "072d8035e270e1c94d8c0cfe98abc8f430600854e970f136795ca02863b9d78a"
+    },
+    {
+      "path": "spt/AiPopulationTuning/src/Codex.AiPopulationTuning/AiPopulationTuningConfig.cs",
+      "bytes": 6588,
+      "sha256": "cbc932bb0b521fe1780d0038fb04a089af69e2cc9a4359eb192af8e172b9f220"
+    },
+    {
+      "path": "spt/AiPopulationTuning/src/Codex.AiPopulationTuning/AiPopulationTuningMod.cs",
+      "bytes": 1362,
+      "sha256": "77d3e5791466cb46349fb072734e086eef1cdb0a3ee5f017b77e7950a530a4ac"
+    },
+    {
+      "path": "spt/AiPopulationTuning/src/Codex.AiPopulationTuning/AiPopulationTuningService.cs",
+      "bytes": 11651,
+      "sha256": "1e30b3f88ef3a055aeb431f0c71010438ae38c2ac9c73cf2ace6b89ddfba0672"
+    },
+    {
+      "path": "spt/AiPopulationTuning/src/Codex.AiPopulationTuning/Codex.AiPopulationTuning.csproj",
+      "bytes": 1463,
+      "sha256": "e05fbfff1dd6f7ab2553303e432854e5b8ad8cf9a191a8708d446c7cd6f6e660"
+    },
+    {
+      "path": "spt/AiPopulationTuning/src/Codex.AiPopulationTuning/ModMetadata.cs",
+      "bytes": 1050,
+      "sha256": "8eee47e512ab234f64acf6eeb2daf97c234b2198406288414b75ccdd5584f116"
+    },
+    {
+      "path": "spt/CodexDiagnostics/.gitignore",
+      "bytes": 63,
+      "sha256": "421c7257513c4d722578797c4b4ba6bea98ab629e3ee23df9900f8bba1c14360"
+    },
+    {
+      "path": "spt/CodexDiagnostics/Build-CodexDiagnostics.ps1",
+      "bytes": 1521,
+      "sha256": "e4b686f08060dbe6d61489232ed4d909ef15d0a59d7bfc030a48d2981f8f72d3"
+    },
+    {
+      "path": "spt/CodexDiagnostics/nuget.config",
+      "bytes": 131,
+      "sha256": "652624e1ac15698be31dc7bc90a74b1fcc4314c387551013c61fb3a113843d28"
+    },
+    {
+      "path": "spt/CodexDiagnostics/README.md",
+      "bytes": 3541,
+      "sha256": "f5afa32c4cc411587f41fc6997434bfc563e9ff2a37cbd3e7e69fc9c8ec6cb38"
+    },
+    {
+      "path": "spt/CodexDiagnostics/src/Codex.Diagnostics.Client/Codex.Diagnostics.Client.csproj",
+      "bytes": 1846,
+      "sha256": "4720f5df0d0542f2a085c728061b142697fda97199c9544685c40dcfdd34f2b9"
+    },
+    {
+      "path": "spt/CodexDiagnostics/src/Codex.Diagnostics.Client/DiagnosticsJsonlWriter.cs",
+      "bytes": 4283,
+      "sha256": "c242b4ebe1698729e821ddde4ce0284808bc73516de0637daf5f0d9ed04c936b"
+    },
+    {
+      "path": "spt/CodexDiagnostics/src/Codex.Diagnostics.Client/Plugin.cs",
+      "bytes": 28178,
+      "sha256": "5e343a13b1f4d5dd4d45fd0098038dffc4bafc82f3466c537486ce51f4496e03"
+    },
+    {
+      "path": "spt/CodexDiagnostics/Summarize-CodexDiagnostics.ps1",
+      "bytes": 13115,
+      "sha256": "a3a8eb062f38a60735228bd540ebf0affa481c71cdff8105381f030ac962ba25"
+    },
+    {
+      "path": "spt/CodexDiagnostics/tests/Test-Summary.ps1",
+      "bytes": 2243,
+      "sha256": "695b7acbc73635c68e0b5d8d0b3b046b74b136d8b11d80d79b9e6668c7864c94"
+    },
+    {
+      "path": "spt/CodexDiagnostics/VALIDATION.md",
+      "bytes": 1574,
+      "sha256": "8c68d589115e2fcab0561b39b24ec5fc8f7876240d2a94f5ef11f7a0a9c4e7c3"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/Build-EscapeFromConnorBranding.ps1",
+      "bytes": 728,
+      "sha256": "bc78b05049278433fd67b6d0f2f00d78495f1b3a2d6c4d044300c35f8b1fcb97"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/NuGet.Config",
+      "bytes": 113,
+      "sha256": "22fd0c2a0eb49bde6e0118232de5718c21ffc967a557adf7476e10cb0baa389c"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/README.md",
+      "bytes": 1511,
+      "sha256": "62e6b424e4e530d04e000b6ef328984acd6b7feb29323197f3d95f85e1605cdc"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/src/Codex.EscapeFromConnorBranding/Codex.EscapeFromConnorBranding.csproj",
+      "bytes": 1475,
+      "sha256": "dd1595f188dd176c07a61fb53db8266ce2eb676a805ad38f5141703f1bec8491"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/src/Codex.EscapeFromConnorBranding/EscapeFromConnorBranding.cs",
+      "bytes": 1858,
+      "sha256": "5a44f988394094f3b838988fbb7ab710fa9fd9afe0f3acf46cc73503f08c0fe5"
+    },
+    {
+      "path": "spt/EscapeFromConnorBranding/src/Codex.EscapeFromConnorBranding/ModMetadata.cs",
+      "bytes": 1062,
+      "sha256": "bdc718873c853aabe657f8336985bc2e21e2146c1fd2d96bd7877d1bcfea06a3"
+    },
+    {
+      "path": "spt/FikaHeadless/FikaHeadless.Common.ps1",
+      "bytes": 2267,
+      "sha256": "e6346c3d2440e8a512217fa1b090bec2040735687058b80c9d68aeee03ccc691"
+    },
+    {
+      "path": "spt/FikaHeadless/Install-FikaHeadless.ps1",
+      "bytes": 1896,
+      "sha256": "32317646c6e9120e24b0d1423785d97c683c533193c8dbe04e78184acf08bccf"
+    },
+    {
+      "path": "spt/FikaHeadless/Prune-FikaHeadlessClient.ps1",
+      "bytes": 1885,
+      "sha256": "8ff795b56fa04f0c21836ec6c12da8c8abcbca671c837bf86460cc526d5219d9"
+    },
+    {
+      "path": "spt/FikaHeadless/README.md",
+      "bytes": 4146,
+      "sha256": "9e1406ffab6259ec360333774e4febb0fcbd421ff436692325d1b7918655980d"
+    },
+    {
+      "path": "spt/FikaHeadless/Repair-FikaHeadlessConfig.ps1",
+      "bytes": 4037,
+      "sha256": "acd642b089dcb2a993f535c842d38f966e4b1cb2f2eb938ef0d22d1e2f9b3d5c"
+    },
+    {
+      "path": "spt/FikaHeadless/Test-FikaHeadless.ps1",
+      "bytes": 5820,
+      "sha256": "d2fdb91694f95815381ada24a4855d738f680d5d2377983cc3018d804e6465b2"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/.gitignore",
+      "bytes": 63,
+      "sha256": "421c7257513c4d722578797c4b4ba6bea98ab629e3ee23df9900f8bba1c14360"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/Build-FpvDroneParentCachePreload.ps1",
+      "bytes": 1580,
+      "sha256": "b49db0076aea893a6c1ed2367db05957091a5405f1d29fb2fcf4d34ab5c03858"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/nuget.config",
+      "bytes": 131,
+      "sha256": "652624e1ac15698be31dc7bc90a74b1fcc4314c387551013c61fb3a113843d28"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/README.md",
+      "bytes": 3089,
+      "sha256": "8bea2b95546ce794f6c2804f8824d38edf85f449705591809e750bdf5f8d38d6"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/src/Codex.FpvDroneParentCachePreload/Codex.FpvDroneParentCachePreload.csproj",
+      "bytes": 1284,
+      "sha256": "d8c5c5c9096561b576a71a09ab3355c162e0d61dee03a0e7bd1b4adf29369ac4"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/src/Codex.FpvDroneParentCachePreload/FpvDroneParentCachePreload.cs",
+      "bytes": 2417,
+      "sha256": "c0f032811e27e644341b66a4e21603f67cae8d1f4c1b45bdd6b78750754fcc45"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/src/Codex.FpvDroneParentCachePreload/ModMetadata.cs",
+      "bytes": 1078,
+      "sha256": "837e087d02a791f07484e6f63a31e45afdfc52e76d411263109c29ea2c3e4ce1"
+    },
+    {
+      "path": "spt/FpvDroneParentCachePreload/VALIDATION.md",
+      "bytes": 1228,
+      "sha256": "e6d679d2d6561dca4c541eec054f764bd55884f99c502dfe4e7fe8bca493fc50"
+    },
+    {
+      "path": "spt/OpenScavTransits/Build-OpenScavTransits.ps1",
+      "bytes": 712,
+      "sha256": "7daf56c744671ddecdcb40fd6f910a1e8725acb67402c1ddd1fd7a8535e2abc3"
+    },
+    {
+      "path": "spt/OpenScavTransits/config/config.json",
+      "bytes": 3045,
+      "sha256": "877099456568e9f2912e28a1683919bf233357465a540e8980bc967c6f381481"
+    },
+    {
+      "path": "spt/OpenScavTransits/NuGet.Config",
+      "bytes": 113,
+      "sha256": "22fd0c2a0eb49bde6e0118232de5718c21ffc967a557adf7476e10cb0baa389c"
+    },
+    {
+      "path": "spt/OpenScavTransits/README.md",
+      "bytes": 2628,
+      "sha256": "a1b3aa27acaedfa20b7364a5089ee2ff5c93a38c39471de29322dde1e2b21fdd"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/Codex.OpenScavTransits.csproj",
+      "bytes": 1459,
+      "sha256": "8719f069fc97506f404477156227b2f5bce6af52ce0aced436027d55fcb9fa5a"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/ModMetadata.cs",
+      "bytes": 1062,
+      "sha256": "3e226587d1585288bda61213f456cc6c54742b2c8277f872f7089a99ed94796d"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/OpenScavTransitsConfig.cs",
+      "bytes": 3800,
+      "sha256": "af5103d576b954c7c7975f7a59504c7f24343e6b176bf888f74852b084f72f1d"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/OpenScavTransitsMod.cs",
+      "bytes": 1980,
+      "sha256": "9aa16dd2fe97ffde71b77fc8c7a98e1316d94bdbf34d85ce1c87fc6a65082446"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/OpenScavTransitsService.cs",
+      "bytes": 8188,
+      "sha256": "abe733574d44a4ce44f888b4a4a6938d88fa02468a76c12625294ae1e0ab3603"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/TraderAvailabilityPatches.cs",
+      "bytes": 2730,
+      "sha256": "81ab2673a4f9d804428af086568506547f2137a356ad47aedae065ea8bcd9529"
+    },
+    {
+      "path": "spt/OpenScavTransits/src/Codex.OpenScavTransits/TraderAvailabilityService.cs",
+      "bytes": 16189,
+      "sha256": "9bb2db730719143defe3286efab094a7cedca84e38cbe6f03d09008ac5dc974b"
+    },
+    {
+      "path": "spt/QuakeBrain/.gitignore",
+      "bytes": 63,
+      "sha256": "421c7257513c4d722578797c4b4ba6bea98ab629e3ee23df9900f8bba1c14360"
+    },
+    {
+      "path": "spt/QuakeBrain/Build-QuakeBrainTelemetry.ps1",
+      "bytes": 1497,
+      "sha256": "ae9929ee7bc73d2f2d5ffb774e0672ca7b5a298ad39c7dfa2c433493095a5280"
+    },
+    {
+      "path": "spt/QuakeBrain/nuget.config",
+      "bytes": 131,
+      "sha256": "652624e1ac15698be31dc7bc90a74b1fcc4314c387551013c61fb3a113843d28"
+    },
+    {
+      "path": "spt/QuakeBrain/README.md",
+      "bytes": 3988,
+      "sha256": "95538609439cab5da62e224537c4901caab8bcebb2fbc92b494e2284e6ac4b55"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/HarmonyPatches.cs",
+      "bytes": 807,
+      "sha256": "1304ba16cdc986c7669fdf03056b060d1e405e9f96b0f9eafb42a66f5ff551a7"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/LineOfSightSampler.cs",
+      "bytes": 1724,
+      "sha256": "12566f9a10e1176cd98f7d37ee0e806e1a2fc1a78caffa42ed20871abf8a9b53"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/Plugin.cs",
+      "bytes": 16953,
+      "sha256": "85dbfc34bdb95c8e0f31e05f84637a5f72b47a6ffb2d84d03ffd2eaeb1ff76f2"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/QuakeBrain.Telemetry.csproj",
+      "bytes": 1988,
+      "sha256": "4c1fd0f44a74f2bd37d74a6df168286c9b720e88165fbfbe3d957896bc6634fc"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/TelemetryModels.cs",
+      "bytes": 9282,
+      "sha256": "1413c8b3298e4b2c441a4b1fa758ec1087f715a1aa5210d120c20d34f6d1f18b"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/TelemetryWriter.cs",
+      "bytes": 8989,
+      "sha256": "fbc5dd31578e01da1b85142718b469a1ac851259aaced70dfa0a5ff7fe972cbc"
+    },
+    {
+      "path": "spt/QuakeBrain/src/QuakeBrain.Telemetry/UtilityBrain.cs",
+      "bytes": 2588,
+      "sha256": "553fc4c550b9acd0b4fdeb047b65c0ebcc6cde04d9a40e882867a2018087004d"
+    },
+    {
+      "path": "spt/QuakeBrain/Summarize-QuakeBrainTelemetry.ps1",
+      "bytes": 4115,
+      "sha256": "6296d86a5bb008de677eb33103fc63bc04f091f0eddcaba172df08c35c3ade09"
+    },
+    {
+      "path": "spt/QuakeBrain/tests/Test-Summary.ps1",
+      "bytes": 2114,
+      "sha256": "d05d297f207f12dd969f67c363f4ac0dd99e768b48ff3be21b18adce18c62249"
+    },
+    {
+      "path": "spt/QuakeBrain/VALIDATION.md",
+      "bytes": 1574,
+      "sha256": "8c68d589115e2fcab0561b39b24ec5fc8f7876240d2a94f5ef11f7a0a9c4e7c3"
+    },
+    {
+      "path": "spt/ScavLifeClient/Build-ScavLifeClient.ps1",
+      "bytes": 960,
+      "sha256": "699b154ec1b6982669363b87b543906cb3a7c6fba0bb0e94da6f6c2f86ef23f9"
+    },
+    {
+      "path": "spt/ScavLifeClient/README.md",
+      "bytes": 1499,
+      "sha256": "994e57d76c137401f9db1089f190cbd50852c792a4c6dfa6347be2841724a0ef"
+    },
+    {
+      "path": "spt/ScavLifeClient/src/Codex.ScavLife.Client/Codex.ScavLife.Client.csproj",
+      "bytes": 1906,
+      "sha256": "b976f317a07b2d215759dadea30202a2da0611ebd06e94ae4ed9ae16929fc26a"
+    },
+    {
+      "path": "spt/ScavLifeClient/src/Codex.ScavLife.Client/Plugin.cs",
+      "bytes": 10752,
+      "sha256": "213a97ad0254bc74e5722846c52b4e29147c37616e00832bb841f9b8412ef11c"
+    },
+    {
+      "path": "spt/ScavLifeConsole/ConsoleSecurity.ps1",
+      "bytes": 1841,
+      "sha256": "190d7ea1ce564fa48316326271274d05195e2b27ab979327c1208e3dbd095575"
+    },
+    {
+      "path": "spt/ScavLifeConsole/README.md",
+      "bytes": 3279,
+      "sha256": "ce7da4a90ebc04206e5effb022af9b519b0041958836e13ce9ca3e4f6b203662"
+    },
+    {
+      "path": "spt/ScavLifeConsole/Start-ScavLifeConsole.ps1",
+      "bytes": 52497,
+      "sha256": "6a09a9166387918a7184ca4b40edfbe560deb3644587eadc303abfd232ac66e3"
+    },
+    {
+      "path": "spt/ScavLifeConsole/Test-ConsoleSecurity.ps1",
+      "bytes": 2653,
+      "sha256": "7da198351e4d584c47e662c571d152f6aeed650cf9d203086cc743a847bcb1a3"
+    },
+    {
+      "path": "spt/ScavLifeConsole/www/app.js",
+      "bytes": 29593,
+      "sha256": "d4de08cb26de097dc21c269bc9219db4aa6e434372dab90b749e8c600c4bc27b"
+    },
+    {
+      "path": "spt/ScavLifeConsole/www/index.html",
+      "bytes": 16594,
+      "sha256": "8258c5efcf7f74c3698ef923bfc8589470807a29a30a00485b58b39fd31b0a36"
+    },
+    {
+      "path": "spt/ScavLifeConsole/www/styles.css",
+      "bytes": 7537,
+      "sha256": "e23887eaadc04e66e87e8e79dd1b81b68f80339867e0adc831826d6f5bb8a4ee"
+    },
+    {
+      "path": "spt/ScavLifeFramework/Build-ScavLifeFramework.ps1",
+      "bytes": 1199,
+      "sha256": "b4881c58948e2af0ec05e3d600402a93e404a692853a8bdfd9285545b4e53a9a"
+    },
+    {
+      "path": "spt/ScavLifeFramework/config/config.json",
+      "bytes": 750,
+      "sha256": "eff0e8c017408df4ddfc198d1305ecd19b9f46e1fc79d01fd279dbd2ea2c679e"
+    },
+    {
+      "path": "spt/ScavLifeFramework/README.md",
+      "bytes": 3345,
+      "sha256": "1f1555034e7b5e18309abe20da57be1df068daa1ea185ed73278de16da9004f8"
+    },
+    {
+      "path": "spt/ScavLifeFramework/Set-ScavLifeCustomization.ps1",
+      "bytes": 3902,
+      "sha256": "680759817bd30586ab71054e70a3f986c5e5d82766b39844389de7313ec63c57"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/Codex.ScavLifeFramework.csproj",
+      "bytes": 1366,
+      "sha256": "6131754b4e8d4069ebbd032ec81d21cedb50589de85dd2d2c409735ad6b43978"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ModMetadata.cs",
+      "bytes": 1040,
+      "sha256": "346284b4f996d01bf45a66367fd70c894571714e55a303c029a84f8d8cae8cc2"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeFrameworkMod.cs",
+      "bytes": 857,
+      "sha256": "9bd6968a2df1154e4ea74704fdf5066e6bdc06c921cb01e138c5f77af768b8fe"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeModels.cs",
+      "bytes": 14221,
+      "sha256": "e02b8e00c4baa5e0f6785454b11f4a45ac514b7bb08de3be0191be0886344dbb"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeProfileSyncPatch.cs",
+      "bytes": 943,
+      "sha256": "726b9050b4690db8ef28c2dfce4b7513b569912061292bec00a0b911e7dffb25"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeRaidPatches.cs",
+      "bytes": 1879,
+      "sha256": "6570ff3db32b0584074c759037a624a75dae75c432314cd32e16a38ffbc2a692"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeService.cs",
+      "bytes": 80812,
+      "sha256": "7f1b2587cadd9ee443fa9e408c8b6e2d6d7e05708ddef8cc2cc47b37efdd84dc"
+    },
+    {
+      "path": "spt/ScavLifeFramework/src/Codex.ScavLifeFramework/ScavLifeStaticRouter.cs",
+      "bytes": 4170,
+      "sha256": "eb1fd71f20d70b8f878e1aa1bd77c14e0533e44f3f669ffd559a600b121530fe"
+    },
+    {
+      "path": "spt/ScavLifeFramework/Test-ScavLifeFramework.ps1",
+      "bytes": 5415,
+      "sha256": "6e9cceff3313e59661cf237d71bb1bb0cd0095b179ae01ecb639b5e242f25d0b"
+    },
+    {
+      "path": "spt/VagabondScavAccess/.gitignore",
+      "bytes": 63,
+      "sha256": "421c7257513c4d722578797c4b4ba6bea98ab629e3ee23df9900f8bba1c14360"
+    },
+    {
+      "path": "spt/VagabondScavAccess/Build-VagabondScavAccess.ps1",
+      "bytes": 1521,
+      "sha256": "075598465cc48f0ff75efe74492f7f69dae3720ebf7aab0e3808b29314330903"
+    },
+    {
+      "path": "spt/VagabondScavAccess/nuget.config",
+      "bytes": 131,
+      "sha256": "652624e1ac15698be31dc7bc90a74b1fcc4314c387551013c61fb3a113843d28"
+    },
+    {
+      "path": "spt/VagabondScavAccess/README.md",
+      "bytes": 3069,
+      "sha256": "70c635c3f2a6bff69d247342f2916a75567b6ec0470f9f25426c6c34c4e240a8"
+    },
+    {
+      "path": "spt/VagabondScavAccess/src/Codex.VagabondScavAccess/Codex.VagabondScavAccess.csproj",
+      "bytes": 2366,
+      "sha256": "bd0af3f6b274fcd2299b86c18366967dda5024675fccde6c4d0d0573973be885"
+    },
+    {
+      "path": "spt/VagabondScavAccess/src/Codex.VagabondScavAccess/Plugin.cs",
+      "bytes": 5355,
+      "sha256": "d01fb82dc11d78ccbcc46053ce2ddcd0e79d74a74f8726142ae7ecd13136c023"
+    },
+    {
+      "path": "spt/VagabondScavAccess/VALIDATION.md",
+      "bytes": 1228,
+      "sha256": "e6d679d2d6561dca4c541eec054f764bd55884f99c502dfe4e7fe8bca493fc50"
+    },
+    {
+      "path": "THIRD-PARTY.md",
+      "bytes": 1989,
+      "sha256": "94479f0813a364c35676daac39b76bcbfc44e2274fa6291650340baad395a5fb"
+    },
+    {
+      "path": "tools/game-tree-exporter/export_game_tree.py",
+      "bytes": 7222,
+      "sha256": "da11175ee19b8a40d2c2a7ead3204cd32cbe1e291cd6108df6fd733a6da42e9c"
+    },
+    {
+      "path": "tools/game-tree-exporter/README.md",
+      "bytes": 1769,
+      "sha256": "ef26781bfc3d64f37157dc85a552d2ce60f73b8da8278915f78ec001c971b76e"
+    },
+    {
+      "path": "tools/game-tree-exporter/tests/test_export.py",
+      "bytes": 5578,
+      "sha256": "5ee28925cbdb50d78bc5ac33c436cfdfee35cce8976c5bfb1c6e6568da708778"
+    },
+    {
+      "path": "tools/process-exit-observer/README.md",
+      "bytes": 1746,
+      "sha256": "5f3220fa893ab903f1e00abde9bd6d9be18eb7fc8784f4126bcd3c902e81c163"
+    },
+    {
+      "path": "tools/process-exit-observer/tests/Test-Observer.ps1",
+      "bytes": 2622,
+      "sha256": "6a61e6b1e6d65505bde67aee1d15b97eeaa385c9ec3ef10fad738b4bbc8ed7f9"
+    },
+    {
+      "path": "tools/process-exit-observer/Watch-ProcessExit.ps1",
+      "bytes": 4135,
+      "sha256": "0c8ff478be3d7cd7b5d3ead4cfa209aa9bb5ea7f5e848d86b060413311bfdca4"
+    },
+    {
+      "path": "tools/tests/test_release.py",
+      "bytes": 2754,
+      "sha256": "12956eaa937b768577bfdccdba291e8094f8f83f34d5709aa11e4a77eb4a6352"
+    },
+    {
+      "path": "tools/verify_source_release.py",
+      "bytes": 5235,
+      "sha256": "2efb4d54464e623e8a2f2cf33bc21c5c5d83698edae6983161e37755a68255fa"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2764,
+      "sha256": "a07954a7b36f114e9a8115d4f2fe225a9baa5fa7566c2b9bee33753fdf2eea64"
+    }
+  ]
+}

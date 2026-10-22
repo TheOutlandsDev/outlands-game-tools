@@ -1,0 +1,60 @@
+name: Feature or suggestion
+description: Suggest a tool, improvement, documentation fix, or different approach.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas and public feedback are welcome, including simpler alternatives and small documentation changes.
+        You do not need finished code. Describe the problem and what would help.
+        Suggestions do not create a support commitment or delivery date. Please keep private player data, credentials, logs, and installations out of this issue.
+  - type: input
+    id: area
+    attributes:
+      label: Affected module or area
+      description: Name a current module, documentation topic, or proposed new tool. Unsure is fine.
+      placeholder: Module, docs, or new tool idea
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the situation, who encounters it, and what is difficult or missing. A concrete example helps.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would be useful?
+      description: Explain the result you want or the change you suggest. You can leave implementation details open.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or tradeoffs
+      description: Optional. Include existing tools, a simpler approach, compatibility concerns, or reasons to avoid a proposed solution.
+    validations:
+      required: false
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions or context, if relevant
+      description: Optional. Include target game/SPT/dependency versions and what you have actually tried. Redact personal identifiers, paths, and addresses.
+    validations:
+      required: false
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Anything else, or a way you would like to help?
+      description: Optional. Documentation, testing, a synthetic example, code, or feedback can all help. There is no obligation to implement your own suggestion.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public-report check
+      options:
+        - label: This suggestion does not include credentials, private player/profile data, raw captures, or other people's identifying information.
+          required: true

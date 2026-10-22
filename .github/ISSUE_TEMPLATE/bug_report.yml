@@ -1,0 +1,92 @@
+name: Bug report
+description: Report a reproducible problem or an unexpected result.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports are welcome. Start with a small description; no full logs, saves, profiles, or telemetry uploads are needed.
+        This is an experimental source collection, and there is no guaranteed response time.
+        For a security vulnerability, use GitHub private vulnerability reporting if available. Otherwise ask for a private reporting route without posting exploit details or sensitive data here.
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which module is involved?
+      options:
+        - Codex Diagnostics
+        - QuakeBrain Telemetry
+        - Scav Life Framework
+        - Scav Life Client
+        - Scav Life Console
+        - AI Population Tuning
+        - Open Scav Transits
+        - FPV Parent Cache Preload
+        - Vagabond Scav Access
+        - Text Branding
+        - Fika Headless Helpers
+        - Game Folder Inventory
+        - Process Exit Observer
+        - Documentation or source-package checks
+        - Other or unsure
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Repository revision or release
+      description: A commit or release name is useful. Say unknown if you do not have it.
+      placeholder: Commit, release, or unknown
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant versions and setup
+      description: Include exact game, SPT, BepInEx, Fika, and affected dependency versions where relevant; also Windows, PowerShell, .NET, or Python versions. Replace private paths and addresses. Write not applicable for unrelated fields.
+      placeholder: Module and host versions; relevant dependencies; client/server role if applicable
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected and actual behavior
+      description: Describe the action you took, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Smallest reproduction
+      description: List the steps, sanitized command, and relevant nonprivate settings. If you cannot reproduce it reliably, say how often it happened. Do not attach the installation or a player profile.
+    validations:
+      required: true
+  - type: dropdown
+    id: validation_scope
+    attributes:
+      label: What did you actually test?
+      description: Choose the furthest stage you checked and explain any limits below.
+      options:
+        - Source inspection only
+        - Build only
+        - Offline synthetic test
+        - Client or server load
+        - A specific raid or profile-changing flow
+        - A multiplayer flow
+        - Unsure or not yet tested
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional redacted evidence and test limits
+      description: A short error excerpt or synthetic example is enough. Include failure frequency or checks you could not run. Never paste tokens, full logs, raw telemetry, real profile/save data, private addresses, or identifying screenshots.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public-report check
+      options:
+        - label: I reviewed this report and removed credentials, tokens, player/profile/account IDs, private paths/addresses, and other people's data.
+          required: true

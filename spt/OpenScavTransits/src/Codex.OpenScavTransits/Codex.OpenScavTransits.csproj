@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Codex.OpenScavTransits</AssemblyName>
+    <RootNamespace>Codex.OpenScavTransits</RootNamespace>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SPTarkov.DI">
+      <HintPath>$(SptServerDirectory)\SPTarkov.DI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Server.Core">
+      <HintPath>$(SptServerDirectory)\SPTarkov.Server.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SPTarkov.Reflection">
+      <HintPath>$(SptServerDirectory)\SPTarkov.Reflection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>$(SptServerDirectory)\SemanticVersioning.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="ValidateSptReferences" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'$(SptServerDirectory)' == ''" Text="Pass -p:SptServerDirectory=PATH containing your installed SPT server assemblies." />
+    <Error Condition="!Exists('$(SptServerDirectory)/SPTarkov.Server.Core.dll')" Text="SPTarkov.Server.Core.dll is missing from SptServerDirectory." />
+  </Target>
+</Project>
