@@ -72,3 +72,10 @@ adapted from an unpublished local backup helper. Its code, generated examples,
 tests and docs are MIT. No source from the AGPL GAMMA companion is incorporated.
 Actual files a user chooses to copy, including saves/configuration, retain their
 own rights and privacy requirements; the tool's license does not relicense them.
+
+The MO2 Baseline Profile Builder is original Python standard-library integration
+code based on an unpublished local comparison-profile helper. Its original
+source, tests, generated examples and docs are MIT. It does not incorporate MO2
+implementation, inspected mod source or code from the AGPL GAMMA companion.
+Files the user supplies retain their own terms. It is an independent limited
+profile workflow, not an official MO2 profile clone or game compatibility layer.

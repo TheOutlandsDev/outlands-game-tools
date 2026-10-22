@@ -26,6 +26,15 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- MO2 Baseline Profile Builder 1.0.0: 42 generated-fixture tests on Windows
+  Python 3.12.7; 38 passed and 4 native symlink/junction checks were skipped
+  because the local review account could not create them. Coverage includes
+  zero-write previews, exact marker changes, BOM/newline preservation, source
+  immutability, fixed file selection, exclusive output, unsafe paths, late source
+  changes, injected copy/write failures and owned-file rollback preserving foreign
+  files. The original example generator and malformed-argument privacy were also
+  tested. Portability CI runs Windows/Ubuntu with Python 3.12/3.13. No installed
+  MO2 instance/game was used; no runtime save compatibility is established.
 - Save Snapshot Verifier 1.0.0: Windows Python 3.12.7 validation collected
   29 tests; 26 passed and 3 case/link fixture checks were skipped because this
   filesystem/account could not create them. Checks cover multi-source and

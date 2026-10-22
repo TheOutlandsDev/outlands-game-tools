@@ -28,6 +28,7 @@ body:
         - Lua Syntax Checker
         - Audio Integrity Checker
         - Save Snapshot Verifier
+        - MO2 Baseline Profile Builder
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

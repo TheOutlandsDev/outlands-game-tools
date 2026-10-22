@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [MO2 Baseline Profile Builder](tools/mo2-profile-builder/README.md): preview and
+  create a separate limited comparison profile with selected mods disabled.
+  New destinations only; originals remain unchanged. Read shared-save caveats.
 - [Save Snapshot Verifier](tools/save-snapshot-verifier/README.md): create new
   SHA-256-verified backups of selected saves/configuration, then check snapshots
   for changed, missing or unexpected files. No restore or overwrite feature.

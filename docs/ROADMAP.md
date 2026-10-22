@@ -22,6 +22,9 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [MO2 profile builder's generated example](../tools/mo2-profile-builder/README.md),
+  review shared-save guidance, or suggest explicit profile-file support with a
+  synthetic fixture and relevant MO2/game documentation.
 - Try the [snapshot verifier's original example](../tools/save-snapshot-verifier/README.md),
   report confusing failure/recovery instructions, or contribute generated fixtures
   for filesystem edge cases. Do not submit real saves, backups or configuration.

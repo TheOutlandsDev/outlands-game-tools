@@ -8,6 +8,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Prepare a separate limited MO2 comparison profile | [MO2 Baseline Profile Builder](../tools/mo2-profile-builder/README.md) | Preview first; apply creates a new profile with exact selected mods disabled. Does not clone every game-specific profile file or isolate saves/settings. |
 | Preserve selected saves/configuration before mod testing | [Save Snapshot Verifier](../tools/save-snapshot-verifier/README.md) | Creates a new local snapshot and verifies copied bytes. Close writers first; no automatic restore, retention deletion or game-format validation. |
 | Check loose audio for decoder errors and sample anomalies | [Audio Integrity Checker](../tools/audio-integrity-checker/README.md) | Needs separately installed SoundFile/NumPy. Reads effective loose files without playback or repairs; a decode pass does not prove game compatibility. |
 | Check loose Lua source syntax using a selected Lua parser | [Lua Syntax Checker](../tools/lua-syntax-checker/README.md) | Needs Lupa installed in your own Python environment. Compiles inspected chunks without invoking them; game APIs and runtime compatibility are outside its scope. |

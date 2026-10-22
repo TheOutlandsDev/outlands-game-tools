@@ -1,5 +1,15 @@
 # Changes
 
+## MO2 Baseline Profile Builder 1.0.0 - 2026-10-22
+
+- Added previews and explicit creation of a new limited saved-profile copy with
+  exact selected mods disabled; saved modlist order, BOM and newlines preserved.
+- Added a fixed five-file allowlist, source/copy verification, exclusive report
+  reservation before apply and guarded rollback of only owned files.
+- Added detailed examples, shared-save and excluded-profile-file guidance,
+  synthetic regression tests and Windows/Ubuntu portability CI.
+- Original source/docs/tests/examples are MIT. No MO2/game/mod payloads bundled.
+
 ## Save Snapshot Verifier 1.0.0 - 2026-10-22
 
 - Added explicit labeled file/folder snapshots into new destinations, with

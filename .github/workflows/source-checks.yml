@@ -110,3 +110,6 @@ jobs:
       - name: Check Save Snapshot Verifier with generated files
         working-directory: tools/save-snapshot-verifier
         run: python -B -m unittest discover -s tests -v
+      - name: Check MO2 Baseline Profile Builder with synthetic profiles
+        working-directory: tools/mo2-profile-builder
+        run: python -B -m unittest discover -s tests -v
