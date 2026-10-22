@@ -410,17 +410,18 @@ class InspectorCliTests(unittest.TestCase):
         if created.returncode:
             self.skipTest("Junction creation is unavailable")
         def remove_fixture_junction():
-            # Both names are fixed children of this test's TemporaryDirectory.
-            # Remove the reparse point itself, never recursively delete its target.
-            self.assertTrue(junction.absolute().is_relative_to(self.base.absolute()))
-            self.assertTrue(outside.absolute().is_relative_to(self.base.absolute()))
-            removed = subprocess.run(
-                ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command",
-                 "Remove-Item -LiteralPath $env:MO2_TEST_JUNCTION -Force -Confirm:$false -ErrorAction Stop"],
-                env=environment, capture_output=True, text=True, timeout=30,
-            )
-            self.assertEqual(removed.returncode, 0, removed.stderr)
-            self.assertTrue((outside / "private.script").is_file())
+            # Validate the current parent and target inside this fixture before
+            # removing only the junction with nonrecursive RemoveDirectory.
+            fixture_root = self.base.resolve(strict=True)
+            link = junction.parent.resolve(strict=True) / junction.name
+            target = outside.resolve(strict=True)
+            self.assertTrue(link.is_relative_to(fixture_root))
+            self.assertTrue(target.is_relative_to(fixture_root))
+            self.assertTrue(link.is_junction())
+            self.assertEqual(link.resolve(strict=True), target)
+            link.rmdir()
+            self.assertFalse(link.exists())
+            self.assertTrue((target / "private.script").is_file())
 
         self.addCleanup(remove_fixture_junction)
         report, _ = self.inspect(status=1)
