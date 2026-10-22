@@ -29,6 +29,7 @@ body:
         - Audio Integrity Checker
         - Save Snapshot Verifier
         - MO2 Baseline Profile Builder
+        - X-Ray Log Summary
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

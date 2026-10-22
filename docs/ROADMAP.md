@@ -22,6 +22,9 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [log summary's original generated logs](../tools/xray-log-summary/README.md)
+  and suggest useful categories with small original fixtures. Do not submit raw
+  player logs or assume a recognized marker proves the underlying behavior.
 - Try the [MO2 profile builder's generated example](../tools/mo2-profile-builder/README.md),
   review shared-save guidance, or suggest explicit profile-file support with a
   synthetic fixture and relevant MO2/game documentation.

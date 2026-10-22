@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [X-Ray Log Summary](tools/xray-log-summary/README.md): count selected warning,
+  fatal/script-error and session markers without emitting original log text.
+  Local observations only; no game diagnosis or raw-log redaction guarantee.
 - [MO2 Baseline Profile Builder](tools/mo2-profile-builder/README.md): preview and
   create a separate limited comparison profile with selected mods disabled.
   New destinations only; originals remain unchanged. Read shared-save caveats.

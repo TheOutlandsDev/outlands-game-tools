@@ -26,6 +26,14 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- X-Ray Log Summary 1.0.0: 35 black-box tests on Windows Python 3.12.7;
+  33 passed and 2 native link checks were skipped because the local review
+  sandbox could not create them. Tests cover known category counts/markers,
+  no source-text or identifier disclosure, malformed encoding, byte/line caps,
+  late findings, repeated-input refusal, source stability, exclusive output,
+  original example logs and platform link guards. Windows CI requires its native
+  junction fixture to run. The Windows/Ubuntu Python 3.12/3.13 matrix uses only
+  generated logs; no real player logs, game behavior or multiplayer was tested.
 - MO2 Baseline Profile Builder 1.0.0: 42 generated-fixture tests on Windows
   Python 3.12.7; 38 passed and 4 native symlink/junction checks were skipped
   because the local review account could not create them. Coverage includes

@@ -1,5 +1,15 @@
 # Changes
 
+## X-Ray Log Summary 1.0.0 - 2026-10-22
+
+- Added bounded strict-decoding scans of one inactive selected X-Ray log, with
+  warning/fatal/script-error counts and selected session/transport text markers.
+- Reports contain static category/error codes, counts and capped line numbers;
+  source text, paths, filenames and extracted identifiers are omitted.
+- Added explicit incomplete status, guarded new reports, original generated logs,
+  detailed privacy/scope guidance and portable synthetic tests.
+- Original code/docs/tests/examples are MIT; no raw game logs or engine bundled.
+
 ## MO2 Baseline Profile Builder 1.0.0 - 2026-10-22
 
 - Added previews and explicit creation of a new limited saved-profile copy with

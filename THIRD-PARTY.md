@@ -79,3 +79,9 @@ source, tests, generated examples and docs are MIT. It does not incorporate MO2
 implementation, inspected mod source or code from the AGPL GAMMA companion.
 Files the user supplies retain their own terms. It is an independent limited
 profile workflow, not an official MO2 profile clone or game compatibility layer.
+
+The X-Ray Log Summary is original Python standard-library source with original
+generated log fixtures. It uses text patterns to describe interoperability and
+contains no engine code, raw player logs or implementation from the AGPL GAMMA
+companion. Source, docs, tests and examples are MIT. The tool's license does not
+grant redistribution rights to logs, scripts, game assets or inspected material.
