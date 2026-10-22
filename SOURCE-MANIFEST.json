@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 3777,
-      "sha256": "964142756f24b9aebe738d556e43f999535d3c44db60c18bc541e7e190bce978"
+      "bytes": 3807,
+      "sha256": "af087578cc02f8e3aeacd8a0c12c06e0d25b2269dc5f2c933eb59a2aca91763d"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,18 +24,18 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 2046,
-      "sha256": "f0a44a6c28043bb022512da526b385ea03cb84705a51f6aebbc5b4dc4a1e7f57"
+      "bytes": 2916,
+      "sha256": "adc9dcf280359fa7872b99c3b30577ebfaaa52c3a2caa015f084773877c6254a"
     },
     {
       "path": ".gitignore",
-      "bytes": 275,
-      "sha256": "28c1ac92e59ed8bf906b4faa2fc2e309e3639583e509135ba1df7501ec69f9ca"
+      "bytes": 285,
+      "sha256": "fd26c09bbc4a986a3a9e1323a43dcdf0095456e63180e6849958949e8ecc7c5f"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2201,
-      "sha256": "e963d2ded48aa2a721c58422453ed5fd5bfb96d39ec372fe84e4725b8f428de4"
+      "bytes": 2994,
+      "sha256": "c4815daa9830782e859399476596fd1f2b19e1d434ee37f42688fd49c2f400be"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 11162,
-      "sha256": "be7ba78ffa10e9e4bf9a7452a2c16d12f01897caa3d35c9c653a2d527de63ca1"
+      "bytes": 11450,
+      "sha256": "8094f0d65876ac4a457317ae5c272bb6bfe9b39b5fd3be253be6f1b252cec4d4"
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 7103,
-      "sha256": "e0e4d2d67b522926896c058c3734e6793dba2c76c93322cc817163904ff50319"
+      "bytes": 7412,
+      "sha256": "1565e4a0a024ba6eda5758988ab33f42648b19239c613490205107dc26fbd285"
     },
     {
       "path": "LICENSE",
@@ -64,13 +64,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 3397,
-      "sha256": "93efbc43f511970060ef8400e38f3dccfe02a42d337bac1b3d90f764a9154c83"
+      "bytes": 3719,
+      "sha256": "778d140ac0924e949edc215b6772ba693cf9ca87c2563cda4a49e773ef9514ce"
     },
     {
       "path": "README.md",
-      "bytes": 4323,
-      "sha256": "29e72d0e07bdc87c9449ed89066e91cc51b3702c78ad9e0d90a4bd01609f62ef"
+      "bytes": 4561,
+      "sha256": "0aa6615fb7c4a1b910f44f54c87293e56deda8cac4a06226f5dd3d9dc83764fc"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -549,8 +549,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 2595,
-      "sha256": "76097217c8793dd13de59a9cef9bb037f1ed309f35715cddfebfa7812d0ed76b"
+      "bytes": 3376,
+      "sha256": "030f98a0e9fc5eb039691be69afe7e8c59761b9629895d464f1619b309bf9c41"
     },
     {
       "path": "tools/game-tree-exporter/export_game_tree.py",
@@ -566,6 +566,41 @@
       "path": "tools/game-tree-exporter/tests/test_export.py",
       "bytes": 5578,
       "sha256": "5ee28925cbdb50d78bc5ac33c436cfdfee35cce8976c5bfb1c6e6568da708778"
+    },
+    {
+      "path": "tools/lua-syntax-checker/examples/create_example.py",
+      "bytes": 3400,
+      "sha256": "adb5d5cd4959a72bbe2346487a616eb671cb5f135c6c7fa66aace6a717e63909"
+    },
+    {
+      "path": "tools/lua-syntax-checker/examples/README.md",
+      "bytes": 4699,
+      "sha256": "4849ee08015a1c7c4f0b037802dba22dc5f137057c68e3510fdadece35f1bfaf"
+    },
+    {
+      "path": "tools/lua-syntax-checker/lua_syntax.py",
+      "bytes": 25416,
+      "sha256": "e141515a189d1b96d25dafad2fb19fb00bae87016ee546da5053f56a05cc3bcc"
+    },
+    {
+      "path": "tools/lua-syntax-checker/README.md",
+      "bytes": 14915,
+      "sha256": "86332ebed406109ab7226e5308a253f0e7293a4f5dc47f4f55d2a294b9712ce1"
+    },
+    {
+      "path": "tools/lua-syntax-checker/REPORT-FORMAT.md",
+      "bytes": 7869,
+      "sha256": "dc585d9d20bd1288ca07a21f1d19307647e9684ae20f1a285e7358d7d929ed0b"
+    },
+    {
+      "path": "tools/lua-syntax-checker/requirements.txt",
+      "bytes": 96,
+      "sha256": "2c4666e9641ea7d581246b22ee0c06b628e4d4947464e1bf70edbf43addeff3a"
+    },
+    {
+      "path": "tools/lua-syntax-checker/tests/test_lua_syntax.py",
+      "bytes": 22269,
+      "sha256": "6a7f51b61b4832c9d2ae7c52f0c80f0be66efeced1a77b6f4528c15729e71f5a"
     },
     {
       "path": "tools/mo2-conflict-inspector/examples/create_example.py",
@@ -614,18 +649,18 @@
     },
     {
       "path": "tools/tests/test_release.py",
-      "bytes": 2754,
-      "sha256": "12956eaa937b768577bfdccdba291e8094f8f83f34d5709aa11e4a77eb4a6352"
+      "bytes": 3693,
+      "sha256": "fa326c89d7264a6cc46f05638f8311f4bcbb7ca7279776d020bf834d0ab0895e"
     },
     {
       "path": "tools/verify_source_release.py",
-      "bytes": 5235,
-      "sha256": "2efb4d54464e623e8a2f2cf33bc21c5c5d83698edae6983161e37755a68255fa"
+      "bytes": 5340,
+      "sha256": "cee167cf19dd435bb1d17b4144162f1223391d44287f8e1d6271217db02a1bf6"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4071,
-      "sha256": "5c2839cfc48cb9309b35ffa1537533f0272828384c0a9b9f997367fb11dd5571"
+      "bytes": 5478,
+      "sha256": "1664679635679a622e388964493e158e7ed39a32b05dc8fbf6ed6365dbcffcd3"
     }
   ]
 }

@@ -41,3 +41,15 @@ semantics; the inspector does not import or incorporate its implementation.
 Its toy profiles and script/configuration examples are original synthetic data.
 The collection's MIT license covers this original code and documentation;
 MO2, games, and the files a user inspects retain their own terms.
+
+The Lua Syntax Checker is original integration code adapted from a separate,
+unpublished local compile-only audit. It contains no inspected game/mod source,
+engine implementation, bytecode, or code from the AGPL GAMMA companion. Its
+source/examples/tests/docs use this collection's MIT license. Lupa 2.8 is a
+separately installed dependency, declared in the tool's requirements file;
+its wheels and Lua/LuaJIT implementations are not bundled in this repository.
+Preserve the applicable upstream notices when redistributing those components.
+See [Lupa and its license](https://github.com/scoder/lupa),
+[the reviewed PyPI version](https://pypi.org/project/lupa/2.8/),
+[Lua's license](https://www.lua.org/license.html), and
+[LuaJIT's license](https://luajit.org/ext_copyright.html).

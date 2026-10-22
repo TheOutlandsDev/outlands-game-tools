@@ -26,6 +26,24 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Lua Syntax Checker 1.0.0: 27 black-box CLI tests collected on Windows with
+  Python 3.12.7 and an existing isolated Lupa 2.8 runtime; 24 passed and 3 link
+  fixture tests were skipped because the review environment could not create
+  symbolic links (two checks) or a junction. Tests exercised all three selected
+  VMs, bytecode/NUL refusal, BOM/hash accounting, private parser-error handling,
+  MO2 winners, immutable input bytes, incomplete/error exits, output guards and
+  invalid size limits. Runtime-error, file-write, missing-module and infinite-loop
+  source fixtures compiled without executing their chunks. The original source
+  example produced two passes and one intentional syntax error on all three VMs;
+  its MO2 example selected four valid winners from eight candidate copies.
+  A separate synthetic scan compiled 1,001 scripts, including a long comment,
+  with unchanged input bytes. Its observed 1.781-second run is one local
+  measurement, not a performance guarantee. Seven publication-gate tests passed,
+  including requirements-path and virtual-environment exclusion checks.
+  CI exercises the checker on Windows/Ubuntu with Python 3.12/3.13 and separately
+  installed Lupa wheels. No parser binaries are in the source package, and no
+  real game/MO2 installation or engine transformations were tested. See the
+  [module guide](tools/lua-syntax-checker/README.md) for the exact scope.
 - MO2 Conflict Inspector 1.0.0: 33 black-box CLI tests collected on Windows with
   Python 3.12.7; 28 passed and 5 were skipped because this review environment
   could not create case-colliding names, symbolic links (two checks), a hardlink,

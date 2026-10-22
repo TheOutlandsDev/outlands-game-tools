@@ -8,6 +8,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Check loose Lua source syntax using a selected Lua parser | [Lua Syntax Checker](../tools/lua-syntax-checker/README.md) | Needs Lupa installed in your own Python environment. Compiles inspected chunks without invoking them; game APIs and runtime compatibility are outside its scope. |
 | Inspect MO2 loose-file winners and possible Lua/LTX conflicts | [MO2 Conflict Inspector](../tools/mo2-conflict-inspector/README.md) | Reads selected mod folders and profile; no game launch or automatic fixes. It does not unpack archives or reproduce the live virtual filesystem. |
 | Investigate frame-time spikes, hitches, Unity errors, or the installed plugin stack | [Codex Diagnostics](../spt/CodexDiagnostics/README.md) | Passive collection still has runtime overhead. Captures can contain profile IDs, paths, and error text. |
 | Inspect bot/raid observations and combat-event counts | [QuakeBrain Telemetry](../spt/QuakeBrain/README.md) | It records data; it does not control bots or implement the proposed AI layers. |

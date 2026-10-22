@@ -22,6 +22,10 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [Lua checker's original example](../tools/lua-syntax-checker/README.md),
+  suggest clearer error categories, or contribute a small original fixture for a
+  parser/version edge case. Game-engine transformations and runtime testing
+  remain separate work; do not submit a proprietary script dump.
 - Try the [MO2 inspector's game-free example](../tools/mo2-conflict-inspector/README.md),
   report confusing output, or propose a small synthetic profile that demonstrates
   an unsupported file-priority case. Archive/VFS and engine merge behavior need

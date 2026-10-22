@@ -60,6 +60,23 @@ class ReleaseTests(unittest.TestCase):
         (self.root / "bin" / "game.dll").write_bytes(b"not distributed")
         self.assertNotIn("bin/game.dll", [row["path"] for row in MODULE.inspect(self.root)])
 
+    def test_only_reviewed_requirements_path_is_allowed(self):
+        requirements = self.root / "tools/lua-syntax-checker/requirements.txt"
+        requirements.parent.mkdir(parents=True)
+        requirements.write_text("lupa==2.8\n", encoding="utf-8")
+        self.assertIn("tools/lua-syntax-checker/requirements.txt",
+                      [row["path"] for row in MODULE.inspect(self.root)])
+        (self.root / "unreviewed.txt").write_text("not publication source")
+        with self.assertRaises(ValueError):
+            MODULE.inspect(self.root)
+
+    def test_virtual_environment_payload_is_not_published(self):
+        payload = self.root / "tools/lua-syntax-checker/.venv/Lib/lupa.pyd"
+        payload.parent.mkdir(parents=True)
+        payload.write_bytes(b"not distributed\0")
+        self.assertNotIn("tools/lua-syntax-checker/.venv/Lib/lupa.pyd",
+                         [row["path"] for row in MODULE.inspect(self.root)])
+
 
 if __name__ == "__main__":
     unittest.main()

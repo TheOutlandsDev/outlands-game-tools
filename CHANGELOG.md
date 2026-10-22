@@ -1,5 +1,18 @@
 # Changes
 
+## Lua Syntax Checker 1.0.0 - 2026-10-22
+
+- Added compile-only syntax checks for loose `.lua`/`.script` sources and the
+  effective loose files of a saved MO2 profile, with optional base/overwrite roots.
+- Added explicit LuaJIT 2.1, Lua 5.1 and Lua 5.4 parser selection through Lupa 2.8.
+  Inspected chunks are compiled and discarded; their top-level code is not run.
+- Added source/parser-input hashes, UTF-8 BOM accounting, sanitized error line
+  reports, incomplete-scan status and guarded exclusive report creation.
+- Added detailed instructions, a reproducible original example, synthetic
+  regression checks, public feedback links and portability CI.
+- Original code, examples, tests and documentation are MIT. External parser
+  dependencies retain their own terms and are not bundled.
+
 ## MO2 Conflict Inspector 1.0.0 - 2026-10-22
 
 - Added a portable Python standard-library inspector for explicit MO2 profiles,

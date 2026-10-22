@@ -15,6 +15,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 | Folder inventory | Original local Python directory exporter | CLI-selected paths, filtered metadata, no link traversal, relative reports, explicit overwrite and CSV formula protection. |
 | Process observer | Original local process-exit diagnostic helper | Exact executable/PID selection, portable output path, bounded observation and independent snapshots. No game implementation. |
 | MO2 conflict inspector | Original unpublished local profile-audit script, rewritten as a standalone CLI | Explicit mods/profile inputs, relative reports without source text or config values, link/path checks, exclusive report output, original toy profiles and synthetic tests. No upstream implementation or assets. |
+| Lua syntax checker | Original unpublished compile-only audit, rewritten as an independent CLI | Explicit tree or MO2 inputs, selected external Lua parser, bounded reads, rejected bytecode, sanitized error reports, original fixtures, and checks that inspected chunks are never invoked. No bundled parser/game binaries. |
 
 Private audit receipts record the original source paths and hashes. They are kept
 outside the publication tree because local paths are not useful public content.

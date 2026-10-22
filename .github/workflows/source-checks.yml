@@ -50,3 +50,24 @@ jobs:
       - name: Check MO2 conflict inspector with synthetic profiles
         working-directory: tools/mo2-conflict-inspector
         run: python -B -m unittest discover -s tests -v
+  lua-portability:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install reviewed Lua parser dependency
+        working-directory: tools/lua-syntax-checker
+        run: python -m pip install --only-binary=:all: -r requirements.txt
+      - name: Require all three reviewed Lua runtime modules
+        run: python -c "import lupa, lupa.luajit21, lupa.lua51, lupa.lua54; assert lupa.__version__ == '2.8'"
+      - name: Check Lua syntax checker with synthetic sources
+        working-directory: tools/lua-syntax-checker
+        run: python -B -m unittest discover -s tests -v

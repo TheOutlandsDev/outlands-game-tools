@@ -11,10 +11,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "SOURCE-MANIFEST.json"
-EXCLUDED = {".git", ".audit", ".validation", "bin", "obj", "__pycache__", ".pytest_cache", ".vs", "node_modules", "artifacts"}
+EXCLUDED = {".git", ".audit", ".validation", ".venv", "bin", "obj", "__pycache__", ".pytest_cache", ".vs", "node_modules", "artifacts"}
 SUFFIXES = {".md", ".cs", ".csproj", ".ps1", ".py", ".json", ".yml", ".yaml",
             ".config", ".html", ".js", ".css", ".cfg", ".gsc", ".csv"}
 SPECIAL = {"LICENSE", ".gitignore", ".gitattributes"}
+SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt"}
 SECRET = re.compile(
     r"(?:AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{40,}"
     r"|sk-proj-[A-Za-z0-9_-]{40,}|tskey-[A-Za-z0-9_-]{16,}"
@@ -52,7 +53,7 @@ def inspect(root: Path) -> list[dict]:
         relative = path.relative_to(root).as_posix()
         if path.name == MANIFEST:
             continue
-        if path.name not in SPECIAL and path.suffix.lower() not in SUFFIXES:
+        if path.name not in SPECIAL and relative not in SPECIAL_PATHS and path.suffix.lower() not in SUFFIXES:
             raise ValueError("Unexpected publication file type: " + relative)
         data = path.read_bytes()
         if len(data) > 2 * 1024 * 1024 or b"\0" in data:
