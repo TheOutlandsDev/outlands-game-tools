@@ -1,5 +1,16 @@
 # Changes
 
+## LTX Definition Inspector 1.0.0 - 2026-10-22
+
+- Added read-only structural checks of explicit loose entry/include graphs:
+  section declarations, ordered parents, missing parents, duplicates and cycles.
+- Added incomplete status for missing/unsafe includes, unsupported DLTX/syntax
+  and limits. No values are merged or game-loader compatibility claimed.
+- Bounded source bytes, graph records/depth, directory lookup, cycle witnesses
+  and JSON report expansion. Added guarded output and relative diagnostics.
+- Added fictional examples, detailed interpretation/scope guidance, synthetic
+  regression/stress tests and portability CI. Original source/docs/tests are MIT.
+
 ## X-Ray Log Summary 1.0.0 - 2026-10-22
 
 - Added bounded strict-decoding scans of one inactive selected X-Ray log, with

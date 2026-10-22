@@ -20,6 +20,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 | Save snapshot verifier | Original unpublished local pre-test backup helper, rewritten as an independent CLI | Explicit labeled file/folder inputs, new destinations, streamed hashes, source/copy stability checks, separate read-only verification, incomplete markers and original synthetic fixtures. No saves or game data bundled. |
 | MO2 baseline profile builder | Original unpublished local comparison-profile helper, rewritten as an independent CLI | Preview-first exact disable requests, fixed saved-file allowlist, exclusive new profile creation, source/destination verification and guarded owned-file rollback. No game or mod payloads. |
 | X-Ray log summary | Original standalone implementation informed by unpublished local warning checks | Bounded selected-log reads, static code/count/line output, no raw excerpts/identifiers, exclusive new reports and original generated logs. No raw logs or AGPL companion implementation copied. |
+| LTX definition inspector | Original narrow structural implementation informed by a local unpublished item-index helper | Explicit entry/include scope, declaration/parent graphs, missing/cyclic reference findings, unsupported-syntax status and bounded reports. No upstream parser, values, game configs or surrounding third-party patches copied. |
 
 Private audit receipts record the original source paths and hashes. They are kept
 outside the publication tree because local paths are not useful public content.

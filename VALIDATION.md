@@ -26,6 +26,18 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- LTX Definition Inspector 1.0.0: 40 generated-fixture tests on Windows
+  Python 3.12.7; 37 passed and 3 case/junction fixtures were skipped because
+  the local filesystem/sandbox could not create them. Tests cover supported
+  includes/declarations, ordered parent records, missing/duplicate/cyclic
+  references, unsafe paths, encodings, unsupported DLTX/syntax, source
+  immutability, byte/file/depth/record/directory/report limits and exclusive
+  reports. Fictional examples return clean/review/incomplete exits 0/2/1.
+  Independent stress review exposed cycle-report expansion; fixed element,
+  encoded-character and streaming JSON bounds now stop dense/long-name graphs
+  with an incomplete report. Windows/Ubuntu Python 3.12/3.13 CI uses generated
+  configurations only. No full LTX/DLTX loader, value resolution, game configuration
+  dump, real profile or game runtime was tested.
 - X-Ray Log Summary 1.0.0: 35 black-box tests on Windows Python 3.12.7;
   33 passed and 2 native link checks were skipped because the local review
   sandbox could not create them. Tests cover known category counts/markers,

@@ -8,6 +8,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Review a selected loose LTX declaration/include graph | [LTX Definition Inspector](../tools/ltx-definition-inspector/README.md) | Checks a narrow supported syntax without merging values or applying DLTX. Missing context and unsupported syntax limit conclusions. |
 | Summarize selected markers in an inactive X-Ray log | [X-Ray Log Summary](../tools/xray-log-summary/README.md) | Outputs static categories/counts/line numbers, not original excerpts. English pattern observations do not establish a root cause or working multiplayer. |
 | Prepare a separate limited MO2 comparison profile | [MO2 Baseline Profile Builder](../tools/mo2-profile-builder/README.md) | Preview first; apply creates a new profile with exact selected mods disabled. Does not clone every game-specific profile file or isolate saves/settings. |
 | Preserve selected saves/configuration before mod testing | [Save Snapshot Verifier](../tools/save-snapshot-verifier/README.md) | Creates a new local snapshot and verifies copied bytes. Close writers first; no automatic restore, retention deletion or game-format validation. |

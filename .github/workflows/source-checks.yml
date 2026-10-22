@@ -116,3 +116,6 @@ jobs:
       - name: Check X-Ray Log Summary with generated logs
         working-directory: tools/xray-log-summary
         run: python -B -m unittest discover -s tests -v
+      - name: Check LTX Definition Inspector with generated configurations
+        working-directory: tools/ltx-definition-inspector
+        run: python -B -m unittest discover -s tests -v

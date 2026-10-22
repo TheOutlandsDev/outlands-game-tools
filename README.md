@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [LTX Definition Inspector](tools/ltx-definition-inspector/README.md): inspect
+  explicit entry/include graphs for missing parents, duplicate sections and
+  cycles. Structural checks only; unsupported DLTX makes the report incomplete.
 - [X-Ray Log Summary](tools/xray-log-summary/README.md): count selected warning,
   fatal/script-error and session markers without emitting original log text.
   Local observations only; no game diagnosis or raw-log redaction guarantee.

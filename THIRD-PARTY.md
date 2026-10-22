@@ -85,3 +85,11 @@ generated log fixtures. It uses text patterns to describe interoperability and
 contains no engine code, raw player logs or implementation from the AGPL GAMMA
 companion. Source, docs, tests and examples are MIT. The tool's license does not
 grant redistribution rights to logs, scripts, game assets or inspected material.
+
+The LTX Definition Inspector is original Python standard-library code with
+fictional generated configuration fixtures. A local unpublished item-index
+helper informed the problem; no surrounding barter/engine/mod implementation
+was incorporated. Primary OpenXRay loader source was consulted for syntax, not
+copied. This is a narrow structural checker, not that loader or a DLTX engine.
+Its original code/docs/tests/examples are MIT. Inspected configuration and
+external engines/mods retain their own terms; no AGPL companion source is copied.
