@@ -8,6 +8,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Inspect MO2 loose-file winners and possible Lua/LTX conflicts | [MO2 Conflict Inspector](../tools/mo2-conflict-inspector/README.md) | Reads selected mod folders and profile; no game launch or automatic fixes. It does not unpack archives or reproduce the live virtual filesystem. |
 | Investigate frame-time spikes, hitches, Unity errors, or the installed plugin stack | [Codex Diagnostics](../spt/CodexDiagnostics/README.md) | Passive collection still has runtime overhead. Captures can contain profile IDs, paths, and error text. |
 | Inspect bot/raid observations and combat-event counts | [QuakeBrain Telemetry](../spt/QuakeBrain/README.md) | It records data; it does not control bots or implement the proposed AI layers. |
 | Experiment with persistent scav state, customization, and a separate stash | [Scav Life Framework](../spt/ScavLifeFramework/README.md) | This can change inventory and persistent state. Use a disposable or backed-up test profile. |

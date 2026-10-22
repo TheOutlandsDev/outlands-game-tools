@@ -22,6 +22,10 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [MO2 inspector's game-free example](../tools/mo2-conflict-inspector/README.md),
+  report confusing output, or propose a small synthetic profile that demonstrates
+  an unsupported file-priority case. Archive/VFS and engine merge behavior need
+  separate designs; do not submit a real modpack or source dump.
 - Improve a confusing setup step after trying it in a clean test folder.
 - Add synthetic report fixtures covering a real format edge case after removing all private values.
 - Improve actionable errors for missing dependencies or malformed input.

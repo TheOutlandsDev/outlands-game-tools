@@ -26,6 +26,23 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- MO2 Conflict Inspector 1.0.0: 33 black-box CLI tests collected on Windows with
+  Python 3.12.7; 28 passed and 5 were skipped because this review environment
+  could not create case-colliding names, symbolic links (two checks), a hardlink,
+  or a junction. The remaining tests covered priority/overwrite winners,
+  effective-file parsing, incomplete scans, privacy, exclusive output, Windows
+  device/stream path refusal, overlapping roots and unchanged input bytes.
+  Its original worked example produced the expected five findings; repeated
+  reports matched and all ten fixture input hashes remained unchanged.
+  A separate synthetic scan of 150 providers and 4,502 loose files found the
+  expected 30 overlaps and preserved all input bytes. This included large
+  unmatched-bracket and repeated-declaration parser inputs. Its observed
+  0.906-second scan is a single local measurement, not a performance promise.
+  Five source-publication gate tests also passed after integration. CI exercises
+  the inspector fixtures on Windows/Ubuntu with Python 3.12/3.13; platform fixture
+  skips remain visible in the job logs. No real MO2/game installation or virtual
+  filesystem was exercised for this source release. See the
+  [module instructions](tools/mo2-conflict-inspector/README.md) for coverage limits.
 - Game Folder Inventory: eight synthetic tests passed, including a native Windows
   junction check with normal permissions. One native symlink test was skipped
   because this account could not create that fixture.

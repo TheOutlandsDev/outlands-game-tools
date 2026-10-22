@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 3743,
-      "sha256": "2d06128c6b4b8ff641e04d4c3668e148d0cd407722ef677a12104357fdfbe27c"
+      "bytes": 3777,
+      "sha256": "964142756f24b9aebe738d556e43f999535d3c44db60c18bc541e7e190bce978"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 1339,
-      "sha256": "254057e83fd39ed6c9bf702509948427e441f2b499a0b191bbe2276bf9c46f4c"
+      "bytes": 2046,
+      "sha256": "f0a44a6c28043bb022512da526b385ea03cb84705a51f6aebbc5b4dc4a1e7f57"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1357,
-      "sha256": "2fd787bf4be4ef56475cc0e945a10d907b12ba39a9a8bf6eb8f4c03ec9d7e030"
+      "bytes": 2201,
+      "sha256": "e963d2ded48aa2a721c58422453ed5fd5bfb96d39ec372fe84e4725b8f428de4"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 10878,
-      "sha256": "71368b739b9cb955ab465482b2eadd21ebdb8c84604aa851dbcec133c265fc4b"
+      "bytes": 11162,
+      "sha256": "be7ba78ffa10e9e4bf9a7452a2c16d12f01897caa3d35c9c653a2d527de63ca1"
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 6782,
-      "sha256": "5bb7d879e44a9cac9f274a2f6f901e1a05041150a6933cd5138bffe7606d5694"
+      "bytes": 7103,
+      "sha256": "e0e4d2d67b522926896c058c3734e6793dba2c76c93322cc817163904ff50319"
     },
     {
       "path": "LICENSE",
@@ -64,13 +64,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 2926,
-      "sha256": "b8b07ee888bd83cb030cf3cb10b2cd82438613fc98e655477362c0b1da5c832a"
+      "bytes": 3397,
+      "sha256": "93efbc43f511970060ef8400e38f3dccfe02a42d337bac1b3d90f764a9154c83"
     },
     {
       "path": "README.md",
-      "bytes": 4099,
-      "sha256": "71ea47eaabd8c0f750154e3299252be7328f1cc34fffbe2512eb192b9ecac817"
+      "bytes": 4323,
+      "sha256": "29e72d0e07bdc87c9449ed89066e91cc51b3702c78ad9e0d90a4bd01609f62ef"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -549,8 +549,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 1989,
-      "sha256": "94479f0813a364c35676daac39b76bcbfc44e2274fa6291650340baad395a5fb"
+      "bytes": 2595,
+      "sha256": "76097217c8793dd13de59a9cef9bb037f1ed309f35715cddfebfa7812d0ed76b"
     },
     {
       "path": "tools/game-tree-exporter/export_game_tree.py",
@@ -566,6 +566,36 @@
       "path": "tools/game-tree-exporter/tests/test_export.py",
       "bytes": 5578,
       "sha256": "5ee28925cbdb50d78bc5ac33c436cfdfee35cce8976c5bfb1c6e6568da708778"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/examples/create_example.py",
+      "bytes": 3150,
+      "sha256": "bf0fd81f955c8f9a6c252f5a55e41245bcc9f9704d472f1a8f4b250663d11eeb"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/examples/README.md",
+      "bytes": 3274,
+      "sha256": "dfb503937edf64b532c1e59ee1343f1d269b10a29fdbd04fb161364814d28cca"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/mo2_conflicts.py",
+      "bytes": 23694,
+      "sha256": "8d0c7258c81382bf2fc51790f8eaf38e3fcc1e86dfe45f4312773d86ebac0964"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/README.md",
+      "bytes": 17776,
+      "sha256": "af53d7358d04f6181be53c46793ab1cf25cb905955d6681d7c7ed9933c72e38f"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/REPORT-FORMAT.md",
+      "bytes": 4917,
+      "sha256": "3d6ec5d42ee97763310bf6cdc70373e8ef9735c6d8bbbcb47012051ab7bcf819"
+    },
+    {
+      "path": "tools/mo2-conflict-inspector/tests/test_inspector.py",
+      "bytes": 26384,
+      "sha256": "0e9c59d363eb31b7d221f06a61a1ccde61820f6b214b5b1239a16f08570290fa"
     },
     {
       "path": "tools/process-exit-observer/README.md",
@@ -594,8 +624,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 2764,
-      "sha256": "a07954a7b36f114e9a8115d4f2fe225a9baa5fa7566c2b9bee33753fdf2eea64"
+      "bytes": 4071,
+      "sha256": "5c2839cfc48cb9309b35ffa1537533f0272828384c0a9b9f997367fb11dd5571"
     }
   ]
 }

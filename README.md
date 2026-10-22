@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [MO2 Conflict Inspector](tools/mo2-conflict-inspector/README.md): read-only
+  loose-file priority and possible Lua/LTX conflict reports for an explicit MO2
+  profile. Includes a game-free worked example and offline tests.
 - [Game Folder Inventory](tools/game-tree-exporter/README.md): filtered TXT/CSV/JSON
   inventories, without reading game-file contents or following links.
 - [Process Exit Observer](tools/process-exit-observer/README.md): capture a

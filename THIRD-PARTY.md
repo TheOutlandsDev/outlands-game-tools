@@ -32,3 +32,12 @@ The separate GAMMA Clear Sky Warfare repository remains outside this collection
 and retains its existing license. No source from that AGPL publication is copied
 into this MIT collection. The generic process observer is adapted from an earlier
 locally authored diagnostic helper, not from that publication tree.
+
+The MO2 Conflict Inspector is an independent Python standard-library tool,
+adapted from an unpublished, locally authored profile-audit script. No source
+from MO2, GAMMA, their published AGPL companion, or inspected mods is bundled.
+MO2's public source/documentation was consulted for file-format and priority
+semantics; the inspector does not import or incorporate its implementation.
+Its toy profiles and script/configuration examples are original synthetic data.
+The collection's MIT license covers this original code and documentation;
+MO2, games, and the files a user inspects retain their own terms.

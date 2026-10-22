@@ -1,5 +1,19 @@
 # Changes
 
+## MO2 Conflict Inspector 1.0.0 - 2026-10-22
+
+- Added a portable Python standard-library inspector for explicit MO2 profiles,
+  with loose-file provider/winner reports and optional overwrite-folder input.
+- Added heuristic reports for repeated qualified Lua declarations, repeated LTX
+  keys, and unlocalizer symbols. Findings are review prompts, not proof of a
+  broken installation or a proposed automatic repair.
+- Added relative report references, omitted source/configuration values,
+  protected source folders from output, and made partial scans visible.
+- Added detailed setup, CLI/report explanations, an original game-free example,
+  synthetic tests, and the inspector in the public bug-report form.
+- Original inspector code, examples, tests and docs use the collection's MIT
+  license. No game/mod payloads are included or changed.
+
 ## Initial public source package - 2026-10-22
 
 - Selected eleven original SPT mod/helper modules and two standalone game tools.

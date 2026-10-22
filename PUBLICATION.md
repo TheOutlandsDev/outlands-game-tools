@@ -14,6 +14,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 | Fika wrappers | Original local installer/config/pruning glue | Explicit inputs and previews replace fixed profiles/addresses and automatic changes; apply operations preserve backups. No upstream installer included. |
 | Folder inventory | Original local Python directory exporter | CLI-selected paths, filtered metadata, no link traversal, relative reports, explicit overwrite and CSV formula protection. |
 | Process observer | Original local process-exit diagnostic helper | Exact executable/PID selection, portable output path, bounded observation and independent snapshots. No game implementation. |
+| MO2 conflict inspector | Original unpublished local profile-audit script, rewritten as a standalone CLI | Explicit mods/profile inputs, relative reports without source text or config values, link/path checks, exclusive report output, original toy profiles and synthetic tests. No upstream implementation or assets. |
 
 Private audit receipts record the original source paths and hashes. They are kept
 outside the publication tree because local paths are not useful public content.
@@ -40,4 +41,6 @@ python -B tools/verify_source_release.py --write-manifest
 python -B tools/verify_source_release.py
 ```
 
-No remote repository was created or updated as part of local preparation.
+The initial preparation was local. Publication receipts are kept privately
+outside this tree. The MO2 addition is reviewed as a separate source update;
+see its module README and the validation record for its scope and checks.
