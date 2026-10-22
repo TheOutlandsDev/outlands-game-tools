@@ -1,5 +1,18 @@
 # Changes
 
+## Audio Integrity Checker 1.0.0 - 2026-10-22
+
+- Added streamed decode checks for loose WAV/OGG/FLAC/AIFF audio and the effective
+  files of saved MO2 profiles, including optional loose base and overwrite roots.
+- Added metadata, finite-sample and decoded-frame checks, optional streaming
+  SHA-256, explicit byte/frame/channel limits and sanitized JSON reports.
+- Added protected report creation, incomplete-scan status, original generated
+  examples, synthetic regression checks and Windows/Ubuntu portability CI.
+- Added detailed setup, report interpretation and public bug/suggestion links.
+  A decode pass does not establish game compatibility or validate every byte.
+- Original source, examples, tests and docs are MIT. SoundFile, NumPy and their
+  native dependencies are separately installed and retain their own licenses.
+
 ## Lua Syntax Checker 1.0.0 - 2026-10-22
 
 - Added compile-only syntax checks for loose `.lua`/`.script` sources and the

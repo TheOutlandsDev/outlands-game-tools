@@ -15,7 +15,8 @@ EXCLUDED = {".git", ".audit", ".validation", ".venv", "bin", "obj", "__pycache__
 SUFFIXES = {".md", ".cs", ".csproj", ".ps1", ".py", ".json", ".yml", ".yaml",
             ".config", ".html", ".js", ".css", ".cfg", ".gsc", ".csv"}
 SPECIAL = {"LICENSE", ".gitignore", ".gitattributes"}
-SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt"}
+SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt",
+                 "tools/audio-integrity-checker/requirements.txt"}
 SECRET = re.compile(
     r"(?:AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{40,}"
     r"|sk-proj-[A-Za-z0-9_-]{40,}|tskey-[A-Za-z0-9_-]{16,}"

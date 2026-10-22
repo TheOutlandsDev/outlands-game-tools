@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [Audio Integrity Checker](tools/audio-integrity-checker/README.md): stream-decode
+  loose audio or a saved MO2 profile's winning files, report decode errors and
+  sample anomalies, and optionally hash inputs. Includes generated examples.
 - [Lua Syntax Checker](tools/lua-syntax-checker/README.md): compile-only checks
   for loose Lua sources or the winning files of a saved MO2 profile. Select
   LuaJIT 2.1, Lua 5.1, or Lua 5.4 through a separately installed Lupa dependency.

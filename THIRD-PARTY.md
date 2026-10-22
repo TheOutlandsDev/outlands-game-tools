@@ -53,3 +53,16 @@ See [Lupa and its license](https://github.com/scoder/lupa),
 [the reviewed PyPI version](https://pypi.org/project/lupa/2.8/),
 [Lua's license](https://www.lua.org/license.html), and
 [LuaJIT's license](https://luajit.org/ext_copyright.html).
+
+The Audio Integrity Checker is original integration code adapted from a separate,
+unpublished local sound audit. Its source, generated examples, tests and docs
+are MIT; it includes no game audio, decoder implementation or source from the
+AGPL GAMMA companion. The separately installed SoundFile 0.13.1 and NumPy 2.2.6
+dependencies use BSD-style licenses. SoundFile uses CFFI and libsndfile; normal
+platform wheels can include a native libsndfile build with its own LGPL terms.
+These dependencies and their binaries are not part of this source repository.
+Preserve the applicable notices and obligations if distributing them separately.
+See [SoundFile's documentation and license](https://python-soundfile.readthedocs.io/en/0.13.1/),
+[NumPy's reviewed version and license](https://pypi.org/project/numpy/2.2.6/),
+[CFFI's license](https://cffi.readthedocs.io/en/stable/license.html), and
+[libsndfile's licensing](https://libsndfile.github.io/libsndfile/).

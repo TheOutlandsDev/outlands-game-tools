@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 3807,
-      "sha256": "af087578cc02f8e3aeacd8a0c12c06e0d25b2269dc5f2c933eb59a2aca91763d"
+      "bytes": 3842,
+      "sha256": "3ae055356ed56e0150582b39a2392a0111b8f6badb1c0d002fe22ae07246ddde"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 2928,
-      "sha256": "7b409258d96bc68f4dc9a10f9f41aabd22122c21bea1b9eb2286aa7541158d5b"
+      "bytes": 3939,
+      "sha256": "704408b8fbf6bb911fd9a39e3bb545cd0aaa897ccb99211631e74553793f96b6"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2994,
-      "sha256": "c4815daa9830782e859399476596fd1f2b19e1d434ee37f42688fd49c2f400be"
+      "bytes": 3826,
+      "sha256": "005190062995d2147322559fec6fabf92f3550f06c75b36d6a0a31e90137f681"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 11450,
-      "sha256": "8094f0d65876ac4a457317ae5c272bb6bfe9b39b5fd3be253be6f1b252cec4d4"
+      "bytes": 11737,
+      "sha256": "64243d34c8f19a82804efcd36332d553b6d3f7e8313ff8934900430d48ef3850"
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 7412,
-      "sha256": "1565e4a0a024ba6eda5758988ab33f42648b19239c613490205107dc26fbd285"
+      "bytes": 7750,
+      "sha256": "09abd6c327d009055a3d50a9c41400e8262f63e0dcecec049d7c0b84ee7386db"
     },
     {
       "path": "LICENSE",
@@ -64,13 +64,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 3719,
-      "sha256": "778d140ac0924e949edc215b6772ba693cf9ca87c2563cda4a49e773ef9514ce"
+      "bytes": 4052,
+      "sha256": "05009f0b7728d04531901a7b6185d6c46bc69566319d7808795e4844d30d618c"
     },
     {
       "path": "README.md",
-      "bytes": 4561,
-      "sha256": "0aa6615fb7c4a1b910f44f54c87293e56deda8cac4a06226f5dd3d9dc83764fc"
+      "bytes": 4801,
+      "sha256": "4b4689a109bdd270642c67fd59aad642717fad2b7a30c94832cbcb1a8ff8ff12"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -549,8 +549,43 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 3376,
-      "sha256": "030f98a0e9fc5eb039691be69afe7e8c59761b9629895d464f1619b309bf9c41"
+      "bytes": 4331,
+      "sha256": "6626679f1ad14fd3641f75d960c5e9d795b610ea8859c647ff3b038b8df9a3d1"
+    },
+    {
+      "path": "tools/audio-integrity-checker/audio_integrity.py",
+      "bytes": 28464,
+      "sha256": "9864c886460cb6e313c403f95f4bdcb79324ffce199e1dc21125fe61a6ca57f3"
+    },
+    {
+      "path": "tools/audio-integrity-checker/examples/create_example.py",
+      "bytes": 3750,
+      "sha256": "367d9479ed0bb1d8f85dde2e29f513cbdda9dd54a4c95d63d2a6f0c0eea21f3f"
+    },
+    {
+      "path": "tools/audio-integrity-checker/examples/README.md",
+      "bytes": 5930,
+      "sha256": "a13b3e93ea152b6c4ae069ad216f9ab6b39ac13fc52d51e3df36d9244b0daeab"
+    },
+    {
+      "path": "tools/audio-integrity-checker/README.md",
+      "bytes": 16912,
+      "sha256": "e4d17d327c7997ab382ca4fefe0e9c6f6b11a8972de8bd6ca873ce18ee7ef9f5"
+    },
+    {
+      "path": "tools/audio-integrity-checker/REPORT-FORMAT.md",
+      "bytes": 10819,
+      "sha256": "56f78f0e84d86afb76efb5fb8e9984e15461adacaa999da2b15f007147521380"
+    },
+    {
+      "path": "tools/audio-integrity-checker/requirements.txt",
+      "bytes": 110,
+      "sha256": "ddec4c457e69f6c138c0fcbaa6a894abd251aa53f7dc3db76bb02f7a781a4638"
+    },
+    {
+      "path": "tools/audio-integrity-checker/tests/test_audio_integrity.py",
+      "bytes": 28951,
+      "sha256": "0a1f88eedbca45c4d297f662182ab2b7dcdd17c7b1f92005ad3dcad4d108a557"
     },
     {
       "path": "tools/game-tree-exporter/export_game_tree.py",
@@ -649,18 +684,18 @@
     },
     {
       "path": "tools/tests/test_release.py",
-      "bytes": 3693,
-      "sha256": "fa326c89d7264a6cc46f05638f8311f4bcbb7ca7279776d020bf834d0ab0895e"
+      "bytes": 3866,
+      "sha256": "54cdb398fd1cbd92a145bbc142d7bcdf32d4adc242c3d77b34a52a44b1d0ba6d"
     },
     {
       "path": "tools/verify_source_release.py",
-      "bytes": 5340,
-      "sha256": "cee167cf19dd435bb1d17b4144162f1223391d44287f8e1d6271217db02a1bf6"
+      "bytes": 5407,
+      "sha256": "6b37359d22d6dfe05b32a31dc94d6d61b79e45f22afdd424f09dcfa437390241"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 5478,
-      "sha256": "1664679635679a622e388964493e158e7ed39a32b05dc8fbf6ed6365dbcffcd3"
+      "bytes": 6923,
+      "sha256": "b90b5b1fb5ab01d2e95ee01542313f86528dc270499eecc812e1b4d31396e5a7"
     }
   ]
 }

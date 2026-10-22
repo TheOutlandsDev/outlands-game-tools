@@ -61,11 +61,13 @@ class ReleaseTests(unittest.TestCase):
         self.assertNotIn("bin/game.dll", [row["path"] for row in MODULE.inspect(self.root)])
 
     def test_only_reviewed_requirements_path_is_allowed(self):
-        requirements = self.root / "tools/lua-syntax-checker/requirements.txt"
-        requirements.parent.mkdir(parents=True)
-        requirements.write_text("lupa==2.8\n", encoding="utf-8")
-        self.assertIn("tools/lua-syntax-checker/requirements.txt",
-                      [row["path"] for row in MODULE.inspect(self.root)])
+        for relative, content in (("tools/lua-syntax-checker/requirements.txt", "lupa==2.8\n"),
+                                  ("tools/audio-integrity-checker/requirements.txt",
+                                   "soundfile==0.13.1\nnumpy==2.2.6\n")):
+            requirements = self.root / relative
+            requirements.parent.mkdir(parents=True)
+            requirements.write_text(content, encoding="utf-8")
+            self.assertIn(relative, [row["path"] for row in MODULE.inspect(self.root)])
         (self.root / "unreviewed.txt").write_text("not publication source")
         with self.assertRaises(ValueError):
             MODULE.inspect(self.root)

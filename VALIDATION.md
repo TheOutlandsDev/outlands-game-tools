@@ -26,6 +26,25 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Audio Integrity Checker 1.0.0: 35 black-box CLI tests collected on Windows
+  with Python 3.12.7, SoundFile 0.13.1, NumPy 2.2.6 and libsndfile 1.2.2;
+  33 passed and 2 link fixture checks were skipped because this review
+  environment could not create directory/file links. Actual generated WAV,
+  OGG/Vorbis, FLAC and AIFF decoding was required rather than silently skipped.
+  Coverage includes empty/non-finite audio, limits, sanitized metadata/errors,
+  hashes and unchanged input bytes, MO2 winners, hidden files, incomplete/error
+  exits, output guards and missing dependencies. The original source example
+  produced one pass, one decode error and one empty-audio anomaly; its MO2
+  example selected two valid winners from four copies. All nine example input
+  files remained unchanged. A separate generated scan checked 259 files,
+  including a stereo WAV spanning multiple decode blocks and SHA-256 chunks;
+  all passed, hashes matched and input bytes remained unchanged. Its observed
+  0.828-second run is a single local measurement, not a performance promise.
+  Seven publication-gate tests passed, Python syntax and workflow YAML parsed,
+  and CI exercises Windows/Ubuntu with Python 3.12/3.13 and separate dependency
+  wheels. No game audio, playback, actual game/MO2 instance, native decoder
+  sandbox or game-engine compatibility was tested. See the
+  [module guide](tools/audio-integrity-checker/README.md) for scope and limits.
 - Lua Syntax Checker 1.0.0: 27 black-box CLI tests collected on Windows with
   Python 3.12.7 and an existing isolated Lupa 2.8 runtime; 24 passed and 3 link
   fixture tests were skipped because the review environment could not create

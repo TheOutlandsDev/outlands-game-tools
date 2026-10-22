@@ -22,6 +22,10 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [audio checker's generated example](../tools/audio-integrity-checker/README.md),
+  suggest clearer report wording, or contribute a small original generated fixture
+  for a codec edge case. Do not upload game audio or a whole modpack. Game-specific
+  compatibility checks need separate evidence and a defined engine/version.
 - Try the [Lua checker's original example](../tools/lua-syntax-checker/README.md),
   suggest clearer error categories, or contribute a small original fixture for a
   parser/version edge case. Game-engine transformations and runtime testing

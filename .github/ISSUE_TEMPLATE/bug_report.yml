@@ -26,6 +26,7 @@ body:
         - Fika Headless Helpers
         - MO2 Conflict Inspector
         - Lua Syntax Checker
+        - Audio Integrity Checker
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks
