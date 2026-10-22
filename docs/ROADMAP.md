@@ -22,6 +22,9 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [snapshot verifier's original example](../tools/save-snapshot-verifier/README.md),
+  report confusing failure/recovery instructions, or contribute generated fixtures
+  for filesystem edge cases. Do not submit real saves, backups or configuration.
 - Try the [audio checker's generated example](../tools/audio-integrity-checker/README.md),
   suggest clearer report wording, or contribute a small original generated fixture
   for a codec edge case. Do not upload game audio or a whole modpack. Game-specific

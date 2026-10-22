@@ -26,6 +26,14 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Save Snapshot Verifier 1.0.0: Windows Python 3.12.7 validation collected
+  29 tests; 26 passed and 3 case/link fixture checks were skipped because this
+  filesystem/account could not create them. Checks cover multi-source and
+  multi-chunk copy/hash preservation, malformed/traversal manifests, changed/
+  missing/extra files, exclusive reports, path/size guards, injected disk failure
+  and mid-copy source membership changes. Only generated toy files were used.
+  Portability CI exercises Windows/Ubuntu and Python 3.12/3.13. No real saves,
+  game-format validity, automatic restoration or crash-safe durability was tested.
 - Audio Integrity Checker 1.0.0: 35 black-box CLI tests collected on Windows
   with Python 3.12.7, SoundFile 0.13.1, NumPy 2.2.6 and libsndfile 1.2.2;
   33 passed and 2 link fixture checks were skipped because this review

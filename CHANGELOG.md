@@ -1,5 +1,15 @@
 # Changes
 
+## Save Snapshot Verifier 1.0.0 - 2026-10-22
+
+- Added explicit labeled file/folder snapshots into new destinations, with
+  streamed SHA-256 copy verification and input stability checks.
+- Added separate read-only verification of changed, missing and unexpected files,
+  guarded reports, input/output limits and partial-snapshot markers.
+- Added original toy files, detailed commands and failure guidance, synthetic
+  tests and portability CI. No restore, deletion or game-format validation.
+- Original code, examples, tests and docs are MIT; no game/save payloads bundled.
+
 ## Audio Integrity Checker 1.0.0 - 2026-10-22
 
 - Added streamed decode checks for loose WAV/OGG/FLAC/AIFF audio and the effective

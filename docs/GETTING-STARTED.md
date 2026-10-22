@@ -8,6 +8,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Preserve selected saves/configuration before mod testing | [Save Snapshot Verifier](../tools/save-snapshot-verifier/README.md) | Creates a new local snapshot and verifies copied bytes. Close writers first; no automatic restore, retention deletion or game-format validation. |
 | Check loose audio for decoder errors and sample anomalies | [Audio Integrity Checker](../tools/audio-integrity-checker/README.md) | Needs separately installed SoundFile/NumPy. Reads effective loose files without playback or repairs; a decode pass does not prove game compatibility. |
 | Check loose Lua source syntax using a selected Lua parser | [Lua Syntax Checker](../tools/lua-syntax-checker/README.md) | Needs Lupa installed in your own Python environment. Compiles inspected chunks without invoking them; game APIs and runtime compatibility are outside its scope. |
 | Inspect MO2 loose-file winners and possible Lua/LTX conflicts | [MO2 Conflict Inspector](../tools/mo2-conflict-inspector/README.md) | Reads selected mod folders and profile; no game launch or automatic fixes. It does not unpack archives or reproduce the live virtual filesystem. |

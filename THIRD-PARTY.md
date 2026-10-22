@@ -66,3 +66,9 @@ See [SoundFile's documentation and license](https://python-soundfile.readthedocs
 [NumPy's reviewed version and license](https://pypi.org/project/numpy/2.2.6/),
 [CFFI's license](https://cffi.readthedocs.io/en/stable/license.html), and
 [libsndfile's licensing](https://libsndfile.github.io/libsndfile/).
+
+The Save Snapshot Verifier is original Python standard-library integration code
+adapted from an unpublished local backup helper. Its code, generated examples,
+tests and docs are MIT. No source from the AGPL GAMMA companion is incorporated.
+Actual files a user chooses to copy, including saves/configuration, retain their
+own rights and privacy requirements; the tool's license does not relicense them.

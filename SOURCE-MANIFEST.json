@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 3842,
-      "sha256": "3ae055356ed56e0150582b39a2392a0111b8f6badb1c0d002fe22ae07246ddde"
+      "bytes": 3876,
+      "sha256": "98b26f4f19a44bf8710b7e3fcecea7079c3a5254d282988139b01aafdf71c4e1"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 3939,
-      "sha256": "704408b8fbf6bb911fd9a39e3bb545cd0aaa897ccb99211631e74553793f96b6"
+      "bytes": 4471,
+      "sha256": "e1567ee880555dc6c83f354a80726485ad5fecc63b2cfe4c519e08321980084e"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3826,
-      "sha256": "005190062995d2147322559fec6fabf92f3550f06c75b36d6a0a31e90137f681"
+      "bytes": 4400,
+      "sha256": "2d1646134756e01ff124e57042ed0e410892c207cdb5ef7ee82f9d1846e2290d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 11737,
-      "sha256": "64243d34c8f19a82804efcd36332d553b6d3f7e8313ff8934900430d48ef3850"
+      "bytes": 12016,
+      "sha256": "872a192ca600e94475e68627aba6cebfb67a2b615d7a4cc725c0938cd7cdff91"
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 7750,
-      "sha256": "09abd6c327d009055a3d50a9c41400e8262f63e0dcecec049d7c0b84ee7386db"
+      "bytes": 8010,
+      "sha256": "e4f2dd63050e8bd2086d4ea1644f1f556ee6cb2cff5af5e0a6cbdef95c6464ff"
     },
     {
       "path": "LICENSE",
@@ -64,13 +64,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 4052,
-      "sha256": "05009f0b7728d04531901a7b6185d6c46bc69566319d7808795e4844d30d618c"
+      "bytes": 4384,
+      "sha256": "c5651446c0ae3b418a1cff5ac1905a31f279739d849d6e1faca10eeea2fbe97e"
     },
     {
       "path": "README.md",
-      "bytes": 4801,
-      "sha256": "4b4689a109bdd270642c67fd59aad642717fad2b7a30c94832cbcb1a8ff8ff12"
+      "bytes": 5038,
+      "sha256": "44c1ea560209c079bc8e24b6151d91c0f37f6886cfde76b83e3dafc1435d9377"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -549,8 +549,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 4331,
-      "sha256": "6626679f1ad14fd3641f75d960c5e9d795b610ea8859c647ff3b038b8df9a3d1"
+      "bytes": 4734,
+      "sha256": "fbba90f04d811ebf3c6e2302bae3243a87fd9fe16bd5d040e5536ea2982f3f3b"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -683,6 +683,31 @@
       "sha256": "0c8ff478be3d7cd7b5d3ead4cfa209aa9bb5ea7f5e848d86b060413311bfdca4"
     },
     {
+      "path": "tools/save-snapshot-verifier/examples/create_example.py",
+      "bytes": 1201,
+      "sha256": "4ea43850d3e7bb9edb9cf34d02c1dac9e95d14adcdd274339b867c141e8d1458"
+    },
+    {
+      "path": "tools/save-snapshot-verifier/README.md",
+      "bytes": 9527,
+      "sha256": "765ee7d7ac7fe400f6337af008958304cd18fdb896b8b6566039301d634a08f3"
+    },
+    {
+      "path": "tools/save-snapshot-verifier/REPORT-FORMAT.md",
+      "bytes": 3323,
+      "sha256": "1bdf112afd4d62b0084562f32d7b5f171b13fb3b63c9d8e8473e60ff5b58db42"
+    },
+    {
+      "path": "tools/save-snapshot-verifier/save_snapshot.py",
+      "bytes": 20205,
+      "sha256": "0a5c65cd3962f7f052f373520a55916c898a31fae63bcdf8da805f8ba1dfb620"
+    },
+    {
+      "path": "tools/save-snapshot-verifier/tests/test_save_snapshot.py",
+      "bytes": 12404,
+      "sha256": "b8d5ca7600acfe3df4b17fb5cb74ec8c937418390533390a662942c35a3c8563"
+    },
+    {
       "path": "tools/tests/test_release.py",
       "bytes": 3866,
       "sha256": "54cdb398fd1cbd92a145bbc142d7bcdf32d4adc242c3d77b34a52a44b1d0ba6d"
@@ -694,8 +719,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 6923,
-      "sha256": "b90b5b1fb5ab01d2e95ee01542313f86528dc270499eecc812e1b4d31396e5a7"
+      "bytes": 7551,
+      "sha256": "14e185a283069d2af35d4ee7b3976657612a7679169adaf915fa4eb0d2ba98c4"
     }
   ]
 }

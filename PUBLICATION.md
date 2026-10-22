@@ -17,6 +17,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 | MO2 conflict inspector | Original unpublished local profile-audit script, rewritten as a standalone CLI | Explicit mods/profile inputs, relative reports without source text or config values, link/path checks, exclusive report output, original toy profiles and synthetic tests. No upstream implementation or assets. |
 | Lua syntax checker | Original unpublished compile-only audit, rewritten as an independent CLI | Explicit tree or MO2 inputs, selected external Lua parser, bounded reads, rejected bytecode, sanitized error reports, original fixtures, and checks that inspected chunks are never invoked. No bundled parser/game binaries. |
 | Audio integrity checker | Original unpublished local sound audit, rewritten as an independent CLI | Explicit tree or MO2 inputs, bounded streamed decoding through external dependencies, sanitized reports, optional hashes, guarded new report output and original generated audio fixtures. No game audio or native decoder binaries. |
+| Save snapshot verifier | Original unpublished local pre-test backup helper, rewritten as an independent CLI | Explicit labeled file/folder inputs, new destinations, streamed hashes, source/copy stability checks, separate read-only verification, incomplete markers and original synthetic fixtures. No saves or game data bundled. |
 
 Private audit receipts record the original source paths and hashes. They are kept
 outside the publication tree because local paths are not useful public content.

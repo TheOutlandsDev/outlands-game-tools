@@ -50,6 +50,9 @@ or SPT product.
 
 ## Standalone game utilities
 
+- [Save Snapshot Verifier](tools/save-snapshot-verifier/README.md): create new
+  SHA-256-verified backups of selected saves/configuration, then check snapshots
+  for changed, missing or unexpected files. No restore or overwrite feature.
 - [Audio Integrity Checker](tools/audio-integrity-checker/README.md): stream-decode
   loose audio or a saved MO2 profile's winning files, report decode errors and
   sample anomalies, and optionally hash inputs. Includes generated examples.
