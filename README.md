@@ -50,6 +50,36 @@ or SPT product.
 
 ## Standalone game utilities
 
+### Try a tool without a game installation
+
+Start with the [LTX Definition Inspector](tools/ltx-definition-inspector/README.md)
+if you want a small, dependency-free example to inspect and test. Its Python
+implementation, synthetic tests, report format and fictional example generator
+are all in this repository. Use Python 3.12 or newer; no game, model, account or
+extra Python package is needed.
+
+From the repository root on Linux or macOS:
+
+```sh
+# Create a new fictional input folder beside your checkout.
+python3 -B tools/ltx-definition-inspector/examples/create_example.py --destination ../outlands-ltx-demo
+
+# Inspect the clean example; JSON goes to your terminal. Expected exit: 0.
+python3 -B tools/ltx-definition-inspector/ltx_inspector.py --root ../outlands-ltx-demo/configs --entry clean.ltx
+
+# Run the inspector's isolated synthetic test suite.
+python3 -B -m unittest discover -s tools/ltx-definition-inspector/tests -v
+```
+
+On Windows, use `py -3.12` instead of `python3`. The example generator refuses
+an existing destination. The inspector reads the selected configuration files;
+it does not start a game or evaluate configuration values. See the
+[worked examples](tools/ltx-definition-inspector/examples/README.md) for review
+findings (exit 2) and incomplete inspection (exit 1). Those outcomes are
+different from a clean structural report (exit 0).
+
+### Choose another utility
+
 - [LTX Definition Inspector](tools/ltx-definition-inspector/README.md): inspect
   explicit entry/include graphs for missing parents, duplicate sections and
   cycles. Structural checks only; unsupported DLTX makes the report incomplete.
@@ -87,3 +117,4 @@ for actual checks and remaining limits.
 Contributions follow [CONTRIBUTING.md](CONTRIBUTING.md). Do not attach unredacted
 logs, profiles, credentials or network/device identifiers to public issues.
 There is no telemetry-upload feature in this collection.
+
