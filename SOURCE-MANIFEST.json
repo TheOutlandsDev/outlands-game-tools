@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 6017,
-      "sha256": "4a4f28021a3240d90b87a8c3a867888ea5928d3b9ceb11849295a0bf5139f9e8"
+      "bytes": 6507,
+      "sha256": "7b1132173acee9884866d64f2bbb5cb8b0f3a81820ab7d367ea23dfa139348f4"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7787,
-      "sha256": "afbefa2ab3edb44ee68c93680550a58a767b2cc9e71ca85a015f08506d07c6d1"
+      "bytes": 7872,
+      "sha256": "4420c0886574aac5de92a4d25b6bcb120a257cd2680e5e4e700a24110bd9733e"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -859,8 +859,8 @@
     },
     {
       "path": "tools/xml-config-diff/README.md",
-      "bytes": 12600,
-      "sha256": "a572f1112be807d2062d7ec2ba3f61fea6399d81ac36aac86d817b33aa9c76fd"
+      "bytes": 12950,
+      "sha256": "c5d3dd9b47a34feed7fd499487bf0ba23f0bd7e0341d324d6b27dfcd91f2de79"
     },
     {
       "path": "tools/xml-config-diff/REPORT-FORMAT.md",
@@ -909,8 +909,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 12923,
-      "sha256": "b08684faed4c1f14f06d066bea547139d9eaa55ac586692568532ab412d531e9"
+      "bytes": 13213,
+      "sha256": "90dd55196e31ebaaa2ac1dba9ee3e00878ecc86e08712fa12c6ddacf5cee7e09"
     }
   ]
 }

@@ -40,9 +40,13 @@ environment overrides. No game or system installation was changed to do this.
   3.12.7/Expat 2.6.3 correctly returns unsupported_expat_version without parsing.
   The worked example returns exit 2 with one added, one removed, one attribute
   and one text change; inputs stay unchanged and values are omitted by default.
-  Portability CI requires Expat 2.7.2+ on Windows/Ubuntu Python 3.12/3.13. These
-  are synthetic source checks; no actual game XML, mod pack, schema, game launch
-  or runtime settings behavior was tested. macOS remains unverified.
+  XML portability CI requires Expat 2.7.2+ on Windows Python 3.13 and Ubuntu
+  Python 3.12/3.13. The initial Windows Python 3.12 CI runtime exposed Expat
+  2.7.1 and correctly failed the guard; the XML matrix uses supported runtimes
+  without lowering the parser requirement. The other standalone utility jobs
+  retain their Windows/Ubuntu Python 3.12/3.13 matrix. These are synthetic source
+  checks; no actual game XML, mod pack, schema, game launch or runtime settings
+  behavior was tested. macOS remains unverified.
 - Mod Content Manifest & Diff 1.0.0: 44 generated-fixture black-box tests on
   Windows Python 3.12.7; 40 passed and 4 case/symlink/junction fixtures were
   explicitly skipped because the review filesystem/account could not create

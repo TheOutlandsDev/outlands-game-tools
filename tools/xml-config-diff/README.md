@@ -17,9 +17,9 @@ Python's major/minor version alone is insufficient: its bundled native XML
 parser version varies by build. Check the interpreter you will actually use:
 
 ```powershell
-py -3.12 --version
-py -3.12 -c "from xml.parsers import expat; print(expat.EXPAT_VERSION)"
-py -3.12 -B xml_diff.py --help
+py -3.13 --version
+py -3.13 -c "from xml.parsers import expat; print(expat.EXPAT_VERSION)"
+py -3.13 -B xml_diff.py --help
 ```
 
 An older parser produces a controlled failure rather than parsing the inputs.
@@ -32,7 +32,7 @@ and the [Expat runtime information](https://docs.python.org/3/library/pyexpat.ht
 
 Download the collection using **Code → Download ZIP**, extract it outside game,
 save and mod-manager folders, then open PowerShell in `tools\xml-config-diff`.
-Use `python` instead of `py -3.12` if it is your verified supported interpreter.
+Use `python` instead of `py -3.13` if it is your verified supported interpreter.
 On Linux/macOS use `python3` after checking the same parser version. `-B` avoids
 bytecode caches beside downloaded source. The module's guide describes current
 source on `main`; older tagged collection archives may not contain this tool.
@@ -43,8 +43,8 @@ Choose a new demo folder outside the downloaded collection and game folders:
 
 ```powershell
 $demo = Join-Path $env:TEMP ('outlands-xml-demo-' + [guid]::NewGuid().ToString('N'))
-py -3.12 -B examples\create_example.py --destination $demo
-py -3.12 -B xml_diff.py `
+py -3.13 -B examples\create_example.py --destination $demo
+py -3.13 -B xml_diff.py `
   --baseline "$demo\baseline.xml" --candidate "$demo\candidate.xml" `
   --output "$demo\comparison.json"
 $LASTEXITCODE
@@ -79,7 +79,7 @@ Close editors, mod deployment/sync utilities and any program that might write
 these files. The tool does not close or freeze other programs. Then run:
 
 ```powershell
-py -3.12 -B xml_diff.py `
+py -3.13 -B xml_diff.py `
   --baseline 'D:\Reference\example-settings.xml' `
   --candidate 'D:\Modding\example-settings.xml' `
   --output 'D:\Reports\example-settings-diff.json'
@@ -115,7 +115,7 @@ incomplete, including inside an added/removed subtree.
 To replace the defaults, repeat `--key-attribute` in your desired precedence:
 
 ```powershell
-py -3.12 -B xml_diff.py `
+py -3.13 -B xml_diff.py `
   --baseline 'D:\Reference\toy.xml' --candidate 'D:\Modding\toy.xml' `
   --key-attribute Code --key-attribute '{urn:toy}Code'
 ```
@@ -133,7 +133,7 @@ matched by tag. Ambiguous repeated unkeyed siblings with the same tag are
 refused by default. If you explicitly intend positional comparison, opt in:
 
 ```powershell
-py -3.12 -B xml_diff.py `
+py -3.13 -B xml_diff.py `
   --baseline 'D:\Reference\toy.xml' --candidate 'D:\Modding\toy.xml' `
   --unkeyed ordinal
 ```
@@ -185,7 +185,7 @@ Neither full source XML nor added/removed subtree payloads are embedded.
 For a local inspection where you intend to disclose changed values explicitly:
 
 ```powershell
-py -3.12 -B xml_diff.py `
+py -3.13 -B xml_diff.py `
   --baseline 'D:\Reference\toy.xml' --candidate 'D:\Modding\toy.xml' `
   --include-values --output 'D:\Reports\toy-with-values.json'
 ```
@@ -232,7 +232,7 @@ fields and the distinction between change-record and subtree counts.
 From this module directory, using your verified supported interpreter:
 
 ```powershell
-py -3.12 -B -m unittest discover -s tests -v
+py -3.13 -B -m unittest discover -s tests -v
 ```
 
 The suite requires an actual supported Expat runtime and fails clearly rather
@@ -241,6 +241,12 @@ matching, namespaces, additions/removals, order, exact leaf text, fingerprints,
 malformed/declaration inputs, limits, output guards and source preservation.
 Native link fixtures explicitly skip when the platform/account cannot create
 them. These are source-level tests, not game or mod-pack testing.
+
+XML portability CI uses Windows Python 3.13 and Ubuntu Python 3.12/3.13, with
+the Expat floor checked before the suite. Some Windows Python 3.12 builds ship
+an older Expat and cannot parse inputs with this tool; use the runtime check
+above instead of assuming a major/minor Python version is sufficient. macOS
+parsing is not covered by this matrix.
 
 [Bug reports](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=bug_report.yml)
 and [suggestions](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_or_suggestion.yml)

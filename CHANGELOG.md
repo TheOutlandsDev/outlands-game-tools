@@ -10,7 +10,8 @@
   DTD/entity declarations, requires Expat 2.7.2+, and creates only new optional
   JSON reports.
 - Added original generated examples, detailed commands/report scope, regression
-  tests, Windows/Ubuntu Python 3.12/3.13 checks and public feedback guidance.
+  tests, Windows Python 3.13 and Ubuntu Python 3.12/3.13 XML checks, and public
+  feedback guidance. The Expat minimum is checked independently of Python version.
 - Added after the v0.1.0 snapshot; use current main source for this module.
 
 ## Collection v0.1.0 source pre-release - 2026-10-22
