@@ -82,7 +82,8 @@ incomplete report goes to stdout when possible.
 Receipt validation reasons can use JSON/schema codes above or
 `unexpected_receipt_event`, `invalid_process_id`, `invalid_timestamp`,
 `invalid_exit_code`. Receipt data failures are findings after hash verification;
-invalid manifests, path/object refusals, I/O and resource failures make the audit
+receipt byte/depth resource refusals propagate as fatal audit errors.
+Invalid manifests, path/object refusals, I/O and resource failures make the audit
 incomplete instead.
 
 Limits: manifest 2 MiB; receipt 64 KiB; capture 256 MiB; declared total and actual

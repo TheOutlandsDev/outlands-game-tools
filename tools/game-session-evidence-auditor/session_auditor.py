@@ -392,6 +392,8 @@ def inspect(args):
                 if not matches:
                     findings.append({'code': 'session_id_mismatch', 'receipt': role})
             except Failure as error:
+                if error.code in ('file_byte_limit', 'receipt_byte_limit', 'json_depth_limit'):
+                    raise
                 session[role + '_status'] = 'invalid'
                 findings.append({'code': 'invalid_receipt', 'receipt': role, 'reason': error.code})
         if 'exit' in receipts:

@@ -26,8 +26,8 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
-- Game Session Evidence Auditor 1.0.0 (2026-10-23): 42 original synthetic
-  cases on Windows Python 3.12.14; 40 passed and 2 native symlink/junction
+- Game Session Evidence Auditor 1.0.0 (2026-10-23): 43 original synthetic
+  cases on Windows Python 3.12.14; 41 passed and 2 native symlink/junction
   fixtures explicitly skipped because local creation is denied. Covers binary
   streaming hashes, size/hash changes, missing files/receipts, schema trust
   gating, session/process/executable/time/exit consistency, privacy omissions,

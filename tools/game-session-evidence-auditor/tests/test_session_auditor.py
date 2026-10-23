@@ -154,6 +154,13 @@ class SessionTests(unittest.TestCase):
         self.assertEqual(report['session']['exit_status'], 'invalid')
         self.assertIn('invalid_receipt', self.codes(report))
 
+    def test_verified_receipt_depth_limit_is_incomplete(self):
+        data = b'['*9+b']'*9
+        (self.evidence/'receipts/exit.json').write_bytes(data)
+        self.document['receipts']['exit'] = fixtures['file_reference']('receipts/exit.json', data)
+        self.save_manifest()
+        self.incomplete('json_depth_limit')
+
     def test_receipt_session_process_executable_and_time_mismatch(self):
         self.change_receipt('exit', session_id='other-session', process_id=4321,
                             executable_id='different-game', timestamp_utc='2026-01-01T11:00:00Z')

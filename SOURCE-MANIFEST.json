@@ -614,23 +614,23 @@
     },
     {
       "path": "tools/game-session-evidence-auditor/README.md",
-      "bytes": 10037,
-      "sha256": "c38c593eec73319c51223f20ef132faa7170415af80f7d7ecce599a395392543"
+      "bytes": 10111,
+      "sha256": "c92f8a3e0bcb300f1ff650990bbfdb2ba9aee2fc50643d901ce986732bb76928"
     },
     {
       "path": "tools/game-session-evidence-auditor/REPORT-FORMAT.md",
-      "bytes": 6424,
-      "sha256": "89335b65ef7704c0c4d36fcf24c522d5db9591fee195890d2ce96d1287d350fd"
+      "bytes": 6494,
+      "sha256": "cab6f488c7a8924815c621828877b097ae925598581c4bdcd88d201ba7a213e6"
     },
     {
       "path": "tools/game-session-evidence-auditor/session_auditor.py",
-      "bytes": 21483,
-      "sha256": "75339dd682ce6ca35315182dd7e47dfceab8cee6c468ea78b18f84c55d7a3708"
+      "bytes": 21605,
+      "sha256": "36be2dfd61cc3989ab4a2b935bc7b258cbda51c8cd15f1f0833a08374a4301b2"
     },
     {
       "path": "tools/game-session-evidence-auditor/tests/test_session_auditor.py",
-      "bytes": 23110,
-      "sha256": "4723eb0dc747562c06357ced17b17d71f18b5120a77d2fa2cc90f0a8ebfd2d38"
+      "bytes": 23438,
+      "sha256": "1819231492a081583a9203e7e060d708a99f2dac0d851ebdcac48ce381e8234e"
     },
     {
       "path": "tools/game-tree-exporter/export_game_tree.py",
@@ -1130,7 +1130,7 @@
     {
       "path": "VALIDATION.md",
       "bytes": 22026,
-      "sha256": "3f7a904e201646e4a4e788fb782078b9574c68e794cc9caa7f8485e4adf8ac2f"
+      "sha256": "fa035d04e7a29437ec6e3e5c81f2cabc2728bbdb5ab2fb5687b8bdff0677b812"
     }
   ]
 }

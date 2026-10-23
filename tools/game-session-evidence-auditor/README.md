@@ -65,7 +65,8 @@ Keep original collector output and document any conversion separately.
   inferred. No capture contents are interpreted or exported.
 - Receipts are interpreted **only after size and hash verification**. Changed
   receipts remain unverified. A verified file whose JSON/schema is malformed
-  becomes an invalid-receipt finding.
+  becomes an invalid-receipt finding. Receipt byte/depth resource refusals make
+  the audit incomplete instead.
 - Valid launch/exit receipts are checked against the manifest session ID and
   against each other's process ID, executable label and UTC ordering. Duration
   is calculated from their declared timestamps; no live process is consulted.
