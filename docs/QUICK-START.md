@@ -10,12 +10,15 @@ the version does not establish gameplay compatibility for every module.
 **New on main after v0.1.0:** [XML Mod Configuration Diff](../tools/xml-config-diff/README.md)
 compares selected XML configuration files, the
 [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md)
-inspects supported literal LTX references, and
+inspects supported literal LTX references,
 [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md)
-compares stored literal settings in a selected pair. Download the current repository with
+compares stored literal settings in a selected pair, and
+[Unreal PAK Index & Conflict Inspector](../tools/unreal-pak-inspector/README.md)
+inspects standard unencrypted version-3 index metadata and path overlaps.
+Download the current repository with
 **Code → Download ZIP** for these additions; they are absent from the v0.1.0 assets.
 Follow each module's requirements and original example. XML comparison has an
-additional Expat version check; the asset and INI/LTX checkers use only the standard library.
+additional Expat version check; the asset, INI/LTX and PAK checkers use only the standard library.
 The tagged download instructions below still apply to the v0.1.0 snapshot.
 
 ## Download and verify

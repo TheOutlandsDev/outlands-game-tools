@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Unreal PAK Index & Conflict Inspector](tools/unreal-pak-inspector/README.md):
+  inspect standard unencrypted version-3 indexes and overlapping virtual paths,
+  with checksum/range guards. Metadata only; no extraction, payload validation,
+  decryption or load-order prediction. Current main source.
 - [INI/LTX Configuration Value Diff](tools/ini-ltx-value-diff/README.md): compare
   literal section/key values in an explicitly selected file pair. Defined case,
   comment, encoding and duplicate-key policies; values hidden by default. Current

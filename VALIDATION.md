@@ -26,6 +26,23 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Unreal PAK Index & Conflict Inspector 1.0.0 (2026-10-23): 45 original
+  generated-fixture cases on Windows Python 3.12.14; 42 passed and 3 native
+  hardlink/symlink/junction fixtures were explicitly skipped because the local
+  sandbox denied creation. Tests cover standard-v3 index metadata/checksums,
+  mount joining and ASCII case matching, path and file/directory overlaps,
+  malformed strings/counts/ranges/flags, compressed block assertions, read
+  regions, source preservation, exclusive reports and resource ceilings.
+  An additional 376 generated truncation/mutation/property cases passed against
+  the same source hash, including a 10-archive/200-entry overlap oracle.
+  Only index/footer regions are requested by the inspector; deliberate local
+  header/payload changes leave metadata-only reports unchanged. The original
+  worked pairs return complete overlap/disjoint exits 2/0. Windows/Ubuntu
+  Python 3.12/3.13 CI uses original generated archives only. No real PAK,
+  payload decoding/hash validation, extraction, decryption, load order, game
+  compatibility or runtime behavior was tested; macOS remains unverified.
+  Standard unencrypted version 3 is the only supported layout. See the
+  [module guide](tools/unreal-pak-inspector/README.md) for exact limits.
 - INI/LTX Configuration Value Diff 1.0.0 (2026-10-23): 47 original
   generated-fixture cases on Windows Python 3.12.14; 45 passed and 2 native
   symlink/junction fixtures were explicitly skipped because the local sandbox

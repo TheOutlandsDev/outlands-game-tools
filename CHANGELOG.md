@@ -1,5 +1,19 @@
 # Changes
 
+## Unreal PAK Index & Conflict Inspector 1.0.0 - 2026-10-23
+
+- Added an original read-only inspector for explicit standard unencrypted
+  version-3 PAK indexes. Verifies the declared index SHA-1, strict strings/mounts,
+  entry/block ranges and bounded counts without reading local entry headers or payloads.
+- Reports case-insensitive virtual path overlaps and file/directory conflicts
+  across labeled archives. Declared entry hashes do not prove payload equality,
+  and argument order does not predict game load order or winners.
+- Added original generated archives, binary-format and conflict regression tests,
+  detailed commands/report documentation, explicit unsupported-format/privacy
+  guidance, public suggestion links and Windows/Ubuntu Python 3.12/3.13 checks.
+- Current main source after v0.1.0; no game archives, keys, extraction/decryption
+  support, third-party parser or AGPL companion implementation is included.
+
 ## INI/LTX Configuration Value Diff 1.0.0 - 2026-10-23
 
 - Added an original read-only comparison of explicit INI/LTX file pairs for

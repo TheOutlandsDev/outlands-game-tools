@@ -135,6 +135,9 @@ jobs:
       - name: Check INI and LTX Configuration Value Diff with original file pairs
         working-directory: tools/ini-ltx-value-diff
         run: python -B -m unittest discover -s tests -v
+      - name: Check Unreal PAK Inspector with original generated archives
+        working-directory: tools/unreal-pak-inspector
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:

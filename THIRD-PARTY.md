@@ -155,3 +155,21 @@ uses an explicitly documented literal parser, with no ConfigParser default
 inheritance, interpolation or engine value resolution. Inspected files and
 exported values retain their own terms and privacy requirements. Python remains
 a separately installed runtime under its own license.
+
+Unreal PAK Index & Conflict Inspector is fresh original Python standard-library
+source under the root MIT license, including its tests, documentation and original
+toy fixture generator. Existing collection filesystem/report patterns informed
+guards. Format research used the primary
+[Epic version enumeration](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/PakFile/FPakInfo_2),
+[Epic entry API](https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/PakFile/FPakEntry),
+[u4pak author's format description](https://github.com/panzi/u4pak#file-format)
+and [repak field-layout reference](https://github.com/trumank/repak/blob/master/repak/src/entry.rs).
+Only format facts were used; their parser implementations, engine source/headers,
+licenses and binaries are not incorporated or relicensed here.
+
+No game archives, assets, keys, proprietary codecs or separate AGPL companion code
+are included. Python remains separately installed under its own license. Index
+checksums are corruption checks, not authenticity guarantees; listed payload
+digests are unverified assertions. Reports and inspected archives retain their
+own rights/privacy requirements. The inspector grants no right to redistribute
+third-party assets and performs no extraction or decryption.
