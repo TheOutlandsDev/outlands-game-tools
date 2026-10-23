@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Mod Asset Reference Checker](tools/mod-asset-reference-checker/README.md):
+  inspect literal LTX mesh references, optional file-key mappings and selected
+  section references. Separates loose-file presence, index listings and unknown
+  coverage; no archive extraction or game-loader emulation. Current main source.
 - [XML Mod Configuration Diff](tools/xml-config-diff/README.md): compare selected
   XML files for changed attributes/text and added/removed entries, with namespace
   awareness and conservative sibling matching. Values are hidden by default.

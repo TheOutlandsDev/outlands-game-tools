@@ -34,6 +34,7 @@ body:
         - Mod Content Manifest & Diff
         - Verified Source Release Builder
         - XML Mod Configuration Diff
+        - Mod Asset Reference Checker
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

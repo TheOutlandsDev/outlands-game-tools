@@ -22,6 +22,11 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md)
+  with its fictional loose files and path index. Suggest clearer coverage wording,
+  literal key mappings or small original parsing edge cases. Archive presence,
+  engine aliases and inherited/DLTX values need separate evidence and designs;
+  do not attach real mod assets or treat unresolved coverage as game corruption.
 - Try [XML Mod Configuration Diff](../tools/xml-config-diff/README.md) on its
   fictional example, suggest clearer matching policies or small namespace and
   identity edge cases, and report confusing privacy controls. Use synthetic XML;

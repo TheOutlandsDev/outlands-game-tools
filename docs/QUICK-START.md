@@ -8,9 +8,12 @@ plugins or native Python dependency wheels. It is an experimental source kit;
 the version does not establish gameplay compatibility for every module.
 
 **New on main after v0.1.0:** [XML Mod Configuration Diff](../tools/xml-config-diff/README.md)
-compares selected XML configuration files. Download the current repository with
-**Code → Download ZIP** for this addition; it is absent from the v0.1.0 assets.
-Follow its module guide, including the Expat version check and original example.
+compares selected XML configuration files, and the
+[Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md)
+inspects supported literal LTX references. Download the current repository with
+**Code → Download ZIP** for these additions; they are absent from the v0.1.0 assets.
+Follow each module's requirements and original example. XML comparison has an
+additional Expat version check; the asset checker uses only the standard library.
 The tagged download instructions below still apply to the v0.1.0 snapshot.
 
 ## Download and verify

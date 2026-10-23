@@ -125,3 +125,19 @@ and values retain their own terms and privacy requirements. See
 [Expat API documentation](https://docs.python.org/3/library/pyexpat.html),
 [Python licensing](https://docs.python.org/3/license.html) and
 [Expat licensing](https://github.com/libexpat/libexpat/blob/master/expat/COPYING).
+
+The Mod Asset Reference Checker is fresh original Python standard-library source
+with original example generators, tests and documentation under the root MIT
+license. Earlier private model/ammunition checks identified the use case only;
+their surrounding native-script harnesses, game configuration, upstream patches,
+asset payloads and implementation are not included. No source from the separate
+AGPL companion is incorporated. Python retains its own runtime license.
+
+Primary [OpenXRay configuration-loader source](https://github.com/OpenXRay/xray-16/blob/dev/src/xrCore/xr_ini.cpp)
+and [weapon configuration source](https://github.com/OpenXRay/xray-16/blob/dev/src/xrGame/Weapon.cpp)
+were consulted for format context, not copied. The checker implements its own
+documented literal subset and file-rule mappings; it does not reproduce that
+loader, apply DLTX, inspect packed archives or establish engine compatibility.
+Files and path indexes supplied by a user retain their own rights and privacy
+requirements. Listing a path or finding a loose file does not grant permission
+to redistribute its content or prove it is a valid asset.

@@ -26,6 +26,24 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Mod Asset Reference Checker 1.0.0: 52 original generated-fixture cases on
+  Windows Python 3.12.14; 48 passed and 4 native link/case fixtures were
+  explicitly skipped because this filesystem/account could not create them.
+  Tests cover literal file mappings, selected section declarations, contained
+  include graphs, encoding, strict asset-path indexes, uncertain versus
+  caller-attested coverage, case ambiguity, input preservation, privacy,
+  exclusive reports and file/directory/metadata limits. Independent review
+  passed 56 additional generated CLI cases and 6 focused path/resource checks,
+  including simulated casefold aliases and deeply branching index bookkeeping.
+  The original worked example returns complete review exit 2 with one loose
+  file, one unresolved reference and one selected section; the supplied toy
+  index resolves its asserted name for exit 0. Declaring complete asset coverage
+  instead reports one absence within that declared coverage for exit 2. All
+  three generated input files stayed unchanged. Windows/Ubuntu Python 3.12/3.13
+  CI exercises generated inputs only. No asset payload is read by the checker;
+  no game assets, archives, live MO2 VFS, inherited/effective values or game
+  runtime were tested. macOS remains unverified. See the
+  [module guide](tools/mod-asset-reference-checker/README.md) for exact scope.
 - XML Mod Configuration Diff 1.0.0: 57 original generated-fixture cases on
   Windows Python 3.12.14 with Expat 2.8.3; 55 passed and 2 native symlink/junction
   fixtures were explicitly skipped because the local sandbox denied creation.

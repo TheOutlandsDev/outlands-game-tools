@@ -129,6 +129,9 @@ jobs:
       - name: Check Source Release Builder with generated manifests
         working-directory: tools/source-release-builder
         run: python -B -m unittest discover -s tests -v
+      - name: Check Mod Asset Reference Checker with original synthetic files
+        working-directory: tools/mod-asset-reference-checker
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:

@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4101,
-      "sha256": "806d65a22a6acd996303be5239b311714479efc0488fc694bcc73345cea89ec7"
+      "bytes": 4140,
+      "sha256": "5b51a2cbae61c698d7a55cb03717e64930a8f71d4804372ac47da28b0e8cba37"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 6507,
-      "sha256": "7b1132173acee9884866d64f2bbb5cb8b0f3a81820ab7d367ea23dfa139348f4"
+      "bytes": 6702,
+      "sha256": "da977c5e2dbbf04e8845e764438fa96bf6d9636cfe01eb2b26e8a49289317576"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7872,
-      "sha256": "4420c0886574aac5de92a4d25b6bcb120a257cd2680e5e4e700a24110bd9733e"
+      "bytes": 8839,
+      "sha256": "e992c97bdad9b80ff7577eeb0f6d4243c620e1d0443c53f214411f3a0010ed75"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 13807,
-      "sha256": "ed6f2cdb6e7d24e574f357c266173ddedaa5f40bc9db46129b2684f90de52696"
+      "bytes": 14130,
+      "sha256": "de6c469a0ca180cc3133d003e3344b0dd67142b36f3701a6f27b238a8234ea4f"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 6903,
-      "sha256": "f0e360a21869140f72fab5f620d708a91ffa469626f6cf94d9b0869b0ee7bd8f"
+      "bytes": 7116,
+      "sha256": "46873b73d23b0bd7cf0e7ac69bab572d257cfb3945cc6266a20f324dc5076595"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 9544,
-      "sha256": "2e9dafbb156c7b45824c3b7476e73709e7ac0674fe244173c6c2e53fbc2ab048"
+      "bytes": 9959,
+      "sha256": "d95c0527d322174041732fa4545eb5c484c0c95e891aab18981a5fe10872410d"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 6380,
-      "sha256": "78c3576812d89f0ee48bcc054b77e98cac1e1dc232d58dfdda124a462dba817b"
+      "bytes": 6710,
+      "sha256": "819fc8123ebdcb657c8e61bfb0a63a1692065a75f3fd7bccd76c1524d0507c7e"
     },
     {
       "path": "README.md",
-      "bytes": 8305,
-      "sha256": "e16df2316379ec3908f9edf7cdf4dad5ff1b0eaa167c991fd5603221710a28fc"
+      "bytes": 8623,
+      "sha256": "bcb7283397c405bf2db54e1610f04547a8880f9fd08ea0e7afe199378cb726ce"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 8304,
-      "sha256": "f205db16205a23c60db1ed3bddbfd35483574e475f30b34b10aa9e7c850ac8bd"
+      "bytes": 9442,
+      "sha256": "c59a4e577300e8902e5a11dd26827054da968d76fc598907bdb569a307081f4a"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -738,6 +738,36 @@
       "sha256": "13e90611a0859e6620c81d029f7f222ca3b3112ebf3b02d315cb906a6bb2dfea"
     },
     {
+      "path": "tools/mod-asset-reference-checker/asset_references.py",
+      "bytes": 31531,
+      "sha256": "055edf602e311af4f5c5942ddf0f576eeda287f270eb01b1456f5767342f523d"
+    },
+    {
+      "path": "tools/mod-asset-reference-checker/examples/create_example.py",
+      "bytes": 2978,
+      "sha256": "0e298c73604472ca8a21eca21051e1e108def3c7f2d07c6cb814468b444baedb"
+    },
+    {
+      "path": "tools/mod-asset-reference-checker/examples/README.md",
+      "bytes": 1195,
+      "sha256": "b814c0c0728eaff70469180fa7816ab2d6fb8801d54c7110b748009e5bf299eb"
+    },
+    {
+      "path": "tools/mod-asset-reference-checker/README.md",
+      "bytes": 13293,
+      "sha256": "0425cd158fa7b6668470174b68d479ff0ed007adce8c266fdf103b5e9a0970c7"
+    },
+    {
+      "path": "tools/mod-asset-reference-checker/REPORT-FORMAT.md",
+      "bytes": 6272,
+      "sha256": "9dc9e37954901a10bb3033822a5e347c12d6cfc6a5b306b25317ee949cb4fa7b"
+    },
+    {
+      "path": "tools/mod-asset-reference-checker/tests/test_asset_references.py",
+      "bytes": 33636,
+      "sha256": "4ff0b165e9915bd0c7d1dc152d89d1774d53bdbdd78c00b7a5ee9edc5a197508"
+    },
+    {
       "path": "tools/mod-content-manifest/content_manifest.py",
       "bytes": 30902,
       "sha256": "13657d780514088bbeff7f4cea93009534f046a605e041083402070493739d50"
@@ -909,8 +939,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 13213,
-      "sha256": "90dd55196e31ebaaa2ac1dba9ee3e00878ecc86e08712fa12c6ddacf5cee7e09"
+      "bytes": 14575,
+      "sha256": "5fe39f78ac05b9ffeb244747940f07a1e0a1dc317e4a6958f0b533ae855645ed"
     }
   ]
 }

@@ -1,5 +1,20 @@
 # Changes
 
+## Mod Asset Reference Checker 1.0.0 - 2026-10-22
+
+- Added an original read-only checker for literal references in explicitly
+  selected LTX files and contained literal include graphs. Defaults inspect
+  `visual` mesh paths and `ammo_class` section lists; file/section key mappings
+  can be selected explicitly. Inherited values and DLTX are not merged.
+- Distinguishes loose-file metadata presence, paths listed in a supplied index,
+  unresolved coverage and absence within explicitly declared complete coverage.
+  A path index is supplied data, not proof of archive contents or compatibility.
+- Added bounded parsing/lookups/reports, strict reference/index paths, guarded
+  new output, original generated examples, detailed instructions/report scope,
+  public suggestion links and Windows/Ubuntu Python 3.12/3.13 tests.
+- New source on main after v0.1.0; no game assets, archive extractor, engine,
+  upstream mod implementation or AGPL companion code is included.
+
 ## XML Mod Configuration Diff 1.0.0 - 2026-10-22
 
 - Added an original read-only comparison of selected XML file pairs, using
