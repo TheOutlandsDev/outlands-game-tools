@@ -22,6 +22,11 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [ZIP layout inspector](../tools/mod-package-zip-inspector/README.md)
+  with its original examples. Suggest useful wrapper-folder explanations and
+  provide small generated reproductions for unsupported archive layouts. ZIP64
+  and additional methods need separately tested support; this tool makes no
+  payload, malware or installation compatibility claim.
 - Try the [PAK inspector](../tools/unreal-pak-inspector/README.md) with its original
   generated archives. Suggest clearer metadata/coverage wording or small format
   boundary cases. Other PAK versions, custom mounts and payload validation need

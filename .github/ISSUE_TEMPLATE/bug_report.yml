@@ -37,6 +37,7 @@ body:
         - Mod Asset Reference Checker
         - INI/LTX Configuration Value Diff
         - Unreal PAK Index & Conflict Inspector
+        - Mod Package ZIP Layout Inspector
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

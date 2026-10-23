@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Mod Package ZIP Layout Inspector](tools/mod-package-zip-inspector/README.md):
+  review bounded classic ZIP metadata for unsafe paths, collisions, common
+  wrapper folders and suspicious declared sizes without extraction. Includes
+  original examples, tests, format limits and public suggestion links.
 - [Unreal PAK Index & Conflict Inspector](tools/unreal-pak-inspector/README.md):
   inspect standard unencrypted version-3 indexes and overlapping virtual paths,
   with checksum/range guards. Metadata only; no extraction, payload validation,

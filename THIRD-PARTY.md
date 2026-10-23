@@ -173,3 +173,14 @@ checksums are corruption checks, not authenticity guarantees; listed payload
 digests are unverified assertions. Reports and inspected archives retain their
 own rights/privacy requirements. The inspector grants no right to redistribute
 third-party assets and performs no extraction or decryption.
+
+Mod Package ZIP Layout Inspector is original Python standard-library source,
+including its tests, documentation and toy fixture generator, under the root MIT
+license. It reuses original collection filesystem/report guards. Format facts
+were checked against [PKWARE APPNOTE 6.3.10](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT)
+and [Python 3.12 ZIP documentation](https://docs.python.org/3.12/library/zipfile.html).
+Neither specification text nor any third-party parser implementation is bundled.
+Python remains separately installed under its own license; stdlib zipfile is used
+only to generate original toy fixtures, not to parse untrusted selected archives.
+No game/mod archives, payloads, keys or separate AGPL implementation are included.
+Archive content and report member names retain their own rights/privacy terms.

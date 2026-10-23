@@ -26,6 +26,23 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Mod Package ZIP Layout Inspector 1.0.0 (2026-10-23): 47 original
+  generated-fixture cases on Windows Python 3.12.14; 45 passed and 2 native
+  symlink/junction fixtures explicitly skipped because local creation is denied.
+  Covers stored/deflated ZIP32, signed/unsigned descriptors, empty/commented
+  archives, portable path/case/NFC/prefix collisions, local/central mismatches,
+  unsafe names, declared size/ratio observations, unsupported ZIP64/flags,
+  malformed ranges/extras, read/report/accounting limits and exclusive output.
+  A read-region spy confirms payload ranges are skipped except the bounded
+  end-record search; deliberate payload corruption leaves the metadata verdict
+  unchanged. Generated clean/wrapper/review examples return 0/2/2. Windows/Linux
+  Python 3.12/3.13 CI exercises the same suite, with native link skips declared
+  where unavailable. No extraction, installation, malware scan or gameplay test.
+  An additional private deterministic review passed 2,225 truncation, mutation,
+  reordered-directory and maximum-entry stress cases against the same parser
+  source hash. A 10,000-member original archive produced a bounded approximately
+  3 MiB report. This exercises metadata handling, not payload authenticity.
+
 - Unreal PAK Index & Conflict Inspector 1.0.0 (2026-10-23): 45 original
   generated-fixture cases on Windows Python 3.12.14; 42 passed and 3 native
   hardlink/symlink/junction fixtures were explicitly skipped because the local

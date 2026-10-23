@@ -1,5 +1,19 @@
 # Changes
 
+## Mod Package ZIP Layout Inspector 1.0.0 - 2026-10-23
+
+- Added original bounded single-disk contiguous classic ZIP32 metadata inspection
+  for stored/deflated entries, matching local headers and classic descriptors.
+  Lists names and declared sizes without extracting or decompressing members.
+- Reports unsafe paths, duplicate/case/normalization collisions, file/directory
+  prefixes, link attributes, encrypted entries, uninterpreted extras, common
+  wrapper folders and suspicious declared sizes. Unsupported or malformed
+  layouts produce incomplete results with no partial inventory.
+- Added original stdlib-generated examples, malformed-archive and resource tests,
+  detailed commands/report documentation, suggestion links and Windows/Linux
+  Python 3.12/3.13 CI. Current main source after v0.1.0; no game files,
+  third-party parser or AGPL implementation bundled.
+
 ## Unreal PAK Index & Conflict Inspector 1.0.0 - 2026-10-23
 
 - Added an original read-only inspector for explicit standard unencrypted

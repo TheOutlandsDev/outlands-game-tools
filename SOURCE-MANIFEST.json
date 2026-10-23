@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4233,
-      "sha256": "51fee2e82f2d1fc6a90700736f7d59f34c057f7926ad777d364803a35fb69850"
+      "bytes": 4171,
+      "sha256": "016826eecc85fc713cf182a6a953688346f385be5b57629021c68db5d801768d"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 7076,
-      "sha256": "b6f1fe68e80db8a15b30039bf0615c4f52374fa64a582fb7ff4219ac98d697ba"
+      "bytes": 7270,
+      "sha256": "50b31ce59e412f2018ed30a7fc0387312a969b75dd007693b2fab3d0598893d9"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 10702,
-      "sha256": "77a59687bab5e3f24d6eb58f96a3ee04537361667ccf681b59fd121f0d56ff72"
+      "bytes": 11577,
+      "sha256": "80b52c801b08b6f7e646253209d59b7ceeff367a7daae304e71718b531d87af1"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 14784,
-      "sha256": "bb479bf69310de27bc37cdcd690982925408c59ebaf86b2cdbc6cec5933a36cc"
+      "bytes": 14950,
+      "sha256": "ac5d2206156ee2c7baab6b8e8c6ba10def6df26ba8ad741050ad69cbf7341e92"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7415,
-      "sha256": "d15788497ed36d8137b51be29fe13028de56bd89d07465e9828a5aa27ec626d7"
+      "bytes": 7559,
+      "sha256": "dcdd1674c5f747a3ebcddbee3a37d41da44f54c09824c43b459e2fa802560a2b"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 10656,
-      "sha256": "c026181d0694c76abd5d3f78782045542e2a4e69cf0e6fb64d282d63178534a0"
+      "bytes": 10916,
+      "sha256": "5c946c55c29249c7f9c605b9e19a95b4c0832d8a29f24539c5f7cd0c68cfb0f2"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 7509,
-      "sha256": "2d7b5bed7d0e1c9e200f3c39b987f304ce94a8405571c7cc59ab56314a407c19"
+      "bytes": 7945,
+      "sha256": "7108a0055b4db3380b4e36bfdcd689da806d8791e07ae037db6a3f2b8f404024"
     },
     {
       "path": "README.md",
-      "bytes": 9249,
-      "sha256": "3bf0cd9ddbc60e03c1ac77082c12a0904a7cad7db77b318cf4cf6c6ae4c723ab"
+      "bytes": 9553,
+      "sha256": "1dac662a3ef0a7df0148d044088d1ffbf0fdd83569dbef9415ac4eb87e5f2156"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 11681,
-      "sha256": "37ea86fca8a403c817750dce495323b7544c2394855fc0aaf4eab7cb0e1db1ea"
+      "bytes": 12519,
+      "sha256": "0bececc84f66770ef1911f17daf5c295d807482d7aceea14008fff836ef9ab62"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -828,6 +828,36 @@
       "sha256": "48d3c7de5341806e13b08fa3319bef7d40e1cd0ff83f60e93f23631b6ab31537"
     },
     {
+      "path": "tools/mod-package-zip-inspector/examples/create_example.py",
+      "bytes": 1771,
+      "sha256": "4331cd5eec7f5ecaf352fc5865774fdf229d6435109e0292cf02a8c1b6ad43a0"
+    },
+    {
+      "path": "tools/mod-package-zip-inspector/examples/README.md",
+      "bytes": 1823,
+      "sha256": "4c4f1b9863c7d0818d95c83b73fa0d41ba61fc4abcabc534d4eb70eb15144f3c"
+    },
+    {
+      "path": "tools/mod-package-zip-inspector/README.md",
+      "bytes": 7995,
+      "sha256": "7405e018ba0eb98b527a9949f32e2aca03d4d9d2e0e9b5b384aa0f82183072ed"
+    },
+    {
+      "path": "tools/mod-package-zip-inspector/REPORT-FORMAT.md",
+      "bytes": 5294,
+      "sha256": "45ae8672b734a2514b72604fdda4b87dbe910859098b7d8635843ae16189c7d5"
+    },
+    {
+      "path": "tools/mod-package-zip-inspector/tests/test_zip_inspector.py",
+      "bytes": 18950,
+      "sha256": "a7a44209942d0722070438f45076de42972c266069f9acf33749c5a00b96f45f"
+    },
+    {
+      "path": "tools/mod-package-zip-inspector/zip_inspector.py",
+      "bytes": 16961,
+      "sha256": "176844556fe4a5f58f36682f03af63150275f971bbd22d0b9f78fab1345c3fd0"
+    },
+    {
       "path": "tools/process-exit-observer/README.md",
       "bytes": 1746,
       "sha256": "5f3220fa893ab903f1e00abde9bd6d9be18eb7fc8784f4126bcd3c902e81c163"
@@ -999,8 +1029,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 17057,
-      "sha256": "983ee9668c056e300de68ede7b2669995ac430fc7b228f7f56bcaa2610a2f6ab"
+      "bytes": 18303,
+      "sha256": "444afe2ffa06d318557b392adfcb61a8f1401f6dbdd24fba51d778febffcefd9"
     }
   ]
 }

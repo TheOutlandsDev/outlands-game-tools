@@ -12,13 +12,15 @@ compares selected XML configuration files, the
 [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md)
 inspects supported literal LTX references,
 [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md)
-compares stored literal settings in a selected pair, and
+compares stored literal settings in a selected pair,
 [Unreal PAK Index & Conflict Inspector](../tools/unreal-pak-inspector/README.md)
-inspects standard unencrypted version-3 index metadata and path overlaps.
+inspects standard unencrypted version-3 index metadata and path overlaps, and
+[Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md)
+reviews supported classic ZIP layouts without extraction.
 Download the current repository with
 **Code → Download ZIP** for these additions; they are absent from the v0.1.0 assets.
 Follow each module's requirements and original example. XML comparison has an
-additional Expat version check; the asset, INI/LTX and PAK checkers use only the standard library.
+additional Expat version check; the asset, INI/LTX, PAK and ZIP checkers use only the standard library.
 The tagged download instructions below still apply to the v0.1.0 snapshot.
 
 ## Download and verify

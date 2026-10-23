@@ -11,6 +11,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Review a mod ZIP layout before installation | [Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md) | Current main, Python 3.12+ standard library. Bounded classic ZIP32 stored/deflated metadata; no extraction, payload integrity, malware or compatibility verdict. |
 | Inspect selected PAK indexes and virtual path overlaps | [Unreal PAK Index & Conflict Inspector](../tools/unreal-pak-inspector/README.md) | Current main source; standard unencrypted version 3 only, Python 3.12+ standard library. No extraction, payload/header validation, modern PAK/IoStore support or winner prediction. |
 | Compare literal INI/LTX settings between two files | [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md) | Current main source; Python 3.12+ standard library. Explicit syntax/case/duplicate policies; default value fingerprints. Does not load includes, interpolate settings or compute inherited values. |
 | Check literal LTX asset paths and selected section references | [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md) | Current main source; Python 3.12+ standard library. Missing loose files have unknown coverage by default. Direct declarations only, without merging inherited values or DLTX. |
