@@ -1,5 +1,23 @@
 # Changes
 
+## Collection v0.1.1-rc.1 — LOCAL REVIEW CANDIDATE ONLY, unpublished
+
+- Corrected the source inventory check's platform-dependent list ordering. New
+  inventories use explicit relative POSIX-path string order. Existing inventories
+  may keep their historical record order; verification compares complete records
+  by exact unique path, including every byte count and full SHA-256 value.
+- Reject duplicate paths, duplicate JSON fields, invalid schema/record fields and
+  non-integer byte counts instead of allowing normalization to hide differences.
+- Added 12 publication-gate regressions for canonical writing, legacy permutations
+  and Windows ordering, duplicates, metadata changes and strict numeric/schema
+  handling. The full candidate gate passed 19 synthetic tests locally on Linux
+  Python 3.12.14, with no skips. Fixtures use a separate temporary directory.
+- This local candidate derives only from the 177-file v0.1.0 tag. It contains the
+  same 11 standalone utilities; seven later additions on main are not included.
+  Updated local ZIP/checksum instructions do not create a GitHub tag or release.
+- The published v0.1.0 files, assets and historical CI remain unchanged. No
+  candidate GitHub CI or gameplay validation is claimed.
+
 ## Collection v0.1.0 source pre-release - 2026-10-22
 
 - Added Mod Content Manifest & Diff 1.0.0: bounded relative-path SHA-256 manifests

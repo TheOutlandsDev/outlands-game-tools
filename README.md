@@ -1,5 +1,12 @@
 # Outlands Game Tools
 
+> **v0.1.1-rc.1 — LOCAL REVIEW CANDIDATE ONLY; unpublished.** Use the enclosed
+> candidate ZIP/checksum and [local quick start](docs/QUICK-START.md). This copy
+> corrects source-inventory ordering across platforms and verifies full records
+> by exact unique path; historical manifests need not be rewritten. It retains
+> the original 11 utilities and does not include seven later main additions.
+> No candidate GitHub tag, release or CI result is claimed.
+
 Original SPT mods and local game utilities from
 TheOutlandsDev / Connor O'Shea. Original contributions are available under the
 [MIT license](LICENSE). See [dependency and provenance boundaries](THIRD-PARTY.md).
@@ -14,13 +21,15 @@ README before building or installing. There is no automatic installer for the
 collection. Default builds do not change an installed game.
 
 Start with [getting started](docs/GETTING-STARTED.md), [questions and troubleshooting](docs/FAQ.md),
-and the [roadmap and help wanted](docs/ROADMAP.md). Changes in this first source
-release are listed in [CHANGELOG.md](CHANGELOG.md).
+and the [roadmap and help wanted](docs/ROADMAP.md). Original preparation and local
+candidate changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
-For a versioned download, use the [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
-and [download quick start](docs/QUICK-START.md). The custom ZIP and SHA-256 asset
-contain reviewed source; games, compiled plugins and dependency binaries are
-obtained separately. Maintainers can read [the source release process](docs/RELEASING.md).
+The [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
+is the original published release and remains unchanged. It is release history,
+not a download for this unpublished candidate. Use the enclosed candidate source
+and [local quick start](docs/QUICK-START.md) for this review. Games, compiled
+plugins and dependency binaries are obtained separately. Maintainers can read
+[the source release process](docs/RELEASING.md).
 
 ## SPT modules
 

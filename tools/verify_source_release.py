@@ -42,7 +42,9 @@ def files(root: Path) -> list[Path]:
                 selected.append(path)
 
     visit(root)
-    return sorted(selected)
+    # Path ordering is platform dependent (Windows casefolds; POSIX does not).
+    # Write inventories in one explicit relative POSIX-string order everywhere.
+    return sorted(selected, key=lambda path: path.relative_to(root).as_posix())
 
 
 def inspect(root: Path) -> list[dict]:
@@ -86,6 +88,35 @@ def inspect(root: Path) -> list[dict]:
     return records
 
 
+def unique_fields(pairs: list[tuple]) -> dict:
+    value = {}
+    for key, item in pairs:
+        if key in value:
+            raise ValueError("Duplicate source inventory JSON field.")
+        value[key] = item
+    return value
+
+
+def inventory_by_path(value: object) -> dict[str, dict]:
+    """Validate exact records without making historical list order significant."""
+    if (not isinstance(value, dict) or set(value) != {"schema_version", "license", "files"}
+            or type(value["schema_version"]) is not int or value["schema_version"] != 1
+            or value["license"] != "MIT" or not isinstance(value["files"], list)):
+        raise ValueError("Invalid source inventory schema.")
+    records = {}
+    for row in value["files"]:
+        if (not isinstance(row, dict) or set(row) != {"path", "bytes", "sha256"}
+                or not isinstance(row["path"], str) or not row["path"]
+                or type(row["bytes"]) is not int or not 0 <= row["bytes"] <= 2 * 1024 * 1024
+                or not isinstance(row["sha256"], str)
+                or re.fullmatch(r"[0-9a-f]{64}", row["sha256"]) is None):
+            raise ValueError("Invalid source inventory record.")
+        if row["path"] in records:
+            raise ValueError("Duplicate source inventory path.")
+        records[row["path"]] = row
+    return records
+
+
 def verify(root: Path, write_manifest: bool = False) -> dict:
     root = root.resolve(strict=True)
     records = inspect(root)
@@ -93,8 +124,10 @@ def verify(root: Path, write_manifest: bool = False) -> dict:
     if write_manifest:
         target.write_text(json.dumps({"schema_version": 1, "license": "MIT", "files": records}, indent=2) + "\n", encoding="utf-8")
     else:
-        manifest = json.loads(target.read_text(encoding="utf-8-sig"))
-        if manifest.get("schema_version") != 1 or manifest.get("license") != "MIT" or manifest.get("files") != records:
+        manifest = json.loads(target.read_text(encoding="utf-8-sig"), object_pairs_hook=unique_fields)
+        # Old Windows-generated inventories remain valid without being rewritten.
+        # Match the complete path/byte-count/hash records, never just path membership.
+        if inventory_by_path(manifest) != {row["path"]: row for row in records}:
             raise ValueError("Source inventory differs; review changes before regenerating the manifest.")
     return {"status": "PASS", "source_files": len(records), "bytes": sum(row["bytes"] for row in records),
             "binary_payloads": 0, "gameplay_validation": False}

@@ -1,5 +1,53 @@
 # Release preparation checks
 
+## Local v0.1.1-rc.1 review candidate — unpublished
+
+This is a local review candidate based on the original v0.1.0 tag, not current
+main. The scope is the source-inventory portability correction and its tests,
+manifest and documentation. The 11 standalone utility implementations and SPT
+sources are retained; the seven later main-branch utilities are not included.
+No GitHub tag, release, asset replacement or candidate CI run was created.
+
+The unchanged v0.1.0 package exposed an ordering defect on Linux: its checker
+compared a POSIX-sorted Path list with the manifest's Windows-sorted record
+list. All 176 path/byte-count/SHA-256 records agreed exactly, but list order
+caused a false mismatch. The original custom ZIP was independently reproduced
+byte for byte: 177 members, 1,315,397 bytes, SHA-256
+`90653639397e82375f0f4548da4a76c161df46b992fc8ca980c189e1df78e4b4`.
+The original asset and extracted source were preserved.
+
+The candidate writes inventories in explicit relative POSIX-path string order
+and accepts legacy ordering without rewriting it. It compares full records by
+exact unique path. Duplicate paths or JSON fields, invalid schemas/record shapes
+and non-integer lengths are refused; hashes and byte counts remain exact.
+
+- Candidate publication gate: **19 collected, 19 passed, zero skipped** on
+  Linux with Python 3.12.14. Twelve new regressions cover canonical writing,
+  reversed/shuffled/Windows-ordered legacy inventories, duplicate records and
+  JSON fields, changed hashes/lengths, strict schemas and exact integer lengths.
+  The seven prior gate tests remain included. Fixtures are original temporary
+  source trees; no game, real profile, service or installed dependency was used.
+- Separately, the unmodified released Mod Content Manifest & Diff and Source
+  Release Builder suites collected **44 and 56** cases respectively: **43 and
+  55 passed**, with one Windows-only junction skip in each suite on Linux.
+- A separate fresh run of six existing released utility suites collected
+  **188 cases: 185 passed and three Windows-only cases skipped**. These are
+  results for the unchanged v0.1.0 utilities, not a complete candidate CI run.
+- The original release revision's [17-job CI run](https://github.com/TheOutlandsDev/outlands-game-tools/actions/runs/39875896673)
+  passed at commit `edabafcc4e71bf998841cc151b279eef9038e060`. That is historical
+  v0.1.0 evidence; it does not establish CI results for this unpublished candidate.
+
+The candidate inventory, newly built local ZIP/checksum and unpacked inventory
+must be checked after the source and manifest review. Detailed local receipts
+remain outside the candidate source tree. This correction does not establish
+macOS support, game compatibility, runtime performance, restoration, licensing
+ownership or complete secret absence.
+
+## Historical v0.1.0 preparation record
+
+The retained Windows notes below describe the original preparation environment
+and its own test/skip populations; they are not new candidate execution claims.
+
 Prepared on Windows, 2026-10-22. The installed games and original project sources
 were not modified. Private source-hash receipts remain outside the release tree.
 
