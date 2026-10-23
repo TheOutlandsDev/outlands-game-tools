@@ -1,8 +1,8 @@
-# Local review candidate: v0.1.1-rc.1
+# Review candidate: v0.1.1-rc.1
 
-**LOCAL REVIEW CANDIDATE ONLY — unpublished.** Use the enclosed candidate ZIP
-and adjacent checksum from the local review packet. No GitHub tag, release or
-download URL exists for this candidate. The
+**UNRELEASED REVIEW CANDIDATE.** Use the matching candidate ZIP and checksum
+from the review packet. Source is available on a review branch; no candidate
+GitHub tag, release or release-asset download has been published. The
 [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
 is the original published snapshot and is retained as release history.
 
@@ -93,7 +93,8 @@ py -3.12 -B -m unittest discover -s tests -v
 
 Historical v0.1.0 portability jobs exercised Python 3.12/3.13 on Windows/Ubuntu.
 The candidate's source-gate correction passed 19 local synthetic tests on Linux
-Python 3.12.14, with no skips; no candidate CI has run. Native link/case fixtures
+Python 3.12.14, with no skips. Review-branch CI evidence and its exact revision
+are recorded in [VALIDATION.md](../VALIDATION.md). Native link/case fixtures
 in the unchanged utility suites have explicit platform skips. These checks do
 not establish macOS or engine/gameplay compatibility.
 

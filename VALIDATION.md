@@ -1,12 +1,34 @@
 # Release preparation checks
 
-## Local v0.1.1-rc.1 review candidate — unpublished
+## Unreleased v0.1.1-rc.1 review candidate
 
-This is a local review candidate based on the original v0.1.0 tag, not current
+This is an unreleased review candidate based on the original v0.1.0 tag, not current
 main. The scope is the source-inventory portability correction and its tests,
 manifest and documentation. The 11 standalone utility implementations and SPT
 sources are retained; the seven later main-branch utilities are not included.
-No GitHub tag, release, asset replacement or candidate CI run was created.
+No candidate GitHub tag, release or release-asset download has been published.
+
+### First review-branch CI checkpoint
+
+Review revision `c6af1509f60b0bdff25a208ece72bb61115bd998` completed all
+**17 jobs** successfully in [run 40008430058](https://github.com/TheOutlandsDev/outlands-game-tools/actions/runs/40008430058):
+nine Windows jobs and eight Ubuntu jobs, including Python 3.12/3.13 matrices.
+The Windows Server 2025 source job passed all 19 publication-gate tests and the
+176-record inventory check. Its full source build read back all 177 members.
+
+That CI build uses the generic `outlands-game-tools-source` archive prefix; its
+1,328,018-byte ZIP had SHA-256
+`3d1784b58cefbe886c1515f5a3d81aac33d34c67e5c50d9b66d025b81942e137`,
+matching the independently derived generic-prefix package for that revision.
+It is not the checksum of the differently prefixed candidate release ZIP.
+Case-collision fixtures have explicit Windows filesystem skips; passing jobs do
+not imply every fixture ran. CI installs the separately pinned Lua/audio wheels
+on hosted runners and is distinct from the local offline checks below.
+
+This checkpoint applies only to the exact revision named above. Later source or
+documentation changes require their own checks; consult the final review receipt
+for the current CI head and candidate ZIP identity. No game or production
+acceptance is established by these synthetic CI checks.
 
 The unchanged v0.1.0 package exposed an ordering defect on Linux: its checker
 compared a POSIX-sorted Path list with the manifest's Windows-sorted record

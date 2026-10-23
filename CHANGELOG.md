@@ -1,6 +1,6 @@
 # Changes
 
-## Collection v0.1.1-rc.1 — LOCAL REVIEW CANDIDATE ONLY, unpublished
+## Collection v0.1.1-rc.1 — UNRELEASED REVIEW CANDIDATE
 
 - Corrected the source inventory check's platform-dependent list ordering. New
   inventories use explicit relative POSIX-path string order. Existing inventories
@@ -15,8 +15,9 @@
 - This local candidate derives only from the 177-file v0.1.0 tag. It contains the
   same 11 standalone utilities; seven later additions on main are not included.
   Updated local ZIP/checksum instructions do not create a GitHub tag or release.
-- The published v0.1.0 files, assets and historical CI remain unchanged. No
-  candidate GitHub CI or gameplay validation is claimed.
+- The published v0.1.0 files, assets and historical CI remain unchanged.
+  Revision-specific review-branch CI is documented in VALIDATION.md; later
+  revisions require their own checks. No gameplay validation is claimed.
 
 ## Collection v0.1.0 source pre-release - 2026-10-22
 

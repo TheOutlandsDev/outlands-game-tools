@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 8264,
-      "sha256": "eb688f3b07fa77bd01de973903591a65a1f46b793127cd801720b4fdc6bf4128"
+      "bytes": 8339,
+      "sha256": "e85e449bd7eecac54d51a6cbacc82d669462f922e092150b63a03fec370a490c"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8556,
-      "sha256": "fe38cde0063f301b1f428d69a0a19753c5fba0d3cde7945e8719bf97a10f36be"
+      "bytes": 8640,
+      "sha256": "c5bf70ed87e55c81a953f77cd5e5b30c140fd51025cedee13aa969c52d43404c"
     },
     {
       "path": "THIRD-PARTY.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 14605,
-      "sha256": "77859902511e63f4866ab837361da0aa939c63dfc2b0d4323697337213e45263"
+      "bytes": 15933,
+      "sha256": "dd059f4306f5e76c65e7e141449ab9c43044c35d078791690cda9df8746bbef2"
     },
     {
       "path": "docs/FAQ.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7968,
-      "sha256": "16d8c18e7d72686a4c6c0e34622986687aadd8067d7f9ae1590216f29314aba3"
+      "bytes": 8059,
+      "sha256": "7bc88329092497ac8d0e6527c800ab6b3a52de5bafef9dbfd2ecbe023698c94f"
     },
     {
       "path": "docs/RELEASING.md",

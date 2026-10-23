@@ -1,11 +1,12 @@
 # Outlands Game Tools
 
-> **v0.1.1-rc.1 — LOCAL REVIEW CANDIDATE ONLY; unpublished.** Use the enclosed
+> **v0.1.1-rc.1 — UNRELEASED REVIEW CANDIDATE.** Use the enclosed
 > candidate ZIP/checksum and [local quick start](docs/QUICK-START.md). This copy
 > corrects source-inventory ordering across platforms and verifies full records
 > by exact unique path; historical manifests need not be rewritten. It retains
 > the original 11 utilities and does not include seven later main additions.
-> No candidate GitHub tag, release or CI result is claimed.
+> Release publication remains pending. Revision-specific CI evidence is recorded
+> in [VALIDATION.md](VALIDATION.md); later revisions need their own checks.
 
 Original SPT mods and local game utilities from
 TheOutlandsDev / Connor O'Shea. Original contributions are available under the
