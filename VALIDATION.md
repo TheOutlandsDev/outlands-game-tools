@@ -323,3 +323,17 @@ provide independent backend authorization or an internet-facing service.
 The content scan is a bounded publication check, not a complete security audit.
 External dependencies and their compatibility/licenses require separate review
 for any future binary distribution. No whole-game archive is part of this release.
+
+
+## DayZ Market Numeric Diff library
+
+Twenty-three original synthetic tests passed locally on Windows before
+publication. Cases cover changed versus equal unchanged rows, exact baseline
+hash and scalar guards, item reorder/addition, held unselected differences,
+boolean/number distinctions, duplicate JSON keys/operations, forbidden pointers,
+finite exponent parsing and bounded/deep/cyclic object trees. The fictional demo
+emits one change and leaves the equal-valued second item untouched. It writes no
+files. Windows/Ubuntu Python 3.12/3.13 jobs are configured in the existing standard
+library portability matrix. No private data or game/server was used. Python float
+rounding/underflow and unbundled external-baseline requirements remain limits;
+this is not a token-exact decimal diff, full configuration backup or installer.

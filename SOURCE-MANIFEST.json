@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 8722,
-      "sha256": "1988f1073c7b6323319a6f1f9c72dce69b96b267a4b50cf0430371aeea0d2b73"
+      "bytes": 9035,
+      "sha256": "169f0cc892e9551fb8ec90466ff138af17ed523123bf3a00fb781f382dc66a58"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 14839,
-      "sha256": "f403ed5f2d565f1a6c16ffdaad93777484556a6e8c8c13e21384fa8bdaf9dfb2"
+      "bytes": 15157,
+      "sha256": "021e16cc73c4dde75c68ae3fbdd93314e69794aa39f227ed950fa0d4e163001f"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11059,
-      "sha256": "288e8e7ed596277f38158e7f7b9f9bb62198bdefbd1d5d10acbd0a51a4ee7fd7"
+      "bytes": 11363,
+      "sha256": "a7239ad83eebd6b854cb3d71c0a518d75870fb20c16ba79ffcec2423883a3c30"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 16544,
-      "sha256": "607429a7641af2a7d56cf9624dce4cb19573cd74ddd16b344ef268c41f058c61"
+      "bytes": 17028,
+      "sha256": "3e5fcd921a2bd88fbb10316ac9e4b14e012f9cc3878ccee4d14756d09d141788"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -641,6 +641,31 @@
       "path": "tools/bounded-evidence-manifest-verifier/verify_manifest.py",
       "bytes": 7630,
       "sha256": "d580a82610d0914322008afbae88d19c0c16f28dde01be93eb5eec36fcc6b76b"
+    },
+    {
+      "path": "tools/dayz-market-numeric-diff/examples/demo.py",
+      "bytes": 816,
+      "sha256": "0979d1ab112b91f76c27803b063d4488d4b48ac8a7f68d0ab6d00f1424a2e111"
+    },
+    {
+      "path": "tools/dayz-market-numeric-diff/numeric_delta.py",
+      "bytes": 8129,
+      "sha256": "31126c707393cef7e220872a5ee69d4d86543dbc37e86fb62b11b06857c1aae8"
+    },
+    {
+      "path": "tools/dayz-market-numeric-diff/PROVENANCE.md",
+      "bytes": 1120,
+      "sha256": "0bb0dd643a17e17d87d370e3234cad74942a77e7892e2d7b5d598ceb03f190c4"
+    },
+    {
+      "path": "tools/dayz-market-numeric-diff/README.md",
+      "bytes": 5618,
+      "sha256": "cfac1710fc29b05a18cf7192d7c4ac8948c84ae534c6b904119bb634c78994c9"
+    },
+    {
+      "path": "tools/dayz-market-numeric-diff/test_numeric_delta.py",
+      "bytes": 6802,
+      "sha256": "402262bd49057cf49f666bbaa6c8dfd38786730373273d83c47e0d6971c05bfe"
     },
     {
       "path": "tools/dotnet-assembly-inspector/Inspector.csproj",
@@ -1209,8 +1234,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 23593,
-      "sha256": "f74dfe4ce0dc00306f9624624db104881f6e4a288775cd4cdf53d3362e7ab199"
+      "bytes": 24424,
+      "sha256": "6675977701607d77691f2701622ea250ad777e2950cd985d318f304e3e711aa0"
     }
   ]
 }

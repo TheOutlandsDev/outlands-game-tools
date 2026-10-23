@@ -240,3 +240,11 @@ report, package source or AGPL implementation is included. The separately
 installed .NET SDK/framework retain their own terms. Inspecting an assembly
 does not grant rights to publish its code, identifiers, embedded strings or
 derived report; review reports before sharing them.
+
+
+DayZ Market Numeric Diff is wholly original standard-library Python code, tests,
+documentation and a fictional demo under the collection MIT license. No private
+recipe/source metadata, real item catalog, inherited template, game/mod source
+or AGPL implementation is included. External configuration field names identify
+an interface; input data, DayZ/Expansion/mod material and Python retain their own
+terms. The source provenance and exact API limits are documented in the module.

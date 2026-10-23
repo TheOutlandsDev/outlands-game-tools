@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added the original DayZ Market Numeric Diff Python library under MIT, with
+  exact-baseline preview guards, JSON-aware replay equality, finite-number and
+  resource checks, 23 fictional regression tests, examples and suggestion links.
+  No private input, template body, game code or automatic installer is bundled.
+
 - Prepared the existing Bounded Evidence Manifest Verifier under MIT, retaining
   its original 16 synthetic tests, flat manifest format and bounded no-follow
   reads. Added explicit unsupported-platform handling, platform regressions,

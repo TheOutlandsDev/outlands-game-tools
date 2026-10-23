@@ -156,6 +156,11 @@ different from a clean structural report (exit 0).
 - [Process Exit Observer](tools/process-exit-observer/README.md): capture a
   user-started game's native exit code without starting or stopping the game.
 
+- [DayZ Market Numeric Diff Library](tools/dayz-market-numeric-diff/README.md):
+  compare a fixed subset of numeric category/item settings and preview exact
+  baseline changes in memory. Original MIT code, fictional examples and tests;
+  no file installer, inherited templates or private recovery data.
+
 ## Verification and contributing
 
 Run `python -B tools/verify_source_release.py` with Python 3.12+ to check the

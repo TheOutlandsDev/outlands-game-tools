@@ -153,6 +153,11 @@ jobs:
       - name: Check Bounded Evidence Manifest Verifier and explicit platform refusal
         working-directory: tools/bounded-evidence-manifest-verifier
         run: python -B -m unittest discover -s tests -v
+      - name: Check DayZ numeric library with fictional in-memory inputs
+        working-directory: tools/dayz-market-numeric-diff
+        run: python -B -m unittest -v test_numeric_delta
+      - name: Check fictional numeric library example
+        run: python -B tools/dayz-market-numeric-diff/examples/demo.py
   assembly-portability:
     strategy:
       matrix:
