@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Game Session Evidence Auditor](tools/game-session-evidence-auditor/README.md):
+  verify selected captured-file sizes/hashes and generic launch/exit receipt
+  consistency, with redacted metadata, explicit coverage and original examples.
+  No process observation, installation changes or gameplay attestation.
 - [Offline Mod Dependency Rule Checker](tools/offline-mod-dependency-checker/README.md):
   check explicit active-order JSON against authored presence/conflict/order rules,
   with missing requirements, direct findings and bounded catalog cycle witnesses.

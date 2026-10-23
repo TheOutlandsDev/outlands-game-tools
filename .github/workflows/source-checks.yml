@@ -147,6 +147,9 @@ jobs:
       - name: Check Offline Mod Dependency Rules with fictional inventories and graphs
         working-directory: tools/offline-mod-dependency-checker
         run: python -B -m unittest discover -s tests -v
+      - name: Check Game Session Evidence Auditor with original fictional captures
+        working-directory: tools/game-session-evidence-auditor
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:

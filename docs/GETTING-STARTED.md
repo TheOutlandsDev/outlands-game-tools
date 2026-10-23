@@ -11,6 +11,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Verify captured files and generic session receipts | [Game Session Evidence Auditor](../tools/game-session-evidence-auditor/README.md) | Current main; Python 3.12+ standard library. Explicit evidence manifest and original receipt schema. External new reports only; hash agreement and consistent receipts do not attest actual gameplay or collector authenticity. |
 | Check your own dependency, conflict and order assertions | [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md) | Current main; Python 3.12+ standard library. Explicit active-order and rule JSON, catalog cycles with witnesses. No compatibility database, automatic manager import, installation scan or order repair. |
 | Explain saved MO2 profile changes | [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md) | Current main; Python 3.12+ standard library. Explicit saved modlist pairs, common relative-order changes, separate separator/foreign metadata. No profile edits, installed-file or plugin-load-order comparison. |
 | Review a mod ZIP layout before installation | [Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md) | Current main, Python 3.12+ standard library. Bounded classic ZIP32 stored/deflated metadata; no extraction, payload integrity, malware or compatibility verdict. |

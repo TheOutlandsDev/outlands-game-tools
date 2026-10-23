@@ -1,5 +1,19 @@
 # Changes
 
+## Game Session Evidence Auditor 1.0.0 - 2026-10-23
+
+- Added original read-only auditing of explicit captured-file manifests and
+  generic launch/exit receipts, with bounded streaming SHA-256 and size checks.
+  Missing/changed files and invalid/inconsistent receipts are review findings.
+- Checks declared session/process/executable identity, UTC ordering and exit code
+  only after receipt byte verification. Reports omit receipt PIDs, executable
+  labels, absolute timestamps and raw captured content; no live process queried.
+- Added guarded external reports, strict schemas and resource limits, original
+  fictional sessions, hash/receipt oracles, detailed guides, suggestion links
+  and Windows/Linux Python 3.12/3.13 CI. Original MIT source on main after v0.1.0;
+  no AGPL launcher/crash-audit implementation, private evidence or game payload
+  copied. Agreement with supplied evidence is not gameplay or authenticity proof.
+
 ## Offline Mod Dependency Rule Checker 1.0.0 - 2026-10-23
 
 - Added original offline checking of explicit active-order JSON and authored

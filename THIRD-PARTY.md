@@ -206,3 +206,16 @@ JSON behavior was checked against [Python 3.12 documentation](https://docs.pytho
 Python remains separately installed under its own license. Authored rules and
 names retain their own rights/privacy requirements; an offline check does not
 verify those assertions or establish actual game/asset compatibility.
+
+Game Session Evidence Auditor is fresh original Python standard-library source,
+tests, documentation and fictional evidence generation under the root MIT
+license. Existing original collection filesystem, bounded JSON and report guards
+are reused. Generic manifest/receipt contracts, streaming verification and
+redacted consistency checks are original; no separate AGPL launcher/crash-audit
+implementation, upstream collector, real session receipt, private log or game
+payload is copied or bundled. Standard-library behavior was checked against
+[Python SHA-256/streaming hashing](https://docs.python.org/3.12/library/hashlib.html)
+and [UTC datetime handling](https://docs.python.org/3.12/library/datetime.html).
+Python remains separately installed under its own license. Evidence files,
+manifest assertions and relative report names retain their own rights/privacy
+requirements. Hash agreement does not authenticate a collector or attest gameplay.

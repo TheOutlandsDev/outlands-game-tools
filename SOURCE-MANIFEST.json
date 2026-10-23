@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4253,
-      "sha256": "5b1c74f0de001ba1f511306bca39716e2de374db4bfa544cdf3160b3bf94866d"
+      "bytes": 4293,
+      "sha256": "b5140ebcae59aa123f8a1b328cbf8e823440c11e7efa8f396c56fa12e44f3849"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 7668,
-      "sha256": "932fd01d7961cc8bec0b12353be870e1b08ee1b1a5a95acfa77eda741072b374"
+      "bytes": 7870,
+      "sha256": "fb0572084e96f1b1125b3ab14565bdb1900b5a3d10376865a8f790349518ebb1"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 13307,
-      "sha256": "036ebe2f1fc98e111855b5ff1d3453d82ad24119a9c0440c82e7e2f6e2eede96"
+      "bytes": 14239,
+      "sha256": "154f9752fa6c429e8daead61173d17c5d97f4dcd8e978d0405e0891d2dd7633f"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 15630,
-      "sha256": "9349733a53102b57573a58825c83899adb15ba75a913e13c30f48c29c4ecbe85"
+      "bytes": 15995,
+      "sha256": "90e5ac062471f7603421d75e0424295fa7bdc178df9ab136ddfc71eb834198d8"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7842,
-      "sha256": "d035dd2ad21a796660306e9cd5ccfa9229262d52aaeb07624ee3b891175284c9"
+      "bytes": 8003,
+      "sha256": "85adf812ad65c99e29fce587fb600ff776b9650ae6facb6965ea35e90b78134f"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 11643,
-      "sha256": "4c88e450b02b90146a497929d76e89901cf7d5aaa5a13a070a106bebb6858450"
+      "bytes": 12043,
+      "sha256": "d4f4d9ce6e60b25207ff71ca3f45e49813944687ca6ebb989deac6fc208a55e8"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 8855,
-      "sha256": "8739c2ad72f6e16a92afd06ba2c43fe9ef2d4ce9e0591360bd77dff47abce237"
+      "bytes": 9337,
+      "sha256": "e80d59eb87e9992ddae7fd96345ce7c966456c320a8c5311f6430683f5b45474"
     },
     {
       "path": "README.md",
-      "bytes": 10187,
-      "sha256": "d7474b7567e8681fefac50152423fb130db5120902574dd323cfcb5fbe97e0a4"
+      "bytes": 10498,
+      "sha256": "27babbe90435597b4c564417737840e4687050ede31ad1eb545f6e253fcda4ba"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 14150,
-      "sha256": "42867eac7ca828bf082adef2c2ddbfb0672b3fa80a8f6628c7b533a6fad42447"
+      "bytes": 15098,
+      "sha256": "c119a655d2a116c59bbbd192795ff816a4e8923314997314d1797288f390ed0a"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -596,6 +596,41 @@
       "path": "tools/audio-integrity-checker/tests/test_audio_integrity.py",
       "bytes": 28951,
       "sha256": "0a1f88eedbca45c4d297f662182ab2b7dcdd17c7b1f92005ad3dcad4d108a557"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/EVIDENCE-FORMAT.md",
+      "bytes": 5225,
+      "sha256": "cc3c7861dc6fe252defe184c88c3832dea6c96a01523572a9674f5d0a4ea99f3"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/examples/create_example.py",
+      "bytes": 2510,
+      "sha256": "faad17d3bdea3a268675f39a1cad04a2ca35eed3c1ea90924db4f45d0caddb01"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/examples/README.md",
+      "bytes": 2444,
+      "sha256": "75a87edd2e0bcfa37640aa51191475f0e04e120a55fb7a3702ea72eec58defba"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/README.md",
+      "bytes": 10037,
+      "sha256": "c38c593eec73319c51223f20ef132faa7170415af80f7d7ecce599a395392543"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/REPORT-FORMAT.md",
+      "bytes": 6424,
+      "sha256": "89335b65ef7704c0c4d36fcf24c522d5db9591fee195890d2ce96d1287d350fd"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/session_auditor.py",
+      "bytes": 21483,
+      "sha256": "75339dd682ce6ca35315182dd7e47dfceab8cee6c468ea78b18f84c55d7a3708"
+    },
+    {
+      "path": "tools/game-session-evidence-auditor/tests/test_session_auditor.py",
+      "bytes": 23110,
+      "sha256": "4723eb0dc747562c06357ced17b17d71f18b5120a77d2fa2cc90f0a8ebfd2d38"
     },
     {
       "path": "tools/game-tree-exporter/export_game_tree.py",
@@ -1094,8 +1129,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 20858,
-      "sha256": "fc8723644a1420c701c42ada79009237ef25a5259b8e2a0cf2739b766a7e909e"
+      "bytes": 22026,
+      "sha256": "3f7a904e201646e4a4e788fb782078b9574c68e794cc9caa7f8485e4adf8ac2f"
     }
   ]
 }

@@ -22,6 +22,11 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [Game Session Evidence Auditor](../tools/game-session-evidence-auditor/README.md)
+  with its fictional captured files and generic receipts. Suggest clearer
+  evidence-coverage wording or separately specified collector adapters. Hashes
+  and receipt assertions do not prove a real process or successful gameplay;
+  use synthetic recipes rather than private session logs or saves in reports.
 - Try the [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md)
   with its fictional inventories/rules. Suggest clearer cycle explanations or
   separately specified manager import/version/alternative formats. Authored

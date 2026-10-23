@@ -26,6 +26,22 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Game Session Evidence Auditor 1.0.0 (2026-10-23): 42 original synthetic
+  cases on Windows Python 3.12.14; 40 passed and 2 native symlink/junction
+  fixtures explicitly skipped because local creation is denied. Covers binary
+  streaming hashes, size/hash changes, missing files/receipts, schema trust
+  gating, session/process/executable/time/exit consistency, privacy omissions,
+  strict paths/JSON, resource limits, concurrent changes and exclusive external
+  reports. The rejected in-evidence report path is tested to create no file.
+  A private deterministic review passed 2,201 additional cases: schema byte
+  mutations, 100 independent binary-hash oracles, 100 receipt-pair truth checks
+  and a maximum 1,002-file selection producing a bounded report below 0.4 MiB.
+  Original clean/changed/missing/inconsistent examples return exits 0/2/2/2.
+  Windows/Linux Python 3.12/3.13 CI runs the same suite with declared native
+  fixture skips where unavailable. No game/process was launched, observed or
+  validated; no installed profile, save, log or AGPL implementation was modified
+  or incorporated. Hash/receipt agreement is not gameplay/authenticity evidence.
+
 - Offline Mod Dependency Rule Checker 1.0.0 (2026-10-23): 42 original
   synthetic cases on Windows Python 3.12.14; 40 passed and 2 native symlink/
   junction fixtures explicitly skipped because local creation is denied.

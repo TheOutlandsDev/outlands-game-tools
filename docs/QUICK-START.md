@@ -16,6 +16,7 @@ the version does not establish gameplay compatibility for every module.
 - [Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md): review supported classic ZIP metadata without extraction.
 - [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md): explain saved modlist additions, removals, states and relative ordering.
 - [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md): check authored presence/conflict/order rules and catalog cycles against explicit JSON inputs.
+- [Game Session Evidence Auditor](../tools/game-session-evidence-auditor/README.md): verify selected captured files and generic launch/exit receipt consistency.
 
 Download current main with **Code → Download ZIP** for these additions; they are
 absent from the v0.1.0 assets. Follow each module's requirements and original
