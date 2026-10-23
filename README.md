@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [MO2 Profile Change Report](tools/mo2-profile-change-report/README.md):
+  compare explicit saved modlists for additions, removals, enablement and relative
+  reordering. Separators and foreign entries are reported separately, with
+  original examples, strict duplicate policy and public suggestion links.
 - [Mod Package ZIP Layout Inspector](tools/mod-package-zip-inspector/README.md):
   review bounded classic ZIP metadata for unsafe paths, collisions, common
   wrapper folders and suspicious declared sizes without extraction. Includes

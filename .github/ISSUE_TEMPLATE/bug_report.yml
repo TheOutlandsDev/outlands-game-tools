@@ -29,6 +29,7 @@ body:
         - Audio Integrity Checker
         - Save Snapshot Verifier
         - MO2 Baseline Profile Builder
+        - MO2 Profile Change Report
         - X-Ray Log Summary
         - LTX Definition Inspector
         - Mod Content Manifest & Diff

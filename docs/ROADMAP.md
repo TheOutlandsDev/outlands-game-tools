@@ -22,6 +22,10 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md)
+  with fictional saved-profile pairs. Suggest clearer reorder explanations or
+  saved syntax examples. Relative-order observations do not identify plugin
+  winners or actual user drag operations; no installed profiles need uploading.
 - Try the [ZIP layout inspector](../tools/mod-package-zip-inspector/README.md)
   with its original examples. Suggest useful wrapper-folder explanations and
   provide small generated reproductions for unsupported archive layouts. ZIP64

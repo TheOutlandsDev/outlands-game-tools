@@ -184,3 +184,14 @@ Python remains separately installed under its own license; stdlib zipfile is use
 only to generate original toy fixtures, not to parse untrusted selected archives.
 No game/mod archives, payloads, keys or separate AGPL implementation are included.
 Archive content and report member names retain their own rights/privacy terms.
+
+MO2 Profile Change Report is original Python standard-library source, tests,
+documentation and fictional profile generation under the root MIT license.
+Existing collection modlist/name and filesystem/report safeguards informed the
+implementation. Saved marker/order facts were checked against
+[MO2 profile format handling](https://github.com/ModOrganizer2/modorganizer/blob/4ba22f0d8b6f9e08e44008b8395cd774551b4ebe/src/profile.cpp).
+No upstream MO2/Qt implementation or license is copied or relicensed, and no
+real profile, game/mod payload or separate AGPL companion code is included.
+Python remains separately installed under its own license. Inspected modlist
+names and report hashes retain their own privacy and rights requirements;
+comparisons do not authenticate an installation or grant asset redistribution.

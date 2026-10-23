@@ -1,5 +1,18 @@
 # Changes
 
+## MO2 Profile Change Report 1.0.0 - 2026-10-23
+
+- Added original read-only comparison of two explicit saved MO2 modlist files,
+  covering added/removed mods, enabled/disabled entries, casefold spelling
+  differences and relative-order changes among shared entries.
+- Separators and foreign entries have separate groups. Separator relocation
+  tracks crossings of shared stable entries; additions/removals do not produce
+  false reordering. Duplicate/casefold collisions make comparison incomplete.
+- Added generated fictional profiles, pairwise reorder oracles, malformed-input
+  and filesystem/resource tests, detailed guides/report format, suggestion links
+  and Windows/Linux Python 3.12/3.13 CI. Original MIT source on main after v0.1.0;
+  no real profiles, game files, upstream MO2 implementation or AGPL code bundled.
+
 ## Mod Package ZIP Layout Inspector 1.0.0 - 2026-10-23
 
 - Added original bounded single-disk contiguous classic ZIP32 metadata inspection

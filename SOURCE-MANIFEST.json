@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4171,
-      "sha256": "016826eecc85fc713cf182a6a953688346f385be5b57629021c68db5d801768d"
+      "bytes": 4207,
+      "sha256": "1428257dc9f9c10d29dcafd438571d158c7e1e78831100418622e6b3291a3f59"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 7270,
-      "sha256": "50b31ce59e412f2018ed30a7fc0387312a969b75dd007693b2fab3d0598893d9"
+      "bytes": 7461,
+      "sha256": "6d646b3c3638b8fc16f103c5b1cb91605379f50a6afd5e235580ff5881ab4269"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 11577,
-      "sha256": "80b52c801b08b6f7e646253209d59b7ceeff367a7daae304e71718b531d87af1"
+      "bytes": 12403,
+      "sha256": "43eb42b0d6a7752b1cdb7781f05fad3f6f77fe902f2abb9a034d9327c2cd3416"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 14950,
-      "sha256": "ac5d2206156ee2c7baab6b8e8c6ba10def6df26ba8ad741050ad69cbf7341e92"
+      "bytes": 15275,
+      "sha256": "f435b9a1eef6bac9a7e69ae288638a9aeb0bc0051e457deb4ba28347f29d1ffd"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7559,
-      "sha256": "dcdd1674c5f747a3ebcddbee3a37d41da44f54c09824c43b459e2fa802560a2b"
+      "bytes": 7656,
+      "sha256": "41a9094170b6761f8569afb65e79f473589834f002e8759cf2a6fe3791088189"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 10916,
-      "sha256": "5c946c55c29249c7f9c605b9e19a95b4c0832d8a29f24539c5f7cd0c68cfb0f2"
+      "bytes": 11234,
+      "sha256": "98f2f3989d4b61d699951396ce0bd382379359a4bfab3a25e4401770a6dcbdbd"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 7945,
-      "sha256": "7108a0055b4db3380b4e36bfdcd689da806d8791e07ae037db6a3f2b8f404024"
+      "bytes": 8392,
+      "sha256": "7f02c7a22a8553d7028ec9cab6f028a06de2f22f828c70e3a402f4ebc1c5801a"
     },
     {
       "path": "README.md",
-      "bytes": 9553,
-      "sha256": "1dac662a3ef0a7df0148d044088d1ffbf0fdd83569dbef9415ac4eb87e5f2156"
+      "bytes": 9859,
+      "sha256": "0d9cc8bd78b8ea947d94d96c6c6ddf6b79b8a2cede2ab98ffeba110c5e5d036a"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 12519,
-      "sha256": "0bececc84f66770ef1911f17daf5c295d807482d7aceea14008fff836ef9ab62"
+      "bytes": 13336,
+      "sha256": "62714e6ba5a96aa8c632ba73dab573425987b1a72866ee58b8e89b9f66156edd"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -766,6 +766,36 @@
       "path": "tools/mo2-profile-builder/tests/test_profile_builder.py",
       "bytes": 18228,
       "sha256": "13e90611a0859e6620c81d029f7f222ca3b3112ebf3b02d315cb906a6bb2dfea"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/examples/create_example.py",
+      "bytes": 1001,
+      "sha256": "0132598456530d48f56b7f3236882982b0b9f2ef865cdb1ddbbf9615dfc343e8"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/examples/README.md",
+      "bytes": 2042,
+      "sha256": "cde76bb04e92a3696ff91c4b8ef9c46c398314e49316f54032b0f7aea942ac35"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/profile_change_report.py",
+      "bytes": 14798,
+      "sha256": "0b7ce5af67acee6cda2b139f700c3ec87cb5841203a627c0583f714dd87c586b"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/README.md",
+      "bytes": 9620,
+      "sha256": "deacd4901b84ccf95a482bd08f04a80197dab08ce314a286b4d21712f5b55362"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/REPORT-FORMAT.md",
+      "bytes": 4714,
+      "sha256": "0d9dd0c8b99d4278f16c0e36cb7d991fa0b5625918c1ca0bb5b59398c6a9fbfd"
+    },
+    {
+      "path": "tools/mo2-profile-change-report/tests/test_profile_change_report.py",
+      "bytes": 18418,
+      "sha256": "b6b75890da64cffbb7e34b34be800060de7524fb4a3a629f1a470415414d101f"
     },
     {
       "path": "tools/mod-asset-reference-checker/asset_references.py",
@@ -1029,8 +1059,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 18303,
-      "sha256": "444afe2ffa06d318557b392adfcb61a8f1401f6dbdd24fba51d778febffcefd9"
+      "bytes": 19532,
+      "sha256": "9e599bdb4e5cebe1af8327507fcf7e86775a5348904879a28104717b3e5c0431"
     }
   ]
 }

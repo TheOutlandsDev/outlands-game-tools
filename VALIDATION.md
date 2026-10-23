@@ -26,6 +26,23 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- MO2 Profile Change Report 1.0.0 (2026-10-23): 43 original synthetic cases
+  on Windows Python 3.12.14; 41 passed and 2 native symlink/junction fixtures
+  explicitly skipped because local creation is denied. Covers added/removed
+  mods, enablement, casefold spelling, shared relative ordering, separator
+  relocation/markers, foreign entries, duplicates, strict names/encoding, BOM
+  and line endings, input preservation, exclusive reports and resource limits.
+  An independent pairwise oracle checks all 120 permutations of five names and
+  100 seeded mixed selections. Generated changed/identical comparisons return
+  exits 2/0; actual output-limit failure returns a small incomplete report.
+  Windows/Linux Python 3.12/3.13 CI runs the same suite, declaring unavailable
+  native fixtures. No live MO2 instance, installed profile, plugin load order,
+  game content or runtime compatibility was inspected or altered.
+  A private deterministic review also passed 2,002 mutation/resource cases
+  against the same parser source hash: two identical 10,000-entry inventories
+  produced a bounded approximately 3.1 MiB report, and a long-name toggle report
+  hit the actual fixed output ceiling with a controlled incomplete result.
+
 - Mod Package ZIP Layout Inspector 1.0.0 (2026-10-23): 47 original
   generated-fixture cases on Windows Python 3.12.14; 45 passed and 2 native
   symlink/junction fixtures explicitly skipped because local creation is denied.

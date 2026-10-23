@@ -141,6 +141,9 @@ jobs:
       - name: Check Mod Package ZIP Inspector with original generated archives
         working-directory: tools/mod-package-zip-inspector
         run: python -B -m unittest discover -s tests -v
+      - name: Check MO2 Profile Change Report with fictional saved modlists
+        working-directory: tools/mo2-profile-change-report
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:
