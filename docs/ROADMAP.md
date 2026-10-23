@@ -22,6 +22,11 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try the [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md)
+  with its fictional inventories/rules. Suggest clearer cycle explanations or
+  separately specified manager import/version/alternative formats. Authored
+  assertions and catalog observations do not certify actual mod compatibility;
+  use small original rule pairs rather than private profiles or game assets.
 - Try the [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md)
   with fictional saved-profile pairs. Suggest clearer reorder explanations or
   saved syntax examples. Relative-order observations do not identify plugin

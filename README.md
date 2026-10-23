@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Offline Mod Dependency Rule Checker](tools/offline-mod-dependency-checker/README.md):
+  check explicit active-order JSON against authored presence/conflict/order rules,
+  with missing requirements, direct findings and bounded catalog cycle witnesses.
+  Includes original examples, strict schemas and public suggestion links.
 - [MO2 Profile Change Report](tools/mo2-profile-change-report/README.md):
   compare explicit saved modlists for additions, removals, enablement and relative
   reordering. Separators and foreign entries are reported separately, with

@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4207,
-      "sha256": "1428257dc9f9c10d29dcafd438571d158c7e1e78831100418622e6b3291a3f59"
+      "bytes": 4253,
+      "sha256": "5b1c74f0de001ba1f511306bca39716e2de374db4bfa544cdf3160b3bf94866d"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 7461,
-      "sha256": "6d646b3c3638b8fc16f103c5b1cb91605379f50a6afd5e235580ff5881ab4269"
+      "bytes": 7668,
+      "sha256": "932fd01d7961cc8bec0b12353be870e1b08ee1b1a5a95acfa77eda741072b374"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 12403,
-      "sha256": "43eb42b0d6a7752b1cdb7781f05fad3f6f77fe902f2abb9a034d9327c2cd3416"
+      "bytes": 13307,
+      "sha256": "036ebe2f1fc98e111855b5ff1d3453d82ad24119a9c0440c82e7e2f6e2eede96"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 15275,
-      "sha256": "f435b9a1eef6bac9a7e69ae288638a9aeb0bc0051e457deb4ba28347f29d1ffd"
+      "bytes": 15630,
+      "sha256": "9349733a53102b57573a58825c83899adb15ba75a913e13c30f48c29c4ecbe85"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7656,
-      "sha256": "41a9094170b6761f8569afb65e79f473589834f002e8759cf2a6fe3791088189"
+      "bytes": 7842,
+      "sha256": "d035dd2ad21a796660306e9cd5ccfa9229262d52aaeb07624ee3b891175284c9"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 11234,
-      "sha256": "98f2f3989d4b61d699951396ce0bd382379359a4bfab3a25e4401770a6dcbdbd"
+      "bytes": 11643,
+      "sha256": "4c88e450b02b90146a497929d76e89901cf7d5aaa5a13a070a106bebb6858450"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 8392,
-      "sha256": "7f02c7a22a8553d7028ec9cab6f028a06de2f22f828c70e3a402f4ebc1c5801a"
+      "bytes": 8855,
+      "sha256": "8739c2ad72f6e16a92afd06ba2c43fe9ef2d4ce9e0591360bd77dff47abce237"
     },
     {
       "path": "README.md",
-      "bytes": 9859,
-      "sha256": "0d9cc8bd78b8ea947d94d96c6c6ddf6b79b8a2cede2ab98ffeba110c5e5d036a"
+      "bytes": 10187,
+      "sha256": "d7474b7567e8681fefac50152423fb130db5120902574dd323cfcb5fbe97e0a4"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 13336,
-      "sha256": "62714e6ba5a96aa8c632ba73dab573425987b1a72866ee58b8e89b9f66156edd"
+      "bytes": 14150,
+      "sha256": "42867eac7ca828bf082adef2c2ddbfb0672b3fa80a8f6628c7b533a6fad42447"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -888,6 +888,41 @@
       "sha256": "176844556fe4a5f58f36682f03af63150275f971bbd22d0b9f78fab1345c3fd0"
     },
     {
+      "path": "tools/offline-mod-dependency-checker/dependency_checker.py",
+      "bytes": 18096,
+      "sha256": "457d9a542bef7adb0b725d6b6fd134c9a8240800bd32a018b2d7b51ff9961237"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/examples/create_example.py",
+      "bytes": 1838,
+      "sha256": "50e69d0753b3e31932faa34207ace9287e92b85360940534893e8dd3e23ad2eb"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/examples/README.md",
+      "bytes": 2376,
+      "sha256": "3d820fbaa71e15dc8d24a1e59d2938aa93bcd07675690dd5b3659d5968bf7768"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/README.md",
+      "bytes": 9759,
+      "sha256": "6b786dd900b5286ad27a6c4531c50aa12ee79e87db3f40bef7ddf28a590830e7"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/REPORT-FORMAT.md",
+      "bytes": 5675,
+      "sha256": "08217e3c692b9c3ae0b14f5c3bafe43b28f76501f71afb3a9f6929e0da3b9cab"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/RULES-FORMAT.md",
+      "bytes": 3730,
+      "sha256": "de6bff2466f35f250ab8ce2805ac780f356298bed18cbadbd7ae12255b2a981c"
+    },
+    {
+      "path": "tools/offline-mod-dependency-checker/tests/test_dependency_checker.py",
+      "bytes": 21370,
+      "sha256": "f6e2a3244b0f8919353218d0847a2b18f0c7be372b4bb3055c939ae760a854c7"
+    },
+    {
       "path": "tools/process-exit-observer/README.md",
       "bytes": 1746,
       "sha256": "5f3220fa893ab903f1e00abde9bd6d9be18eb7fc8784f4126bcd3c902e81c163"
@@ -1059,8 +1094,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 19532,
-      "sha256": "9e599bdb4e5cebe1af8327507fcf7e86775a5348904879a28104717b3e5c0431"
+      "bytes": 20858,
+      "sha256": "fc8723644a1420c701c42ada79009237ef25a5259b8e2a0cf2739b766a7e909e"
     }
   ]
 }

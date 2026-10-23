@@ -195,3 +195,14 @@ real profile, game/mod payload or separate AGPL companion code is included.
 Python remains separately installed under its own license. Inspected modlist
 names and report hashes retain their own privacy and rights requirements;
 comparisons do not authenticate an installation or grant asset redistribution.
+
+Offline Mod Dependency Rule Checker is original Python standard-library source,
+tests, documentation and fictional JSON example generation under the root MIT
+license. Existing collection filesystem/read/report guards are reused. Inventory
+and rule schemas, direct checking and iterative cycle-group/witness analysis are
+original implementations; no third-party graph/parser library, compatibility
+database, game/mod data, real profile or separate AGPL source is incorporated.
+JSON behavior was checked against [Python 3.12 documentation](https://docs.python.org/3.12/library/json.html).
+Python remains separately installed under its own license. Authored rules and
+names retain their own rights/privacy requirements; an offline check does not
+verify those assertions or establish actual game/asset compatibility.

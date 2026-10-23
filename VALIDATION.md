@@ -26,6 +26,24 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Offline Mod Dependency Rule Checker 1.0.0 (2026-10-23): 42 original
+  synthetic cases on Windows Python 3.12.14; 40 passed and 2 native symlink/
+  junction fixtures explicitly skipped because local creation is denied.
+  Covers direct requires/conflicts/order semantics, separate inactive/active
+  catalog context, cycle groups/witnesses, self rules, duplicate/unknown fields,
+  strict JSON/depth/encoding, resource ceilings, input preservation and guarded
+  exclusive reports. Independent reachability checks all 512 three-name directed
+  graphs, including self edges, and verifies each witness against authored edges;
+  100 seeded direct-evaluation cases and a 1,500-name chain/cycle also pass.
+  A private review passed 2,102 additional mutation/resource/mixed-graph cases,
+  including 100 independent mixed-graph oracles and a 10,000-rule/10,000-name
+  cycle. The maximum-cycle report stayed below 4.1 MiB; an actual CLI Unicode
+  expansion case hit the fixed report ceiling and returned sanitized incomplete
+  JSON with no inventories. Generated clean/review examples return exits 0/2.
+  Windows/Linux Python 3.12/3.13 CI runs the same suite, declaring unavailable
+  native fixtures. No game installation, manager, profile or compatibility
+  database was accessed, changed or validated. No runtime compatibility claim.
+
 - MO2 Profile Change Report 1.0.0 (2026-10-23): 43 original synthetic cases
   on Windows Python 3.12.14; 41 passed and 2 native symlink/junction fixtures
   explicitly skipped because local creation is denied. Covers added/removed

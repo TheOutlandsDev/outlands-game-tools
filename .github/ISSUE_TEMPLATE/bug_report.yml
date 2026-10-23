@@ -30,6 +30,7 @@ body:
         - Save Snapshot Verifier
         - MO2 Baseline Profile Builder
         - MO2 Profile Change Report
+        - Offline Mod Dependency Rule Checker
         - X-Ray Log Summary
         - LTX Definition Inspector
         - Mod Content Manifest & Diff

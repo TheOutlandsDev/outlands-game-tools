@@ -144,6 +144,9 @@ jobs:
       - name: Check MO2 Profile Change Report with fictional saved modlists
         working-directory: tools/mo2-profile-change-report
         run: python -B -m unittest discover -s tests -v
+      - name: Check Offline Mod Dependency Rules with fictional inventories and graphs
+        working-directory: tools/offline-mod-dependency-checker
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:

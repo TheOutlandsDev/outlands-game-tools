@@ -1,5 +1,19 @@
 # Changes
 
+## Offline Mod Dependency Rule Checker 1.0.0 - 2026-10-23
+
+- Added original offline checking of explicit active-order JSON and authored
+  requires/conflicts/load-before rules. Reports missing requirements, mutual
+  active conflicts and strict ordering violations without changing inputs.
+- Separately analyzes full requirement/order catalogs for cyclic strongly
+  connected groups with bounded witnesses. Requirement cycles are advisory;
+  inactive catalog cycles still request review, with selected members listed.
+- Added strict schemas/duplicate policies, guarded bounded JSON and reports,
+  original examples, independent graph/evaluation oracles, detailed instructions,
+  suggestion links and Windows/Linux Python 3.12/3.13 CI. Original MIT source on
+  main after v0.1.0; no compatibility database, real profile, game/mod payload,
+  third-party graph/parser implementation or AGPL source included.
+
 ## MO2 Profile Change Report 1.0.0 - 2026-10-23
 
 - Added original read-only comparison of two explicit saved MO2 modlist files,
