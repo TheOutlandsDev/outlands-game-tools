@@ -132,6 +132,9 @@ jobs:
       - name: Check Mod Asset Reference Checker with original synthetic files
         working-directory: tools/mod-asset-reference-checker
         run: python -B -m unittest discover -s tests -v
+      - name: Check INI and LTX Configuration Value Diff with original file pairs
+        working-directory: tools/ini-ltx-value-diff
+        run: python -B -m unittest discover -s tests -v
   xml-portability:
     strategy:
       matrix:

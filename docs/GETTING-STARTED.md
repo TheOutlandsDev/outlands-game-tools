@@ -11,6 +11,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Compare literal INI/LTX settings between two files | [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md) | Current main source; Python 3.12+ standard library. Explicit syntax/case/duplicate policies; default value fingerprints. Does not load includes, interpolate settings or compute inherited values. |
 | Check literal LTX asset paths and selected section references | [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md) | Current main source; Python 3.12+ standard library. Missing loose files have unknown coverage by default. Direct declarations only, without merging inherited values or DLTX. |
 | Explain changes between two XML mod configuration files | [XML Mod Configuration Diff](../tools/xml-config-diff/README.md) | Current main source, added after v0.1.0. Needs Python 3.12+ with Expat 2.7.2+. Conservative identity matching; optional values can disclose settings. |
 | Compare selected mod file contents between folders or MO2 profiles | [Mod Content Manifest & Diff](../tools/mod-content-manifest/README.md) | Creates SHA-256 manifests and compares compatible selections. No live-file authentication or engine/multiplayer compatibility guarantee. |

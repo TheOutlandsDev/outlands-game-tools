@@ -8,6 +8,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 
 | Group | Selected source | Publication changes |
 |---|---|---|
+| INI/LTX configuration value diff | Fresh original Python standard-library implementation within the MIT collection | Explicit file pairs, literal syntax, declared case/comment/duplicate policies, bounded comparisons and original generated fixtures. Existing MIT filesystem/report patterns informed guards; no game configuration, third-party parser, private patch or AGPL implementation copied. |
 | Mod asset reference checker | Fresh original Python standard-library implementation | Prior local static checks informed the use case only. Explicit LTX selection and literal rules, declared coverage, data-only path indexes, bounded lookups and original synthetic fixtures; no surrounding game/mod patches or payloads copied. |
 | XML mod configuration diff | Fresh original Python standard-library implementation | A prior local XML comparison use case informed requirements; no private helper implementation, game XML, downloaded mod or AGPL code is incorporated. Explicit file pair, bounded guarded parsing, conservative matching, default value fingerprints and original generated fixtures. |
 | SPT diagnostics and telemetry | Locally authored client plugins and PowerShell summarizers | External dependency paths parameterized; builds no longer install by default; privacy and synthetic tests documented. |

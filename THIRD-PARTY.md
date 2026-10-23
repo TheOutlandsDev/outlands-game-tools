@@ -141,3 +141,17 @@ loader, apply DLTX, inspect packed archives or establish engine compatibility.
 Files and path indexes supplied by a user retain their own rights and privacy
 requirements. Listing a path or finding a loose file does not grant permission
 to redistribute its content or prove it is a valid asset.
+
+INI/LTX Configuration Value Diff is fresh original Python standard-library
+source within this MIT collection. Its code, documentation, tests and generated
+toy examples use the root MIT license. Existing collection path/report patterns
+informed safeguards; no third-party parser, game configuration, private patch
+implementation or separate AGPL companion source is incorporated.
+
+Primary [Python configuration-parser documentation](https://docs.python.org/3/library/configparser.html)
+and [OpenXRay loader source](https://github.com/OpenXRay/xray-16/blob/dev/src/xrCore/xr_ini.cpp)
+were consulted for format context. Their implementation is not copied. The tool
+uses an explicitly documented literal parser, with no ConfigParser default
+inheritance, interpolation or engine value resolution. Inspected files and
+exported values retain their own terms and privacy requirements. Python remains
+a separately installed runtime under its own license.

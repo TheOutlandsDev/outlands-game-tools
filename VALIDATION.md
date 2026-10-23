@@ -26,6 +26,22 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- INI/LTX Configuration Value Diff 1.0.0 (2026-10-23): 47 original
+  generated-fixture cases on Windows Python 3.12.14; 45 passed and 2 native
+  symlink/junction fixtures were explicitly skipped because the local sandbox
+  denied creation. Tests cover literal section/key changes, empty values,
+  ordered LTX parent context, globals and ordinary DEFAULT sections, case and
+  duplicate-key policies, comments/quotes, independent strict encodings,
+  fingerprints and opt-in values, source preservation, error locations,
+  exclusive output and resource bounds. Independent generated review passed
+  82 additional CLI cases against the same source hash. Per-parent accounting
+  and a fixed parent-count ceiling bound large declarations before retention;
+  unsupported syntax and limits clear partial differences. Original INI and
+  LTX examples return complete difference exit 2; no settings are evaluated,
+  includes loaded or inherited/default values materialized. Windows/Ubuntu
+  Python 3.12/3.13 CI exercises generated inputs only. No actual game config,
+  mod pack, MO2 VFS or runtime settings behavior was tested; macOS remains
+  unverified. See the [module guide](tools/ini-ltx-value-diff/README.md).
 - Mod Asset Reference Checker 1.0.0: 52 original generated-fixture cases on
   Windows Python 3.12.14; 48 passed and 4 native link/case fixtures were
   explicitly skipped because this filesystem/account could not create them.

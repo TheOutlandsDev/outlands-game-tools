@@ -35,6 +35,7 @@ body:
         - Verified Source Release Builder
         - XML Mod Configuration Diff
         - Mod Asset Reference Checker
+        - INI/LTX Configuration Value Diff
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

@@ -1,5 +1,20 @@
 # Changes
 
+## INI/LTX Configuration Value Diff 1.0.0 - 2026-10-23
+
+- Added an original read-only comparison of explicit INI/LTX file pairs for
+  literal section/key additions, removals and changed values. LTX parent lists
+  are compared as declaration context without computing inherited values.
+- Defines case matching, duplicate-key handling, comments and per-input
+  encoding policies. Values are fingerprinted by default; exporting their
+  literal text requires `--include-values`. Includes, DLTX and unsupported
+  syntax make comparison incomplete rather than producing an equality claim.
+- Added bounded parsing/comparison/reports, guarded new output, original
+  generated examples, detailed instructions/report documentation, public
+  suggestion links and Windows/Ubuntu Python 3.12/3.13 tests.
+- Current main source after v0.1.0; no game configuration, third-party parser,
+  engine implementation or AGPL companion source is included.
+
 ## Mod Asset Reference Checker 1.0.0 - 2026-10-22
 
 - Added an original read-only checker for literal references in explicitly

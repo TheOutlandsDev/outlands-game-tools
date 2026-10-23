@@ -22,6 +22,11 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md)
+  with its original file pairs. Suggest clearer case/comment/duplicate policies
+  or small original syntax edge cases. Use fictional settings and review
+  fingerprints or exported values before sharing; effective game values and
+  include/DLTX evaluation require a separate design.
 - Try the [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md)
   with its fictional loose files and path index. Suggest clearer coverage wording,
   literal key mappings or small original parsing edge cases. Archive presence,

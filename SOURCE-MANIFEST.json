@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "bytes": 4140,
-      "sha256": "5b51a2cbae61c698d7a55cb03717e64930a8f71d4804372ac47da28b0e8cba37"
+      "bytes": 4184,
+      "sha256": "6c002758d8dad8403a884c97c7a858fbd10400d9c7b9a8e30bdc2f39762f035e"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 6702,
-      "sha256": "da977c5e2dbbf04e8845e764438fa96bf6d9636cfe01eb2b26e8a49289317576"
+      "bytes": 6892,
+      "sha256": "f3f75ce7c3c5a6dd71bc0b316e0180029e9442cb9cd3d233a96c31e346e04a48"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 8839,
-      "sha256": "e992c97bdad9b80ff7577eeb0f6d4243c620e1d0443c53f214411f3a0010ed75"
+      "bytes": 9772,
+      "sha256": "ae86c2678bb4c9e06ff4522ae68ed129be0cb358a33e1bead83149a5aabf966c"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/GETTING-STARTED.md",
-      "bytes": 14130,
-      "sha256": "de6c469a0ca180cc3133d003e3344b0dd67142b36f3701a6f27b238a8234ea4f"
+      "bytes": 14459,
+      "sha256": "6e92047138a57e351394ae604f0ee4570d186f4ac79b817d7e856ad9269a25b5"
     },
     {
       "path": "docs/QUICK-START.md",
-      "bytes": 7116,
-      "sha256": "46873b73d23b0bd7cf0e7ac69bab572d257cfb3945cc6266a20f324dc5076595"
+      "bytes": 7255,
+      "sha256": "5fbf7cb713c447c831aa439f4b3a0b110d148bc5b3872f21194ed7b73df67897"
     },
     {
       "path": "docs/RELEASING.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "bytes": 9959,
-      "sha256": "d95c0527d322174041732fa4545eb5c484c0c95e891aab18981a5fe10872410d"
+      "bytes": 10326,
+      "sha256": "9589cc79d5a54ee70efd9d58506d845e330302cbf3d51df5964b2029fa7a8cfc"
     },
     {
       "path": "LICENSE",
@@ -74,13 +74,13 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 6710,
-      "sha256": "819fc8123ebdcb657c8e61bfb0a63a1692065a75f3fd7bccd76c1524d0507c7e"
+      "bytes": 7108,
+      "sha256": "8ed3d4e6cab31061ebec1dfd404cdacdcd5bb0c2b05f27b8e6107b46e795632e"
     },
     {
       "path": "README.md",
-      "bytes": 8623,
-      "sha256": "bcb7283397c405bf2db54e1610f04547a8880f9fd08ea0e7afe199378cb726ce"
+      "bytes": 8948,
+      "sha256": "c8c7db5ee050a560bfcbc145c006a93bd31c21881a884859efe7a68562dfc8ef"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +559,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 9442,
-      "sha256": "c59a4e577300e8902e5a11dd26827054da968d76fc598907bdb569a307081f4a"
+      "bytes": 10389,
+      "sha256": "a0dd1aa2aa6e6680bd342da6cca0fcd1be546f44110eda716ea42e8d4e69d6c0"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -611,6 +611,36 @@
       "path": "tools/game-tree-exporter/tests/test_export.py",
       "bytes": 5578,
       "sha256": "5ee28925cbdb50d78bc5ac33c436cfdfee35cce8976c5bfb1c6e6568da708778"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/config_value_diff.py",
+      "bytes": 20055,
+      "sha256": "eb40ab75dcd0340883a620e5e356966d15b241cfcdca1e2a2011c0f4b0d8cfc0"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/examples/create_example.py",
+      "bytes": 3379,
+      "sha256": "c9e177368f7820f4a2a8d0c1ed5e347627f3d0bc69f1661dc0fbfa860409beae"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/examples/README.md",
+      "bytes": 1801,
+      "sha256": "95e05f294dba49027c12252561b38df9af6efd6320264d8bc18b74e9d511f0c8"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/README.md",
+      "bytes": 11605,
+      "sha256": "2647adf03bb6634960b43dd39ebdccf211d72b9284ed0f1dfc0b124d56a7dae8"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/REPORT-FORMAT.md",
+      "bytes": 5353,
+      "sha256": "7f415abd7122f58fc5c468bf7839f40e1556782a180f8dfc2affd79144d25d04"
+    },
+    {
+      "path": "tools/ini-ltx-value-diff/tests/test_config_value_diff.py",
+      "bytes": 27167,
+      "sha256": "9c55a4f15b3da93e4d2b2403cfa48ff4301b1226d7fd6b44df982e55a3959745"
     },
     {
       "path": "tools/ltx-definition-inspector/examples/create_example.py",
@@ -939,8 +969,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 14575,
-      "sha256": "5fe39f78ac05b9ffeb244747940f07a1e0a1dc317e4a6958f0b533ae855645ed"
+      "bytes": 15780,
+      "sha256": "261a1844401fc9c8507ce4c6dd1d9a5ff5be173aad0229a6611aa1e9bd9ab4ff"
     }
   ]
 }

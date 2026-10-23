@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [INI/LTX Configuration Value Diff](tools/ini-ltx-value-diff/README.md): compare
+  literal section/key values in an explicitly selected file pair. Defined case,
+  comment, encoding and duplicate-key policies; values hidden by default. Current
+  main source; no interpolation, include loading or effective-value calculation.
 - [Mod Asset Reference Checker](tools/mod-asset-reference-checker/README.md):
   inspect literal LTX mesh references, optional file-key mappings and selected
   section references. Separates loose-file presence, index listings and unknown
