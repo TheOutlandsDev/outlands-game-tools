@@ -219,3 +219,24 @@ and [UTC datetime handling](https://docs.python.org/3.12/library/datetime.html).
 Python remains separately installed under its own license. Evidence files,
 manifest assertions and relative report names retain their own rights/privacy
 requirements. Hash agreement does not authenticate a collector or attest gameplay.
+
+Bounded Evidence Manifest Verifier preserves an existing original AI-assisted
+educational sample, its 16 synthetic tests and fictional text/manifest fixtures.
+The owner authorized MIT publication after review; its previous owner-review
+status did not grant a license by itself. Minimal publication changes add
+platform handling, regression coverage, instructions and notices. See the
+tool's [source provenance](tools/bounded-evidence-manifest-verifier/PROVENANCE.md).
+No external implementation, real evidence, private development records, game
+assets or AGPL source is included. Python is a separately installed runtime
+under its own terms. Verified files and manifest assertions retain their own
+rights/privacy requirements; matching hashes do not authenticate the author.
+
+.NET Assembly Inspector adapts an existing original AI-assisted standalone
+metadata helper using framework `PEReader`/`System.Reflection.Metadata` APIs.
+Its source, authored synthetic fixture source, tests and documentation use MIT;
+see its [source origin](tools/dotnet-assembly-inspector/ORIGIN.md). No adjacent
+game/rebuild implementation, inspected third-party assembly, private metadata
+report, package source or AGPL implementation is included. The separately
+installed .NET SDK/framework retain their own terms. Inspecting an assembly
+does not grant rights to publish its code, identifiers, embedded strings or
+derived report; review reports before sharing them.

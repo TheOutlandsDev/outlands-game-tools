@@ -60,10 +60,12 @@ class ReleaseTests(unittest.TestCase):
         (self.root / "bin" / "game.dll").write_bytes(b"not distributed")
         self.assertNotIn("bin/game.dll", [row["path"] for row in MODULE.inspect(self.root)])
 
-    def test_only_reviewed_requirements_path_is_allowed(self):
+    def test_only_reviewed_text_paths_are_allowed(self):
         for relative, content in (("tools/lua-syntax-checker/requirements.txt", "lupa==2.8\n"),
                                   ("tools/audio-integrity-checker/requirements.txt",
-                                   "soundfile==0.13.1\nnumpy==2.2.6\n")):
+                                   "soundfile==0.13.1\nnumpy==2.2.6\n"),
+                                  ("tools/bounded-evidence-manifest-verifier/examples/files/sample.txt",
+                                   "synthetic evidence\n")):
             requirements = self.root / relative
             requirements.parent.mkdir(parents=True)
             requirements.write_text(content, encoding="utf-8")

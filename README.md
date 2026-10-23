@@ -85,6 +85,13 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Bounded Evidence Manifest Verifier](tools/bounded-evidence-manifest-verifier/README.md):
+  check a small flat directory against explicit file sizes and SHA-256 hashes.
+  Existing educational sample with synthetic fixtures; Linux/POSIX verification
+  only, with explicit native Windows refusal and documented trust limits.
+- [.NET Assembly Inspector](tools/dotnet-assembly-inspector/README.md): read one
+  managed PE assembly's metadata and emit bounded JSON without loading or
+  executing it. Requires the .NET 9 SDK; reports may contain inspected literals.
 - [Game Session Evidence Auditor](tools/game-session-evidence-auditor/README.md):
   verify selected captured-file sizes/hashes and generic launch/exit receipt
   consistency, with redacted metadata, explicit coverage and original examples.

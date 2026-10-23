@@ -229,7 +229,9 @@ class SourceReleaseTests(unittest.TestCase):
                 self.refusal("source_path_excluded")
 
     def test_binary_extensions_rejected(self):
-        for name in ["game.exe", "audio.ogg", "save.dat", "archive.zip", "diagnostic.log", "requirements.txt"]:
+        for name in ["game.exe", "audio.ogg", "save.dat", "archive.zip", "diagnostic.log", "requirements.txt",
+                     "sample.txt", "tools/another-tool/examples/files/sample.txt",
+                     "tools/bounded-evidence-manifest-verifier/examples/files/unreviewed.txt"]:
             with self.subTest(name=name):
                 self.value["files"][0]["path"] = name
                 self.write_manifest()
@@ -239,6 +241,13 @@ class SourceReleaseTests(unittest.TestCase):
         path = self.root / "tools" / "lua-syntax-checker" / "requirements.txt"
         path.parent.mkdir(parents=True)
         path.write_text("lupa==2.6\n", encoding="utf-8")
+        self.record()
+        self.assertEqual("PASS", self.build()["status"])
+
+    def test_exact_reviewed_synthetic_text_fixture_is_supported(self):
+        path = self.root / "tools" / "bounded-evidence-manifest-verifier" / "examples" / "files" / "sample.txt"
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b"synthetic evidence\n")
         self.record()
         self.assertEqual("PASS", self.build()["status"])
 

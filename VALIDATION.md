@@ -26,6 +26,28 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Bounded Evidence Manifest Verifier (2026-10-23): Linux WSL Python 3.10.12
+  passed 18 of 19 synthetic cases, with one Windows-only rejection check skipped.
+  All 16 original verifier cases passed and their test bodies remain unchanged.
+  Windows Python 3.12 passed three platform-rejection cases and explicitly
+  skipped the 16 POSIX file-verification cases; those skips do not validate
+  native Windows hashing. The included fictional example passed on Linux, and
+  both example files remain byte-identical to the reviewed original archive.
+  The standalone CI matrix includes the suite on Windows/Ubuntu Python 3.12/3.13.
+  Linux verification is the supported use; other POSIX systems remain unverified.
+  No actual evidence, game files or private data was used. Matching supplied
+  hashes does not authenticate the manifest, prove custody or detect extra files.
+
+- .NET Assembly Inspector 1.0.0 (2026-10-23): local Windows synthetic integration
+  tests build only this standalone helper and original authored fixture source
+  with the .NET 9.0.310 SDK and Python 3.12. All 19 cases passed, including
+  malformed user-string framing, a well-formed oversized decoded value and
+  JSON expansion beyond the output limit without partial stdout. Inspected
+  test fixtures are read as PE data without assembly loading or entry-point execution. No
+  actual game/vendor assembly, dependency package, private metadata dump or
+  game runtime was used. Windows/Ubuntu CI builds and runs the same original
+  fixtures; Linux execution remains unverified at this local stage.
+
 - Game Session Evidence Auditor 1.0.0 (2026-10-23): 43 original synthetic
   cases on Windows Python 3.12.14; 41 passed and 2 native symlink/junction
   fixtures explicitly skipped because local creation is denied. Covers binary

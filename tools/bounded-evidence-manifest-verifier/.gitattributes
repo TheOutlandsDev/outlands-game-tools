@@ -1,0 +1,2 @@
+# Preserve the synthetic fixture's byte-exact LF contents on every platform.
+examples/files/sample.txt -text

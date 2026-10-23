@@ -32,6 +32,8 @@ body:
         - MO2 Profile Change Report
         - Offline Mod Dependency Rule Checker
         - Game Session Evidence Auditor
+        - Bounded Evidence Manifest Verifier
+        - .NET Assembly Inspector
         - X-Ray Log Summary
         - LTX Definition Inspector
         - Mod Content Manifest & Diff

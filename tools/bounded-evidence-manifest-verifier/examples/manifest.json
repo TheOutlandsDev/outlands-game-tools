@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "name": "sample.txt",
+      "size": 19,
+      "sha256": "b781ca4e3efcbf31178927825de855f45b7e52f0d652af03cfb236785de2fe48"
+    }
+  ]
+}

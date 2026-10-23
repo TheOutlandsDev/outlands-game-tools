@@ -25,7 +25,8 @@ SUFFIXES = {".md", ".py", ".cs", ".csproj", ".ps1", ".json", ".yml", ".yaml",
             ".config", ".html", ".js", ".css", ".cfg", ".gsc", ".csv"}
 SPECIAL = {"LICENSE", ".gitignore", ".gitattributes"}
 SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt",
-                 "tools/audio-integrity-checker/requirements.txt"}
+                 "tools/audio-integrity-checker/requirements.txt",
+                 "tools/bounded-evidence-manifest-verifier/examples/files/sample.txt"}
 EXCLUDED_PARTS = {".git", ".audit", ".validation", ".venv", "bin", "obj", "__pycache__",
                   ".pytest_cache", ".vs", "node_modules", "artifacts"}
 DEVICE = re.compile(r"(?:CON|PRN|AUX|NUL|CONIN\$|CONOUT\$|CLOCK\$|COM[1-9]|LPT[1-9]) *(?:\..*)?\Z", re.I)

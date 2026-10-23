@@ -150,6 +150,29 @@ jobs:
       - name: Check Game Session Evidence Auditor with original fictional captures
         working-directory: tools/game-session-evidence-auditor
         run: python -B -m unittest discover -s tests -v
+      - name: Check Bounded Evidence Manifest Verifier and explicit platform refusal
+        working-directory: tools/bounded-evidence-manifest-verifier
+        run: python -B -m unittest discover -s tests -v
+  assembly-portability:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '9.0.x'
+          skip-lts-prepass: true
+      - name: Check static assembly inspector with original synthetic assemblies
+        run: python -B -m unittest discover -s tools/dotnet-assembly-inspector/tests -v
   xml-portability:
     strategy:
       matrix:

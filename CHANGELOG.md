@@ -1,5 +1,16 @@
 # Changes
 
+## Unreleased
+
+- Prepared the existing Bounded Evidence Manifest Verifier under MIT, retaining
+  its original 16 synthetic tests, flat manifest format and bounded no-follow
+  reads. Added explicit unsupported-platform handling, platform regressions,
+  detailed instructions, source provenance and public suggestion links.
+- Prepared the existing original .NET Assembly Inspector under MIT with
+  bounded static metadata/IL JSON, controlled errors, synthetic fixtures,
+  detailed commands and provenance/privacy limits. No inspected assemblies,
+  game data or generated private reports are included.
+
 ## Game Session Evidence Auditor 1.0.0 - 2026-10-23
 
 - Added original read-only auditing of explicit captured-file manifests and
