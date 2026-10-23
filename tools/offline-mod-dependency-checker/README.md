@@ -167,7 +167,7 @@ JSON depth, resource limits, guarded output and input preservation. CI runs
 Windows/Linux on Python 3.12/3.13, declaring unavailable native link fixtures.
 See [validation](../../VALIDATION.md).
 
-[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_request.yml)
+[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_or_suggestion.yml)
 or [report a bug](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=bug_report.yml).
 Suggestions and questions are welcome without a code contribution. Select this
 tool in the bug form; include OS/Python/tool versions, the relevant rule IDs,

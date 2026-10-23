@@ -1,5 +1,70 @@
 # Release preparation checks
 
+## Local v0.2.0-rc.1 candidate
+
+This candidate includes all nineteen standalone utilities from the pinned main
+snapshot and carries the source-inventory correction from v0.1.1-rc.1 forward.
+The eight newer utility implementations and SPT code are unchanged from main.
+The asset-reference test checks filesystem case capability, four guide links are
+corrected, and the setup/release directions cover this complete candidate.
+The existing license/dependency/provenance boundaries are unchanged.
+
+### Current local checks
+
+The sixteen standard-library Python tool suites and nineteen publication-gate
+cases were checked with original generated fixtures on Linux CPython 3.12.14.
+XML used the actual Expat 2.8.3 runtime, above its independent 2.7.2 floor.
+Each suite is counted once; graph/permutation oracles inside a test case are not
+reported as additional unit-test cases. The changed asset fixture received its
+own candidate rerun rather than relying only on the unmodified main test file.
+
+| Scope | Collected | Passed | Skipped |
+|---|---:|---:|---:|
+| Eight retained standard-library tool suites | 288 | 283 | 5 |
+| Eight newer standard-library tool suites | 376 | 368 | 8 |
+| Publication gate | 19 | 19 | 0 |
+| Total distinct suite cases | 683 | 670 | 13 |
+
+All thirteen skips are Windows-native junction fixtures on this Linux host.
+The case-only asset fixture ran on this filesystem; its new guard reports a skip
+when the two names identify the same file. This does not establish behavior on
+an untested filesystem. Source/test payloads were checked for preservation;
+only reviewed candidate edits enter the rebuilt manifest.
+
+The Lua/audio dependencies are not installed in this local review runtime and
+were not installed for this pass. Their suites and PowerShell/SPT checks were
+not re-executed locally. No game, live profile, save, log or service was used.
+Original examples choose new paths outside the checkout and live installations;
+example generators differ in whether they enforce that boundary themselves.
+
+### Upstream main CI and the remaining release gate
+
+The pinned upstream main revision
+`43a4a775f6adfbb0538950d38f8e26fb8f8b4a89` passed all **20 jobs** in
+[run 40006879132](https://github.com/TheOutlandsDev/outlands-game-tools/actions/runs/40006879132).
+The seven newer non-XML tools run in Windows/Ubuntu Python 3.12/3.13 matrices.
+XML has Windows Python 3.13 and Ubuntu Python 3.12/3.13 jobs with an actual
+Expat >=2.7.2 gate; no Windows 3.12 XML or macOS result is claimed.
+That exact main run includes the older source verifier and is upstream evidence,
+not a successful CI run for the local candidate's later edits.
+
+The candidate adds source-inventory verification and the nineteen gate tests to
+the existing standalone matrix so both Windows and Linux cover inventory order.
+Require passing hosted CI on the exact final candidate revision before
+publication, including the existing Lua/audio and PowerShell/source jobs.
+Release publication is a separate owner decision after matching the tested
+revision to the reviewed custom ZIP and checksum. Use that release checkpoint
+for current hosted results; this source section records the local checks above.
+Local checks and source-archive readback do not establish gameplay, multiplayer,
+restoration, current engine integration, authorship or production acceptance.
+
+## Retained historical validation notes
+
+The following notes are preserved from the pinned main snapshot. Their earlier
+Windows compilation, private deterministic reviews and per-tool observations
+were not repeated by the current local pass. They describe their stated sources
+and environments and do not establish acceptance for later candidate edits.
+
 Prepared on Windows, 2026-10-22. The installed games and original project sources
 were not modified. Private source-hash receipts remain outside the release tree.
 

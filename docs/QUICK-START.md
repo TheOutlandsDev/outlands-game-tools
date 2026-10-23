@@ -1,60 +1,51 @@
 # Download and try one tool
 
-The [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
-is the first tagged collection download. It contains original source, tests,
-generated-example scripts and documentation under the root MIT license. It
-contains no installed games, upstream mod payloads, saves, real logs, compiled
-plugins or native Python dependency wheels. It is an experimental source kit;
-the version does not establish gameplay compatibility for every module.
+**v0.2.0-rc.1 review candidate.** Use the reviewed custom ZIP and checksum
+supplied together for review. Confirm public download availability on the
+[release list](https://github.com/TheOutlandsDev/outlands-game-tools/releases).
+The earlier published
+[v0.1.1-rc.1 source prerelease](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.1-rc.1)
+contains eleven tools; this candidate contains all nineteen.
 
-**New on main after v0.1.0:**
+The eight additions cover XML and INI/LTX comparisons, literal asset references,
+PAK and ZIP metadata, saved MO2 changes, authored dependency rules and captured
+session evidence. Source, tests, original example generators and documentation
+are included under the existing license boundaries. Game/mod payloads, real
+profiles/saves/logs, compiled plugins and installed dependency wheels are absent.
 
-- [XML Mod Configuration Diff](../tools/xml-config-diff/README.md): compare selected XML files.
-- [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md): inspect supported literal LTX references.
-- [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md): compare stored literal settings.
-- [Unreal PAK Index & Conflict Inspector](../tools/unreal-pak-inspector/README.md): inspect supported version-3 index metadata and overlaps.
-- [Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md): review supported classic ZIP metadata without extraction.
-- [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md): explain saved modlist additions, removals, states and relative ordering.
-- [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md): check authored presence/conflict/order rules and catalog cycles against explicit JSON inputs.
-- [Game Session Evidence Auditor](../tools/game-session-evidence-auditor/README.md): verify selected captured files and generic launch/exit receipt consistency.
+## Verify and extract the review package
 
-Download current main with **Code → Download ZIP** for these additions; they are
-absent from the v0.1.0 assets. Follow each module's requirements and original
-example. XML comparison has an additional Expat version check; the other new
-checkers listed here use only the Python standard library.
-The tagged download instructions below still apply to the v0.1.0 snapshot.
+Keep these exact companion assets together:
 
-## Download and verify
+- `outlands-game-tools-v0.2.0-rc.1-source.zip`
+- `outlands-game-tools-v0.2.0-rc.1-source.zip.sha256`
 
-Open the release page and download both custom assets:
-
-- `outlands-game-tools-v0.1.0-source.zip`
-- `outlands-game-tools-v0.1.0-source.zip.sha256`
-
-GitHub also offers automatically generated source archives. The checksum above
-applies only to the specifically named custom ZIP, not those automatic archives.
-From PowerShell in your download folder:
+GitHub's automatic source archives are different containers and do not use the
+custom ZIP's checksum. From PowerShell in the folder containing both files:
 
 ```powershell
-$zip = 'outlands-game-tools-v0.1.0-source.zip'
+$zip = 'outlands-game-tools-v0.2.0-rc.1-source.zip'
 $expected = ((Get-Content -LiteralPath ($zip + '.sha256') -Raw) -split '\s+')[0]
 $actual = (Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash
-if ($actual -ne $expected) { throw 'ZIP checksum mismatch; do not use this download.' }
-Expand-Archive -LiteralPath $zip -DestinationPath '.\outlands-source-extracted'
-Set-Location '.\outlands-source-extracted\outlands-game-tools-v0.1.0'
+if ($actual -ne $expected) { throw 'ZIP checksum mismatch; do not use this package.' }
+Expand-Archive -LiteralPath $zip -DestinationPath '.\outlands-v020-review'
+Set-Location '.\outlands-v020-review\outlands-game-tools-v0.2.0-rc.1'
 py -3.12 -B tools\verify_source_release.py
 ```
 
-Use a new extraction folder outside games, saves and mod-manager folders.
-`py -3.12` means a separately installed Python 3.12 interpreter; Python 3.13
-is also tested. Use `python` after checking its version if you do not have the
-Windows launcher. Linux users can run `sha256sum -c` on the checksum file,
-extract the ZIP with their archive tool, and use `python3 -B` for commands.
+Choose a new extraction folder outside games, saves and mod managers. `py -3.12`
+means a separately installed Python 3.12 interpreter; use a checked `python`
+command if the launcher is unavailable. Linux users can run `sha256sum -c` on
+the checksum, extract the ZIP and use `python3 -B`. The XML tool separately
+requires Expat 2.7.2 or newer, regardless of Python version:
 
-A matching SHA-256 detects a difference from the published checksum. It does
-not authenticate the author if an attacker can replace both assets. The source
-manifest separately checks the selected unpacked files against reviewed hashes;
-neither check proves ownership or game compatibility.
+```sh
+python3 -c "import xml.parsers.expat as e; print(e.EXPAT_VERSION); assert e.version_info >= (2, 7, 2)"
+```
+
+A checksum detects a difference relative to the supplied value; it does not
+independently authenticate its publisher. The source inventory checks unpacked
+paths, lengths and full hashes. Neither check proves game compatibility.
 
 ## Choose the tool for the job
 
@@ -75,19 +66,31 @@ Read the linked module guide before selecting inputs or creating outputs.
 | List filtered folder/file metadata | [Game Folder Inventory](../tools/game-tree-exporter/README.md) | Python 3.12+; metadata only, without reading contents. |
 | Observe the native exit code of a process you start | [Process Exit Observer](../tools/process-exit-observer/README.md) | Windows PowerShell; does not start or stop the game. |
 | Build a reviewed source ZIP from its manifest | [Verified Source Release Builder](../tools/source-release-builder/README.md) | Python 3.12+; maintainer utility; source files only and new outputs. |
+| Compare XML structure and selected values | [XML Mod Configuration Diff](../tools/xml-config-diff/README.md) | Python 3.12+ and Expat 2.7.2+; namespace-aware comparison with conservative matching. No effective configuration or engine validation. |
+| Inspect literal LTX asset and section references | [Mod Asset Reference Checker](../tools/mod-asset-reference-checker/README.md) | Python 3.12+; distinguishes loose-file presence, supplied index listings and unknown coverage. No archive extraction or loader emulation. |
+| Compare stored INI/LTX settings | [INI/LTX Configuration Value Diff](../tools/ini-ltx-value-diff/README.md) | Python 3.12+; explicit file pairs, literal values hidden by default. No interpolation, include resolution or inherited-value calculation. |
+| Inspect version-3 PAK indexes and virtual overlaps | [Unreal PAK Index & Conflict Inspector](../tools/unreal-pak-inspector/README.md) | Python 3.12+; standard unencrypted v3 metadata only. No payload validation, extraction, decryption or load-order prediction. |
+| Inspect classic ZIP package layout | [Mod Package ZIP Layout Inspector](../tools/mod-package-zip-inspector/README.md) | Python 3.12+; bounded supported ZIP32 metadata. No extraction, decompression or payload-integrity claim. |
+| Explain saved modlist changes | [MO2 Profile Change Report](../tools/mo2-profile-change-report/README.md) | Python 3.12+; additions, removals, states and relative ordering in explicit saved files. No live MO2 or plugin/load-order acceptance. |
+| Check authored dependency and order rules | [Offline Mod Dependency Rule Checker](../tools/offline-mod-dependency-checker/README.md) | Python 3.12+; explicit JSON catalogs, presence/conflict/order findings and bounded cycle witnesses. No inferred compatibility database. |
+| Audit captured files and launch/exit receipts | [Game Session Evidence Auditor](../tools/game-session-evidence-auditor/README.md) | Python 3.12+; selected sizes, hashes and generic receipt consistency. No process observer, authenticity or gameplay attestation. |
 
 Each module includes its own commands and scope notes. The newer standalone
 tools include generators that create original toy files in a new external
-folder. Try those before supplying real data. Game files are unnecessary for
-the synthetic test suites. Run tests from the relevant tool directory:
+folder. Select a new destination outside the checkout and any live installation;
+example generators have different path guards. Try those before supplying real
+data. Game files are unnecessary for the synthetic test suites. Run tests from the relevant tool directory:
 
 ```powershell
 py -3.12 -B -m unittest discover -s tests -v
 ```
 
-Python 3.12/3.13 on Windows/Ubuntu are exercised in CI for the documented
-portability jobs. Native link/case fixtures have explicit platform skips.
-These checks do not establish macOS or engine/gameplay compatibility.
+The upstream main revision passed its documented Windows/Ubuntu CI jobs with
+Python 3.12/3.13. XML has Windows 3.13 and Ubuntu 3.12/3.13 jobs with an independent
+Expat gate. Before publication, require hosted CI for the exact final candidate revision;
+see [validation](../VALIDATION.md). Native link/case
+fixtures declare skips where unavailable. macOS and engine/gameplay acceptance
+remain unverified.
 
 ## SPT source modules
 

@@ -1,5 +1,21 @@
 # Changes
 
+## Collection v0.2.0-rc.1 local review candidate
+
+- Includes the eight newer main-branch utilities alongside the existing eleven:
+  XML and INI/LTX diffs, literal asset references, PAK and ZIP metadata, saved
+  MO2 changes, authored dependency rules and captured session evidence.
+- Retains the strict path/byte-count/hash inventory correction and all nineteen
+  publication-gate regressions from v0.1.1-rc.1. Existing utility implementations,
+  SPT sources, dependency pins and license boundaries are retained from main.
+- Makes the asset case-collision fixture check actual filesystem capability,
+  corrects four suggestion-form links, and updates the nineteen-tool setup table.
+- Adds source-inventory and gate checks to the existing Windows/Linux standalone
+  CI matrix, covering both Python 3.12 and 3.13 without increasing permissions.
+- Local original-fixture checks and upstream-main CI are recorded separately in
+  VALIDATION.md. This candidate requires exact-revision hosted CI and owner
+  review before a tag, release or public candidate asset is published.
+
 ## Game Session Evidence Auditor 1.0.0 - 2026-10-23
 
 - Added original read-only auditing of explicit captured-file manifests and

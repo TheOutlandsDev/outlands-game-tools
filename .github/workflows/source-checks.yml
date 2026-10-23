@@ -111,6 +111,10 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
+      - name: Verify source inventory on each portability platform
+        run: python -B tools/verify_source_release.py
+      - name: Check publication gate failure cases on each portability platform
+        run: python -B -m unittest discover -s tools/tests -v
       - name: Check Save Snapshot Verifier with generated files
         working-directory: tools/save-snapshot-verifier
         run: python -B -m unittest discover -s tests -v

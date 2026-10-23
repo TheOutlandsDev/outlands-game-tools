@@ -14,13 +14,17 @@ README before building or installing. There is no automatic installer for the
 collection. Default builds do not change an installed game.
 
 Start with [getting started](docs/GETTING-STARTED.md), [questions and troubleshooting](docs/FAQ.md),
-and the [roadmap and help wanted](docs/ROADMAP.md). Changes in this first source
-release are listed in [CHANGELOG.md](CHANGELOG.md).
+and the [roadmap and help wanted](docs/ROADMAP.md). Changes in the source collection
+are listed in [CHANGELOG.md](CHANGELOG.md).
 
-For a versioned download, use the [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
-and [download quick start](docs/QUICK-START.md). The custom ZIP and SHA-256 asset
-contain reviewed source; games, compiled plugins and dependency binaries are
-obtained separately. Maintainers can read [the source release process](docs/RELEASING.md).
+**v0.2.0-rc.1 review candidate.** It adds
+eight standalone tools to the eleven-tool collection and retains the strict
+source-inventory portability correction from the published
+[v0.1.1-rc.1 prerelease](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.1-rc.1).
+Use the [candidate quick start](docs/QUICK-START.md) for all nineteen tools and
+[validation](VALIDATION.md) for exact check scope and release gates.
+Games, compiled plugins and dependency binaries are obtained separately.
+Maintainers can read [the source release process](docs/RELEASING.md).
 
 ## SPT modules
 
@@ -104,19 +108,18 @@ different from a clean structural report (exit 0).
 - [Unreal PAK Index & Conflict Inspector](tools/unreal-pak-inspector/README.md):
   inspect standard unencrypted version-3 indexes and overlapping virtual paths,
   with checksum/range guards. Metadata only; no extraction, payload validation,
-  decryption or load-order prediction. Current main source.
+  decryption or load-order prediction. Included in this candidate.
 - [INI/LTX Configuration Value Diff](tools/ini-ltx-value-diff/README.md): compare
   literal section/key values in an explicitly selected file pair. Defined case,
-  comment, encoding and duplicate-key policies; values hidden by default. Current
-  main source; no interpolation, include loading or effective-value calculation.
+  comment, encoding and duplicate-key policies; values hidden by default. Included in this candidate; no interpolation, include loading or effective-value calculation.
 - [Mod Asset Reference Checker](tools/mod-asset-reference-checker/README.md):
   inspect literal LTX mesh references, optional file-key mappings and selected
   section references. Separates loose-file presence, index listings and unknown
-  coverage; no archive extraction or game-loader emulation. Current main source.
+  coverage; no archive extraction or game-loader emulation. Included in this candidate.
 - [XML Mod Configuration Diff](tools/xml-config-diff/README.md): compare selected
   XML files for changed attributes/text and added/removed entries, with namespace
   awareness and conservative sibling matching. Values are hidden by default.
-  Added after v0.1.0; use the current main source for this tool.
+  Included in this candidate; requires Expat 2.7.2 or newer.
 - [Mod Content Manifest & Diff](tools/mod-content-manifest/README.md): hash
   selected loose folders or MO2 winners, then compare compatible manifests for
   added, removed, changed or differently provided files. No file payload upload.

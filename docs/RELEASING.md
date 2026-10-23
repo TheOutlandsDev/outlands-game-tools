@@ -6,9 +6,10 @@ not be identical. The first collection tag is `v0.1.0`, labeled a pre-release
 because SPT modules and engine integration retain experimental runtime limits.
 See [the download quick start](QUICK-START.md).
 
-The commands below use v0.1.0 as a historical example. Later additions on main
-need a new reviewed version/tag and matching archive prefix/filenames. Preserve
-the existing v0.1.0 tag and assets; they identify that earlier snapshot.
+The commands below prepare the local v0.2.0-rc.1 review candidate. Publication
+is a separate owner decision after reviewing the package and exact-revision CI.
+Preserve the published v0.1.0 and v0.1.1-rc.1 tags/assets; they identify earlier
+snapshots. Never replace main with an older release branch.
 
 ## Review and validate source
 
@@ -39,8 +40,8 @@ Run from the reviewed repository root, after creating an external output folder:
 ```powershell
 py -3.12 -B tools\source-release-builder\source_release.py `
   --source-root . `
-  --prefix outlands-game-tools-v0.1.0 `
-  --output 'D:\ReleaseOutput\outlands-game-tools-v0.1.0-source.zip'
+  --prefix outlands-game-tools-v0.2.0-rc.1 `
+  --output 'D:\ReleaseOutput\outlands-game-tools-v0.2.0-rc.1-source.zip'
 ```
 
 The output and companion `.zip.sha256` must be new and outside the source tree.

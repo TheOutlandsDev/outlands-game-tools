@@ -147,7 +147,7 @@ CI runs Windows/Linux with Python 3.12/3.13; native link tests declare skips whe
 the platform or permissions do not support fixture creation.
 See [report format](REPORT-FORMAT.md) and [validation](../../VALIDATION.md).
 
-[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_request.yml)
+[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_or_suggestion.yml)
 or [report a bug](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=bug_report.yml).
 Questions and suggestions are welcome without a code contribution. Select this
 tool in the bug form and include OS/Python/tool versions, expected versus actual

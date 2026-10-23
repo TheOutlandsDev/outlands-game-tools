@@ -534,11 +534,12 @@ runpy.run_path(sys.argv[0], run_name='__main__')
         self.assertEqual(reference['status'], 'listed_in_index')
         self.assertTrue(reference['found_case_mismatch'])
 
-    @unittest.skipIf(os.name == 'nt', 'Case-sensitive directory fixture')
     def test_case_colliding_loose_assets_are_incomplete(self) -> None:
         self.config('[toy]\nvisual = toy/present\n')
-        self.asset()
-        self.asset('meshes/toy/PRESENT.ogf')
+        lower = self.asset()
+        upper = self.asset('meshes/toy/PRESENT.ogf')
+        if lower.samefile(upper):
+            self.skipTest('Filesystem does not support distinct case-only files')
         result, report = self.run_tool()
         self.assertEqual(result.returncode, 1)
         self.assertFalse(report['complete'])

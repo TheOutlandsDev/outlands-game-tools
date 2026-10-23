@@ -152,7 +152,7 @@ privacy omissions, strict paths/JSON, resource ceilings, exclusive external
 reports and source mutation. CI runs Windows/Linux on Python 3.12/3.13; native
 link fixtures declare skips where unsupported. See [validation](../../VALIDATION.md).
 
-[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_request.yml)
+[Suggest a feature](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_or_suggestion.yml)
 or [report a bug](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=bug_report.yml).
 Questions and suggestions are welcome without a code contribution. Select this
 tool in the bug form; include OS/Python/tool versions, relevant finding/error

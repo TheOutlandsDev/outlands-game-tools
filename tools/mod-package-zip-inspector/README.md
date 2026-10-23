@@ -115,7 +115,7 @@ bounded parsing, output protection and supported descriptors. CI runs Windows
 and Linux on Python 3.12/3.13; native link tests explicitly skip when unavailable.
 See [examples](examples/README.md) and the collection's [validation record](../../VALIDATION.md).
 
-[Suggest an improvement](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_request.yml)
+[Suggest an improvement](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=feature_or_suggestion.yml)
 or [report a bug](https://github.com/TheOutlandsDev/outlands-game-tools/issues/new?template=bug_report.yml).
 Questions and small reproducible examples are welcome; no code contribution is
 required. Select this tool in the bug form, include the tool/Python/OS versions,
