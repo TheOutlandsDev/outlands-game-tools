@@ -26,6 +26,29 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- Mod Content Manifest & Diff 1.0.0: 44 generated-fixture black-box tests on
+  Windows Python 3.12.7; 40 passed and 4 case/symlink/junction fixtures were
+  explicitly skipped because the review filesystem/account could not create
+  them. Coverage includes streamed byte hashing, privacy exclusions, native MO2
+  priority, separator/hidden-directory handling, base/overwrite-only profiles,
+  virtual file/directory collisions, strict imported JSON/schema/hash/path checks,
+  compatible selection policies, equal-byte provider changes, incomplete status,
+  exclusive output, input immutability and metadata/depth/report limits. Original
+  examples produced the expected one added, one removed, one changed and one
+  identical path; the MO2 example found three effective files and one overlap.
+  No game files, live MO2 VFS, archive extraction or multiplayer was exercised.
+- Source Release Builder 1.0.0: 56 generated-fixture tests on Windows Python
+  3.12.7; 51 passed and 5 native link/junction fixtures were explicitly skipped
+  because the sandbox denied creation. Coverage includes canonical manifest
+  validation, duplicate JSON/path/case/prefix/depth rejection, source type/license
+  checks, byte/hash mismatch, unchanged inputs, exclusive ZIP/checksum outputs,
+  interrupted/changed-source failure cleanup, exact stored ZIP members and
+  deterministic bytes. The original example created four archive members from
+  three listed toy source files plus its exact manifest; unlisted source was
+  excluded and repeat builds matched. No game folder or compiled payload used.
+  The source CI job also builds/verifies the complete collection archive after
+  its source gate, using only manifest-selected records. These checks do not
+  establish authorship, legal rights, secret absence or game/runtime compatibility.
 - LTX Definition Inspector 1.0.0: 40 generated-fixture tests on Windows
   Python 3.12.7; 37 passed and 3 case/junction fixtures were skipped because
   the local filesystem/sandbox could not create them. Tests cover supported

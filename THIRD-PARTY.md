@@ -93,3 +93,18 @@ was incorporated. Primary OpenXRay loader source was consulted for syntax, not
 copied. This is a narrow structural checker, not that loader or a DLTX engine.
 Its original code/docs/tests/examples are MIT. Inspected configuration and
 external engines/mods retain their own terms; no AGPL companion source is copied.
+
+Mod Content Manifest & Diff is new original Python standard-library source built
+within this MIT collection. The use case overlaps the separate co-op content
+preflight, but no AGPL launcher implementation, import or serialized fingerprint
+format is incorporated. The AGPL companion keeps its own license. This tool's
+code/docs/tests/examples are MIT; selected file contents are only read for hashing
+and do not become licensed or distributable through a generated manifest.
+
+The Verified Source Release Builder is original standard-library integration
+code based on an unpublished source bundling helper. Its source/docs/tests and
+fictional manifest examples are MIT. A manifest declaring MIT and a matching
+LICENSE/hash do not establish ownership of every selected file; a maintainer
+must separately review provenance, privacy and dependency terms before release.
+The collection's tagged custom source ZIP contains only reviewed records and
+the manifest itself, with no game or dependency binaries.

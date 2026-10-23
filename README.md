@@ -17,6 +17,11 @@ Start with [getting started](docs/GETTING-STARTED.md), [questions and troublesho
 and the [roadmap and help wanted](docs/ROADMAP.md). Changes in this first source
 release are listed in [CHANGELOG.md](CHANGELOG.md).
 
+For a versioned download, use the [v0.1.0 source pre-release](https://github.com/TheOutlandsDev/outlands-game-tools/releases/tag/v0.1.0)
+and [download quick start](docs/QUICK-START.md). The custom ZIP and SHA-256 asset
+contain reviewed source; games, compiled plugins and dependency binaries are
+obtained separately. Maintainers can read [the source release process](docs/RELEASING.md).
+
 ## SPT modules
 
 | Module | Purpose |
@@ -80,6 +85,12 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [Mod Content Manifest & Diff](tools/mod-content-manifest/README.md): hash
+  selected loose folders or MO2 winners, then compare compatible manifests for
+  added, removed, changed or differently provided files. No file payload upload.
+- [Verified Source Release Builder](tools/source-release-builder/README.md):
+  create and verify a deterministic source ZIP and companion SHA-256 file from
+  an explicit reviewed source manifest. Maintainer utility; new outputs only.
 - [LTX Definition Inspector](tools/ltx-definition-inspector/README.md): inspect
   explicit entry/include graphs for missing parents, duplicate sections and
   cycles. Structural checks only; unsupported DLTX makes the report incomplete.
@@ -117,4 +128,3 @@ for actual checks and remaining limits.
 Contributions follow [CONTRIBUTING.md](CONTRIBUTING.md). Do not attach unredacted
 logs, profiles, credentials or network/device identifiers to public issues.
 There is no telemetry-upload feature in this collection.
-

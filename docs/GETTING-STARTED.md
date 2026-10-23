@@ -1,5 +1,8 @@
 # Getting started
 
+For the tagged source ZIP, checksum verification and a compact tool selector,
+start with [Download and try one tool](QUICK-START.md).
+
 These are tools from a personal SPT setup, opened up so other people can inspect them, use the parts that help, and suggest improvements. Each module has a separate job. Start with one module and read its README before changing a game installation.
 
 This is an experimental source collection. Compiling a plugin, passing a synthetic test, and completing a real raid are different checks. The recorded preparation covered the first two; it did not establish gameplay or multiplayer compatibility. See [the actual validation record](../VALIDATION.md).
@@ -8,6 +11,8 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Compare selected mod file contents between folders or MO2 profiles | [Mod Content Manifest & Diff](../tools/mod-content-manifest/README.md) | Creates SHA-256 manifests and compares compatible selections. No live-file authentication or engine/multiplayer compatibility guarantee. |
+| Build a reviewed source-only ZIP with checksum | [Verified Source Release Builder](../tools/source-release-builder/README.md) | Packages explicitly listed source records after hash/type/path checks. Manifest/extension checks do not replace rights/privacy review. |
 | Review a selected loose LTX declaration/include graph | [LTX Definition Inspector](../tools/ltx-definition-inspector/README.md) | Checks a narrow supported syntax without merging values or applying DLTX. Missing context and unsupported syntax limit conclusions. |
 | Summarize selected markers in an inactive X-Ray log | [X-Ray Log Summary](../tools/xray-log-summary/README.md) | Outputs static categories/counts/line numbers, not original excerpts. English pattern observations do not establish a root cause or working multiplayer. |
 | Prepare a separate limited MO2 comparison profile | [MO2 Baseline Profile Builder](../tools/mo2-profile-builder/README.md) | Preview first; apply creates a new profile with exact selected mods disabled. Does not clone every game-specific profile file or isolate saves/settings. |

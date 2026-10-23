@@ -34,6 +34,10 @@ jobs:
         run: ./tools/process-exit-observer/tests/Test-Observer.ps1 -PythonPath (Get-Command python.exe).Source
       - name: Check dashboard JavaScript
         run: node --check ./spt/ScavLifeConsole/www/app.js
+      - name: Build and verify the complete reviewed source archive
+        shell: pwsh
+        run: |
+          python -B tools/source-release-builder/source_release.py --source-root . --prefix outlands-game-tools-source --output (Join-Path $env:RUNNER_TEMP 'outlands-game-tools-source-check.zip')
   mo2-portability:
     strategy:
       matrix:
@@ -118,4 +122,10 @@ jobs:
         run: python -B -m unittest discover -s tests -v
       - name: Check LTX Definition Inspector with generated configurations
         working-directory: tools/ltx-definition-inspector
+        run: python -B -m unittest discover -s tests -v
+      - name: Check Mod Content Manifest and Diff with synthetic content
+        working-directory: tools/mod-content-manifest
+        run: python -B -m unittest discover -s tests -v
+      - name: Check Source Release Builder with generated manifests
+        working-directory: tools/source-release-builder
         run: python -B -m unittest discover -s tests -v

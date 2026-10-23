@@ -22,6 +22,12 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try [Mod Content Manifest & Diff](../tools/mod-content-manifest/README.md) with
+  the original example and suggest clearer comparisons or small synthetic
+  priority/filter edge cases. Do not attach mod assets or complete installations.
+- Try the [source release builder](../tools/source-release-builder/README.md) on
+  its fictional manifest, review the [download quick start](QUICK-START.md), and
+  report missing setup instructions or confusing checksum guidance.
 - Try the [LTX inspector's fictional examples](../tools/ltx-definition-inspector/README.md)
   and propose supported syntax with primary engine documentation and small original
   fixtures. Broader DLTX/effective-value support needs its own design and tests.

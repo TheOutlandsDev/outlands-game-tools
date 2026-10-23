@@ -31,6 +31,8 @@ body:
         - MO2 Baseline Profile Builder
         - X-Ray Log Summary
         - LTX Definition Inspector
+        - Mod Content Manifest & Diff
+        - Verified Source Release Builder
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

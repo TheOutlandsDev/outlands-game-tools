@@ -1,5 +1,17 @@
 # Changes
 
+## Collection v0.1.0 source pre-release - 2026-10-22
+
+- Added Mod Content Manifest & Diff 1.0.0: bounded relative-path SHA-256 manifests
+  for selected folders/MO2 winners and strict comparisons of compatible inputs.
+- Added Verified Source Release Builder 1.0.0: manifest-selected source archives,
+  deterministic stored ZIP members, member/hash verification and SHA-256 assets.
+- Added the download quick start and maintainer release process, expanded public
+  feedback module choices and portability checks, and prepared the first tagged
+  source kit. No compiled game plugins or dependency payloads are included.
+- The collection remains an experimental source release. Existing module guides
+  and validation limits apply; this tag does not establish gameplay compatibility.
+
 ## LTX Definition Inspector 1.0.0 - 2026-10-22
 
 - Added read-only structural checks of explicit loose entry/include graphs:
