@@ -108,3 +108,20 @@ LICENSE/hash do not establish ownership of every selected file; a maintainer
 must separately review provenance, privacy and dependency terms before release.
 The collection's tagged custom source ZIP contains only reviewed records and
 the manifest itself, with no game or dependency binaries.
+
+XML Mod Configuration Diff is fresh original Python standard-library integration
+code, with original XML example generators and synthetic tests. A prior local
+State of Decay comparison identified the use case; its private implementation,
+baseline XML, downloaded mods and reports are not copied. This module includes
+no lxml, game, mod-manager or AGPL companion implementation. Its original code,
+documentation, tests and generated examples use the root MIT license.
+
+XML parsing uses the separately installed Python runtime's Expat binding, with
+Expat 2.7.2 or newer required for parsing. Python and Expat retain their own terms;
+their implementations/binaries are not bundled. Primary Python documentation
+informed API and security requirements, not copied implementation. Inspected XML
+and values retain their own terms and privacy requirements. See
+[Python XML security](https://docs.python.org/3/library/xml.html#xml-security),
+[Expat API documentation](https://docs.python.org/3/library/pyexpat.html),
+[Python licensing](https://docs.python.org/3/license.html) and
+[Expat licensing](https://github.com/libexpat/libexpat/blob/master/expat/COPYING).

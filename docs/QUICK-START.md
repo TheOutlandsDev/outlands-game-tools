@@ -7,6 +7,12 @@ contains no installed games, upstream mod payloads, saves, real logs, compiled
 plugins or native Python dependency wheels. It is an experimental source kit;
 the version does not establish gameplay compatibility for every module.
 
+**New on main after v0.1.0:** [XML Mod Configuration Diff](../tools/xml-config-diff/README.md)
+compares selected XML configuration files. Download the current repository with
+**Code → Download ZIP** for this addition; it is absent from the v0.1.0 assets.
+Follow its module guide, including the Expat version check and original example.
+The tagged download instructions below still apply to the v0.1.0 snapshot.
+
 ## Download and verify
 
 Open the release page and download both custom assets:

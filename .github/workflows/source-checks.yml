@@ -129,3 +129,8 @@ jobs:
       - name: Check Source Release Builder with generated manifests
         working-directory: tools/source-release-builder
         run: python -B -m unittest discover -s tests -v
+      - name: Require supported XML parser version
+        run: python -c "import xml.parsers.expat as expat; print(expat.EXPAT_VERSION); assert expat.version_info >= (2, 7, 2)"
+      - name: Check XML Mod Configuration Diff with synthetic XML
+        working-directory: tools/xml-config-diff
+        run: python -B -m unittest discover -s tests -v

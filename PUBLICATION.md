@@ -8,6 +8,7 @@ is ready for source review; it is not an end-to-end tested gameplay distribution
 
 | Group | Selected source | Publication changes |
 |---|---|---|
+| XML mod configuration diff | Fresh original Python standard-library implementation | A prior local XML comparison use case informed requirements; no private helper implementation, game XML, downloaded mod or AGPL code is incorporated. Explicit file pair, bounded guarded parsing, conservative matching, default value fingerprints and original generated fixtures. |
 | SPT diagnostics and telemetry | Locally authored client plugins and PowerShell summarizers | External dependency paths parameterized; builds no longer install by default; privacy and synthetic tests documented. |
 | Small SPT server/client mods | Original local API-integration mods | Source/config only, external references, build-only defaults, compatibility and persistent-state effects documented. Several original server metadata records already selected MIT. |
 | Scav Life | Original local framework, client and dashboard | Real IDs and machine paths removed; console narrowed to loopback, normal TLS, exact origin/host and per-run token; mutations/debug methods opt-in. |

@@ -26,6 +26,23 @@ environment overrides. No game or system installation was changed to do this.
 
 ## Standalone utilities
 
+- XML Mod Configuration Diff 1.0.0: 57 original generated-fixture cases on
+  Windows Python 3.12.14 with Expat 2.8.3; 55 passed and 2 native symlink/junction
+  fixtures were explicitly skipped because the local sandbox denied creation.
+  Tests cover exact change records/fingerprints, conservative sibling identities,
+  namespaced attributes, insertions/reordering, unmatched subtree validation,
+  exact parsed leaf text, default value omission and opt-in disclosure, UTF-8
+  enforcement, malformed XML and DTD/entity/XInclude/xml:space refusals, limits,
+  source stability, output non-overwrite and original examples. Independent
+  review passed 47 additional generated adversarial cases, including namespace
+  metadata and locator/report expansion limits. It found and verified the fix
+  for BOM-less UTF-16 input bypassing the UTF-8 policy. The older local Python
+  3.12.7/Expat 2.6.3 correctly returns unsupported_expat_version without parsing.
+  The worked example returns exit 2 with one added, one removed, one attribute
+  and one text change; inputs stay unchanged and values are omitted by default.
+  Portability CI requires Expat 2.7.2+ on Windows/Ubuntu Python 3.12/3.13. These
+  are synthetic source checks; no actual game XML, mod pack, schema, game launch
+  or runtime settings behavior was tested. macOS remains unverified.
 - Mod Content Manifest & Diff 1.0.0: 44 generated-fixture black-box tests on
   Windows Python 3.12.7; 40 passed and 4 case/symlink/junction fixtures were
   explicitly skipped because the review filesystem/account could not create

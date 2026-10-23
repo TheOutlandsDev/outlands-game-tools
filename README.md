@@ -85,6 +85,10 @@ different from a clean structural report (exit 0).
 
 ### Choose another utility
 
+- [XML Mod Configuration Diff](tools/xml-config-diff/README.md): compare selected
+  XML files for changed attributes/text and added/removed entries, with namespace
+  awareness and conservative sibling matching. Values are hidden by default.
+  Added after v0.1.0; use the current main source for this tool.
 - [Mod Content Manifest & Diff](tools/mod-content-manifest/README.md): hash
   selected loose folders or MO2 winners, then compare compatible manifests for
   added, removed, changed or differently provided files. No file payload upload.

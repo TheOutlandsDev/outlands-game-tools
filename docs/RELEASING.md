@@ -6,6 +6,10 @@ not be identical. The first collection tag is `v0.1.0`, labeled a pre-release
 because SPT modules and engine integration retain experimental runtime limits.
 See [the download quick start](QUICK-START.md).
 
+The commands below use v0.1.0 as a historical example. Later additions on main
+need a new reviewed version/tag and matching archive prefix/filenames. Preserve
+the existing v0.1.0 tag and assets; they identify that earlier snapshot.
+
 ## Review and validate source
 
 Keep source, tests, documentation and original generated examples in the public

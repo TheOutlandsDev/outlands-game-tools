@@ -22,6 +22,10 @@ Do not run destructive test helpers on a valued profile to gather a report. A fa
 
 ## Small contributions with clear value
 
+- Try [XML Mod Configuration Diff](../tools/xml-config-diff/README.md) on its
+  fictional example, suggest clearer matching policies or small namespace and
+  identity edge cases, and report confusing privacy controls. Use synthetic XML;
+  structural changes do not establish game-specific settings or schema validity.
 - Try [Mod Content Manifest & Diff](../tools/mod-content-manifest/README.md) with
   the original example and suggest clearer comparisons or small synthetic
   priority/filter edge cases. Do not attach mod assets or complete installations.

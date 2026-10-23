@@ -33,6 +33,7 @@ body:
         - LTX Definition Inspector
         - Mod Content Manifest & Diff
         - Verified Source Release Builder
+        - XML Mod Configuration Diff
         - Game Folder Inventory
         - Process Exit Observer
         - Documentation or source-package checks

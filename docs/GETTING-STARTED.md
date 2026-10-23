@@ -11,6 +11,7 @@ This is an experimental source collection. Compiling a plugin, passing a synthet
 
 | What you want to do | Start here | Know before using it |
 |---|---|---|
+| Explain changes between two XML mod configuration files | [XML Mod Configuration Diff](../tools/xml-config-diff/README.md) | Current main source, added after v0.1.0. Needs Python 3.12+ with Expat 2.7.2+. Conservative identity matching; optional values can disclose settings. |
 | Compare selected mod file contents between folders or MO2 profiles | [Mod Content Manifest & Diff](../tools/mod-content-manifest/README.md) | Creates SHA-256 manifests and compares compatible selections. No live-file authentication or engine/multiplayer compatibility guarantee. |
 | Build a reviewed source-only ZIP with checksum | [Verified Source Release Builder](../tools/source-release-builder/README.md) | Packages explicitly listed source records after hash/type/path checks. Manifest/extension checks do not replace rights/privacy review. |
 | Review a selected loose LTX declaration/include graph | [LTX Definition Inspector](../tools/ltx-definition-inspector/README.md) | Checks a narrow supported syntax without merging values or applying DLTX. Missing context and unsupported syntax limit conclusions. |

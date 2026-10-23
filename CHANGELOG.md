@@ -1,5 +1,18 @@
 # Changes
 
+## XML Mod Configuration Diff 1.0.0 - 2026-10-22
+
+- Added an original read-only comparison of selected XML file pairs, using
+  expanded namespace names and conservative per-parent identity matching.
+- Reports attribute/text changes, compact added/removed subtrees and reordered
+  common children. Ambiguous matches and unsupported mixed content are incomplete.
+- Hides values by default, bounds parsing/comparison/report resources, rejects
+  DTD/entity declarations, requires Expat 2.7.2+, and creates only new optional
+  JSON reports.
+- Added original generated examples, detailed commands/report scope, regression
+  tests, Windows/Ubuntu Python 3.12/3.13 checks and public feedback guidance.
+- Added after the v0.1.0 snapshot; use current main source for this module.
+
 ## Collection v0.1.0 source pre-release - 2026-10-22
 
 - Added Mod Content Manifest & Diff 1.0.0: bounded relative-path SHA-256 manifests
