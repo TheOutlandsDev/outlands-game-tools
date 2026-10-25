@@ -17,6 +17,7 @@ SUFFIXES = {".md", ".cs", ".csproj", ".ps1", ".py", ".json", ".yml", ".yaml",
 SPECIAL = {"LICENSE", ".gitignore", ".gitattributes"}
 SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt",
                  "tools/audio-integrity-checker/requirements.txt",
+                 "tools/webcam-diagnostic/requirements.txt",
                  "tools/bounded-evidence-manifest-verifier/examples/files/sample.txt"}
 SECRET = re.compile(
     r"(?:AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{40,}"

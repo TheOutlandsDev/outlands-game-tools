@@ -337,3 +337,17 @@ files. Windows/Ubuntu Python 3.12/3.13 jobs are configured in the existing stand
 library portability matrix. No private data or game/server was used. Python float
 rounding/underflow and unbundled external-baseline requirements remain limits;
 this is not a token-exact decimal diff, full configuration backup or installer.
+
+
+## Webcam Diagnostic application
+
+The desktop/CLI application passed 34 synthetic, dependency and Tk lifecycle
+tests locally on Windows Python 3.12. The real reviewed OpenCV headless/NumPy
+libraries loaded; tests open no camera. The desktop healthy demo was visually
+checked through its actual window. A separate real index-0/ANY attempt returned
+open_failed, zero frames and a stopped worker; it does not establish successful
+physical capture or hardware stability. Private hardware receipts are excluded.
+
+Windows/Ubuntu Python 3.12/3.13 CI runs the same suite, requiring Tk controls and
+using Xvfb on Ubuntu. No hardware/event log is accessed in CI. Full scope and
+remaining device/platform limits are in the [app validation notes](tools/webcam-diagnostic/VALIDATION.md).

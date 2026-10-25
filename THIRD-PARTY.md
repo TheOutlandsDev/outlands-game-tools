@@ -248,3 +248,13 @@ recipe/source metadata, real item catalog, inherited template, game/mod source
 or AGPL implementation is included. External configuration field names identify
 an interface; input data, DayZ/Expansion/mod material and Python retain their own
 terms. The source provenance and exact API limits are documented in the module.
+
+
+The Webcam Diagnostic application is original integration/desktop code adapted
+from an unpublished locally authored camera probe. Its source, fictional tests,
+examples and docs are MIT; the included app LICENSE supports copying that folder
+alone. OpenCV headless 4.13.0.92 and NumPy 2.2.6 are installed separately and keep
+their upstream and bundled-component terms. Python/Tcl/Tk are supplied separately.
+No native library, decoder, driver, real capture/log, device-instance identifier,
+private path, virtual-camera bridge or third-party implementation is included.
+See the [app provenance and dependency references](tools/webcam-diagnostic/PROVENANCE.md).

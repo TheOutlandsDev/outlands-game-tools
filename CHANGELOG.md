@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Added Outlands Webcam Diagnostic 1.0.0 under MIT: desktop and CLI controls,
+  explicit camera/backend/mode requests, isolated workers with Stop/timeout
+  handling, metadata-only reports and camera-free fictional demos. Includes 34
+  tests, detailed setup/examples/privacy/validation notes and a dedicated issue
+  form. Real local camera opening failed; successful physical capture remains
+  unqualified. No driver, recording, raw event log or private receipt is bundled.
+
+
 - Added the original DayZ Market Numeric Diff Python library under MIT, with
   exact-baseline preview guards, JSON-aware replay equality, finite-number and
   resource checks, 23 fictional regression tests, examples and suggestion links.

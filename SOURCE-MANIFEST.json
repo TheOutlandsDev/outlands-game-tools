@@ -23,9 +23,14 @@
       "sha256": "8db1b2f667dfc42b4bcf12ddb3d5a9b9e3b62dae1c9b7fa45654bfe9dd848236"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/webcam_diagnostic.yml",
+      "bytes": 1808,
+      "sha256": "d3fb24426826d698de4702b8a75ca52311cf923ebae716c65f9b1c51fa530e24"
+    },
+    {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 9035,
-      "sha256": "169f0cc892e9551fb8ec90466ff138af17ed523123bf3a00fb781f382dc66a58"
+      "bytes": 9721,
+      "sha256": "29647ea0dcd6a0b48bb0402e554f7086c04db2aae10571dcc975b15a5e589d8b"
     },
     {
       "path": ".gitignore",
@@ -34,8 +39,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 15157,
-      "sha256": "021e16cc73c4dde75c68ae3fbdd93314e69794aa39f227ed950fa0d4e163001f"
+      "bytes": 15632,
+      "sha256": "f8d7c6e82e887d0e02c0c60789518fc2e2a6578f4ad4ce388262ae301dbe2f2b"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -79,8 +84,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11363,
-      "sha256": "a7239ad83eebd6b854cb3d71c0a518d75870fb20c16ba79ffcec2423883a3c30"
+      "bytes": 11905,
+      "sha256": "f78fcf68b4b7e4ca0c73c00b5f19e7e8ec0d51e13be28d83da0f0da38af2ddc3"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -559,8 +564,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 17028,
-      "sha256": "3e5fcd921a2bd88fbb10316ac9e4b14e012f9cc3878ccee4d14756d09d141788"
+      "bytes": 17688,
+      "sha256": "8cda3702083ef19cde71c57da5aa7b669d714f72683da564deac0f8e4437cbde"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -1124,8 +1129,8 @@
     },
     {
       "path": "tools/source-release-builder/source_release.py",
-      "bytes": 19117,
-      "sha256": "5468d4c8073aa72d16ee9d37967664d5945de2ece595425c18d226d521ba6110"
+      "bytes": 19178,
+      "sha256": "73febfb0f1a3f2bd09b3418f48be51888a8462c4220ff620e35cf40f8338078b"
     },
     {
       "path": "tools/source-release-builder/tests/test_source_release.py",
@@ -1169,8 +1174,63 @@
     },
     {
       "path": "tools/verify_source_release.py",
-      "bytes": 5494,
-      "sha256": "f36bf38de728469c96b100d09c99554bf16ead4fcfaf94e18d8aa54b1b37dc24"
+      "bytes": 5555,
+      "sha256": "d85e6bf173ff1332d88cf17d7dfe116ba45fa4d7bae9b05f41e061f851bf3f9a"
+    },
+    {
+      "path": "tools/webcam-diagnostic/diagnostic_core.py",
+      "bytes": 17667,
+      "sha256": "cbf39860932f89cb64edf9f78764d9b2fde648d38dc3bd89e047e6d3b75cbc00"
+    },
+    {
+      "path": "tools/webcam-diagnostic/examples/healthy.json",
+      "bytes": 1193,
+      "sha256": "b7f9a63e08aed0c76607acd9e51959d3dae49722d36e5b3e8e05e708b2b6b245"
+    },
+    {
+      "path": "tools/webcam-diagnostic/examples/read_failed.json",
+      "bytes": 1182,
+      "sha256": "2cf35275e2ee4e82309858ffa8dc52ebc843b4b47bb4226d915ca85b11587d2d"
+    },
+    {
+      "path": "tools/webcam-diagnostic/examples/README.md",
+      "bytes": 1881,
+      "sha256": "33c600be6cd527ed8ffd4f477e7a8496334f506aa805dc174051b2a4cc827ad8"
+    },
+    {
+      "path": "tools/webcam-diagnostic/LICENSE",
+      "bytes": 1104,
+      "sha256": "865b2b98e99ebe5f268452428ff664f59904ea0b82e8dabb93cb49b485b9e4b7"
+    },
+    {
+      "path": "tools/webcam-diagnostic/PROVENANCE.md",
+      "bytes": 2390,
+      "sha256": "a0631cf6a973c195e268306c4bd82492edcde57bd695427068aff6a8e1c5279f"
+    },
+    {
+      "path": "tools/webcam-diagnostic/README.md",
+      "bytes": 10685,
+      "sha256": "20e587302393b9149bf4713b9986f0dcb18f4b605dc709789464b826237ff16e"
+    },
+    {
+      "path": "tools/webcam-diagnostic/requirements.txt",
+      "bytes": 47,
+      "sha256": "f9554cefbe6a7c24e20a6fc538c1cbe60afa7c0c145e94883f9a6936718e68b6"
+    },
+    {
+      "path": "tools/webcam-diagnostic/tests/test_diagnostic.py",
+      "bytes": 17909,
+      "sha256": "b5ccec5feea9b2bf0b6a812e2644bd927bf6ff36ca75b1fd69e00688a7cbb766"
+    },
+    {
+      "path": "tools/webcam-diagnostic/VALIDATION.md",
+      "bytes": 3628,
+      "sha256": "7712d99a6d2282611836fdabe0476abb17ab209e5823c49832d69e67420d63ef"
+    },
+    {
+      "path": "tools/webcam-diagnostic/webcam_diagnostic.py",
+      "bytes": 14507,
+      "sha256": "fbd2b31858c83a3aca9b2d4db804120a067867ffcfc2f764193fc91e06ff22d1"
     },
     {
       "path": "tools/xml-config-diff/examples/create_example.py",
@@ -1234,8 +1294,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 24424,
-      "sha256": "6675977701607d77691f2701622ea250ad777e2950cd985d318f304e3e711aa0"
+      "bytes": 25201,
+      "sha256": "ec70b37e274244e7156f865b6d09df31f03053882cdd2809de715bc3bf14d6a2"
     }
   ]
 }

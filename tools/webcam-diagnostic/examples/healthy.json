@@ -1,0 +1,51 @@
+{
+  "schema": "outlands-webcam-diagnostic/1",
+  "app_version": "1.0.0",
+  "simulated": true,
+  "platform": "Example",
+  "started_utc": "2026-01-01T00:00:00.000+00:00",
+  "request": {
+    "index": 0,
+    "backend": "ANY",
+    "seconds": 2,
+    "open_timeout": 10.0,
+    "width": null,
+    "height": null,
+    "fps": null,
+    "fourcc": null
+  },
+  "status": "completed",
+  "frames": 60,
+  "read_failures": 0,
+  "stream_seconds": 2.0,
+  "observed_fps": 30.0,
+  "mode_observations": {
+    "width": 640.0,
+    "height": 480.0,
+    "fps": 30.0,
+    "fourcc": "MJPG"
+  },
+  "mode_comparisons": {},
+  "usb_events": {
+    "status": "not_requested",
+    "matching_removals": null
+  },
+  "privacy": {
+    "frames_saved": false,
+    "audio_accessed": false,
+    "raw_native_logs_included": false,
+    "device_instance_ids_included": false
+  },
+  "ended_utc": "2026-01-01T00:00:02.000+00:00",
+  "actual_backend": "SIMULATED",
+  "opencv_version": "simulated",
+  "set_results": {},
+  "last_frame_shape": [
+    480,
+    640,
+    3
+  ],
+  "max_read_seconds": 0.034,
+  "worker_stopped": true,
+  "assessment": "Frames arrived for this test window. Long-term stability and other applications remain untested."
+}

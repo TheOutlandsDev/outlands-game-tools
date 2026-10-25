@@ -1,0 +1,53 @@
+name: Webcam Diagnostic app
+description: Report a reproducible webcam-app problem or camera/backend observation.
+title: "[Webcam]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public issue. Share only reviewed metadata, never camera images,
+        recordings, raw event logs, serial numbers, private paths or credentials.
+        A failure report is useful even if you cannot provide code or a fix.
+  - type: input
+    id: versions
+    attributes:
+      label: OS, Python and OpenCV versions
+      placeholder: Windows, Python 3.12, OpenCV 4.13.0
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Test type
+      options:
+        - Camera-free demo
+        - Real camera test
+        - GUI, setup or documentation problem
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and requested settings
+      description: Include backend, duration and mode request, or the demo scenario. A camera model is optional; omit serials and instance IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+      description: A small reviewed report excerpt is optional. Do not upload raw captures or logs.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Improvement or additional context
+      description: Optional ideas, accessibility feedback, or comparison with another backend.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public report check
+      options:
+        - label: I have removed recordings, raw logs, private paths, serials, credentials and other people's identifying information.
+          required: true

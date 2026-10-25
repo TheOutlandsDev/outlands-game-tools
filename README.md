@@ -1,6 +1,6 @@
 # Outlands Game Tools
 
-Original SPT mods and local game utilities from
+Original SPT mods, diagnostic applications and local game utilities from
 TheOutlandsDev / Connor O'Shea. Original contributions are available under the
 [MIT license](LICENSE). See [dependency and provenance boundaries](THIRD-PARTY.md).
 
@@ -52,6 +52,15 @@ The source retains existing plugin IDs/names for compatibility. Codex names in
 older namespaces and metadata identify the original assistant-assisted local
 projects; the collection is maintained by TheOutlandsDev, not an official OpenAI
 or SPT product.
+
+## Standalone diagnostic application
+
+[Outlands Webcam Diagnostic](tools/webcam-diagnostic/README.md) provides a desktop
+window and explicit CLI for timed camera tests, reported-mode comparisons,
+bounded cancellation and local metadata reports. Try the camera-free demo first.
+It records no images/audio, requires no game, and includes MIT source, fictional
+examples, dependency/setup instructions and public suggestion/bug forms. A real
+camera that fails to open is reported as a failure, not a successful capture.
 
 ## Standalone game utilities
 
