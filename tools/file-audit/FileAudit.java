@@ -349,7 +349,7 @@ public final class FileAudit {
     }
     public static final class Window extends JFrame {
         private static final long serialVersionUID = 1L;
-        final ScanTask scanner;
+        final transient ScanTask scanner;
         final JTextField root = new JTextField(55), extensions = new JTextField(18), search = new JTextField(22);
         final JCheckBox hashes = new JCheckBox("SHA-256 and duplicate candidates (reads file contents)", true);
         final JSpinner maxFiles = spinner(10000, 1, 20000), maxEntries = spinner(20000, 1, 100000),
@@ -362,11 +362,11 @@ public final class FileAudit {
             duplicates = model(new String[]{"Bytes per file", "Paths", "SHA-256", "Relative paths"}, 0),
             issues = model(new String[]{"Relative path", "Reason"}, -1);
         final JTable fileTable = table(files), groupTable = table(duplicates), issueTable = table(issues);
-        final List<JComponent> inputs = new ArrayList<>();
+        final transient List<JComponent> inputs = new ArrayList<>();
         final AtomicBoolean cancel = new AtomicBoolean();
         volatile boolean busy;
-        Thread worker;
-        Report report;
+        transient Thread worker;
+        transient Report report;
         Window() { this(FileAudit::scan); }
         Window(ScanTask scanner) {
             super("Outlands File Audit");

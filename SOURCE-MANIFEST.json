@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 10972,
-      "sha256": "9f65048782bc84f3e36573cce4298f48ba39dccb7087d7825dc9f4d6231b32da"
+      "bytes": 10996,
+      "sha256": "1a97655e3f9ea9d2dc6e92fcefd931b13f94ced8c722cbd985328826c8d4fcf5"
     },
     {
       "path": ".gitignore",
@@ -729,8 +729,8 @@
     },
     {
       "path": "tools/file-audit/FileAudit.java",
-      "bytes": 34920,
-      "sha256": "f7d84f4f29a76f179c8181635e3f070e530aa8c8f368e0da41c9ec68069c7f0c"
+      "bytes": 34960,
+      "sha256": "00b6d52672a012bca15d000845620253858f078956a4321b464da8dd1bf1b75d"
     },
     {
       "path": "tools/file-audit/LICENSE",

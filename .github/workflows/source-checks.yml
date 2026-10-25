@@ -220,6 +220,7 @@ jobs:
 
   file-audit-portability:
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
         java: ['17', '21']
