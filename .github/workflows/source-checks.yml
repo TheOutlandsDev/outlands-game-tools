@@ -159,7 +159,8 @@ jobs:
       - name: Check fictional numeric library example
         run: python -B tools/dayz-market-numeric-diff/examples/demo.py
       - name: Install reviewed webcam diagnostic dependencies
-        run: python -m pip install --only-binary=:all: -r tools/webcam-diagnostic/requirements.txt
+        run: |
+          python -m pip install --only-binary=:all: -r tools/webcam-diagnostic/requirements.txt
       - name: Check webcam app with synthetic captures and Windows Tk
         if: runner.os == 'Windows'
         working-directory: tools/webcam-diagnostic
