@@ -217,3 +217,29 @@ jobs:
       - name: Check XML Mod Configuration Diff with synthetic XML
         working-directory: tools/xml-config-diff
         run: python -B -m unittest discover -s tests -v
+
+  file-audit-portability:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        java: ['17', '21']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+      - name: Compile File Audit and original fixtures
+        working-directory: tools/file-audit
+        run: javac -encoding UTF-8 --release 17 -Xlint:all -Werror -d bin FileAudit.java tests/FileAuditTests.java examples/CreateExample.java
+      - name: Check engine and Swing controls on Windows
+        if: runner.os == 'Windows'
+        working-directory: tools/file-audit
+        run: java -cp bin FileAuditTests --gui
+      - name: Check engine and Swing controls on Ubuntu
+        if: runner.os == 'Linux'
+        working-directory: tools/file-audit
+        run: xvfb-run -a java -cp bin FileAuditTests --gui

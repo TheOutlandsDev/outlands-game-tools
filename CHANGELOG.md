@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added File Audit 1.0.0 under MIT: a Java 17 desktop and CLI app for chosen-folder
+  inventory, SHA-256 and nonempty duplicate candidates. Includes cooperative Stop,
+  scan limits, JSON export outside the input, fictional examples, 44 test cases,
+  detailed instructions, provenance and a dedicated issue/suggestion form.
+
 - Added Outlands Webcam Diagnostic 1.0.0 under MIT: desktop and CLI controls,
   explicit camera/backend/mode requests, isolated workers with Stop/timeout
   handling, metadata-only reports and camera-free fictional demos. Includes 34

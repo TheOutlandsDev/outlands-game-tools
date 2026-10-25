@@ -24,7 +24,10 @@ BLOCK_BYTES = 64 * 1024
 SUFFIXES = {".md", ".py", ".cs", ".csproj", ".ps1", ".json", ".yml", ".yaml",
             ".config", ".html", ".js", ".css", ".cfg", ".gsc", ".csv"}
 SPECIAL = {"LICENSE", ".gitignore", ".gitattributes"}
-SPECIAL_PATHS = {"tools/lua-syntax-checker/requirements.txt",
+SPECIAL_PATHS = {"tools/file-audit/FileAudit.java",
+                 "tools/file-audit/tests/FileAuditTests.java",
+                 "tools/file-audit/examples/CreateExample.java",
+                 "tools/lua-syntax-checker/requirements.txt",
                  "tools/audio-integrity-checker/requirements.txt",
                  "tools/webcam-diagnostic/requirements.txt",
                  "tools/bounded-evidence-manifest-verifier/examples/files/sample.txt"}

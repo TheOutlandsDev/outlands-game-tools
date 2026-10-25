@@ -1,0 +1,70 @@
+{
+  "schema": "outlands-file-audit/1",
+  "app_version": "1.0.0",
+  "simulated": true,
+  "started_utc": "2026-01-01T00:00:00Z",
+  "ended_utc": "2026-01-01T00:00:01Z",
+  "status": "complete",
+  "hash_algorithm": "SHA-256",
+  "scope": "Explicit selected folder; relative paths; no followed links; best-effort change checks",
+  "extensions": [],
+  "limits": {
+    "max_files": 10000,
+    "max_entries": 20000,
+    "max_file_bytes": 268435456,
+    "max_hash_bytes": 2147483648,
+    "max_depth": 64,
+    "cooperative_time_limit_ms": 300000
+  },
+  "summary": {
+    "files": 3,
+    "file_bytes_observed": 34,
+    "bytes_hashed": 34,
+    "entries_visited": 5,
+    "issue_count": 0,
+    "issues_omitted": 0,
+    "duplicate_candidate_groups": 1,
+    "hard_link_aliases_excluded_from_groups": 0
+  },
+  "files": [
+    {
+      "path": "copies/alpha-copy.txt",
+      "bytes": 17,
+      "modified_utc": "2026-01-01T00:00:00Z",
+      "sha256": "696b6ae4bdebfea1b3ac56adcc028049163771ceb01680248c038183eeda8f93",
+      "hash_status": "hashed"
+    },
+    {
+      "path": "empty.txt",
+      "bytes": 0,
+      "modified_utc": "2026-01-01T00:00:00Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hash_status": "hashed"
+    },
+    {
+      "path": "notes/alpha.txt",
+      "bytes": 17,
+      "modified_utc": "2026-01-01T00:00:00Z",
+      "sha256": "696b6ae4bdebfea1b3ac56adcc028049163771ceb01680248c038183eeda8f93",
+      "hash_status": "hashed"
+    }
+  ],
+  "duplicate_candidates": [
+    {
+      "bytes_per_file": 17,
+      "sha256": "696b6ae4bdebfea1b3ac56adcc028049163771ceb01680248c038183eeda8f93",
+      "paths": [
+        "copies/alpha-copy.txt",
+        "notes/alpha.txt"
+      ],
+      "file_identity_available": true
+    }
+  ],
+  "issues": [],
+  "privacy": {
+    "absolute_root_included": false,
+    "file_contents_included": false,
+    "automatic_upload": false
+  },
+  "interpretation": "Not malware/cheat detection, deletion advice, an atomic snapshot or proof of physical storage savings."
+}

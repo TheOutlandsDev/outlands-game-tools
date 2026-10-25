@@ -351,3 +351,16 @@ physical capture or hardware stability. Private hardware receipts are excluded.
 Windows/Ubuntu Python 3.12/3.13 CI runs the same suite, requiring Tk controls and
 using Xvfb on Ubuntu. No hardware/event log is accessed in CI. Full scope and
 remaining device/platform limits are in the [app validation notes](tools/webcam-diagnostic/VALIDATION.md).
+
+
+## File Audit application
+
+Windows JDK 17 compiled with UTF-8, --release 17, -Xlint:all and -Werror.
+Of 44 named cases, 38 passed locally, including four Swing lifecycle/model
+checks; six native-link fixture cases skipped because creation was unavailable
+in this review environment. A generated four-file example independently matched
+Python SHA-256 checks and the expected duplicate pair. The actual desktop and
+fictional demo were visually checked. Windows/Ubuntu JDK 17/21 CI requires Swing
+tests (Xvfb on Ubuntu). No private scan or actual user file was used in fixtures.
+Cooperative filesystem timeouts, file identity and race limitations remain:
+see [app validation](tools/file-audit/VALIDATION.md).

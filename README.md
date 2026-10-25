@@ -53,7 +53,12 @@ older namespaces and metadata identify the original assistant-assisted local
 projects; the collection is maintained by TheOutlandsDev, not an official OpenAI
 or SPT product.
 
-## Standalone diagnostic application
+## Standalone applications
+
+- [File Audit](tools/file-audit/README.md): Java desktop and CLI inventory, SHA-256
+  hashing and duplicate candidates for a chosen folder. Includes fictional demos,
+  bounded scans and JSON export; it never deletes or quarantines files.
+
 
 [Outlands Webcam Diagnostic](tools/webcam-diagnostic/README.md) provides a desktop
 window and explicit CLI for timed camera tests, reported-mode comparisons,

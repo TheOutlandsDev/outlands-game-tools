@@ -23,14 +23,19 @@
       "sha256": "8db1b2f667dfc42b4bcf12ddb3d5a9b9e3b62dae1c9b7fa45654bfe9dd848236"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/file_audit.yml",
+      "bytes": 1516,
+      "sha256": "9b28ac11a8a075c5995c70d5151445688111883f632584515a022db5686cc54b"
+    },
+    {
       "path": ".github/ISSUE_TEMPLATE/webcam_diagnostic.yml",
       "bytes": 1808,
       "sha256": "d3fb24426826d698de4702b8a75ca52311cf923ebae716c65f9b1c51fa530e24"
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 9733,
-      "sha256": "c65763a8907a4fa897fcc87d0d5d002bf5a0c9d66afed292c97b9166819f27de"
+      "bytes": 10972,
+      "sha256": "9f65048782bc84f3e36573cce4298f48ba39dccb7087d7825dc9f4d6231b32da"
     },
     {
       "path": ".gitignore",
@@ -39,8 +44,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 15632,
-      "sha256": "f8d7c6e82e887d0e02c0c60789518fc2e2a6578f4ad4ce388262ae301dbe2f2b"
+      "bytes": 16214,
+      "sha256": "38e274f2af6c6626392b2de04a9e5c170ab1811efc8b851cd8fccd5a9fa7643a"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -84,8 +89,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11905,
-      "sha256": "f78fcf68b4b7e4ca0c73c00b5f19e7e8ec0d51e13be28d83da0f0da38af2ddc3"
+      "bytes": 12323,
+      "sha256": "e3a51426cf311101b38e784ee19432e083a3659e33ef732556b93c10a0298ef4"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -564,8 +569,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 17688,
-      "sha256": "8cda3702083ef19cde71c57da5aa7b669d714f72683da564deac0f8e4437cbde"
+      "bytes": 18423,
+      "sha256": "874bc6077b4e7bbeef45b8a54fb10ca7a9ac51085bd6f12a7ba524f276d0e918"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -706,6 +711,51 @@
       "path": "tools/dotnet-assembly-inspector/tests/test_inspector.py",
       "bytes": 9815,
       "sha256": "48cedd70f7ff1185accfdcab8fc0731e4135b8ca7c044fb993469898c199fa1e"
+    },
+    {
+      "path": "tools/file-audit/examples/CreateExample.java",
+      "bytes": 1988,
+      "sha256": "e6ae453d99009b8aaf755ee678245162e9ab7df2ffc15933146936ffd43eb243"
+    },
+    {
+      "path": "tools/file-audit/examples/demo-report.json",
+      "bytes": 2096,
+      "sha256": "c86d987a89d60281b6aa7400b046890041787e41b3f9fb8aaecdf634d17af12b"
+    },
+    {
+      "path": "tools/file-audit/examples/README.md",
+      "bytes": 2426,
+      "sha256": "63d96a9ab0c24dde4acda21cd0b8a6232bfb338fdbc20a306b7c3971973ee7ed"
+    },
+    {
+      "path": "tools/file-audit/FileAudit.java",
+      "bytes": 34920,
+      "sha256": "f7d84f4f29a76f179c8181635e3f070e530aa8c8f368e0da41c9ec68069c7f0c"
+    },
+    {
+      "path": "tools/file-audit/LICENSE",
+      "bytes": 1104,
+      "sha256": "865b2b98e99ebe5f268452428ff664f59904ea0b82e8dabb93cb49b485b9e4b7"
+    },
+    {
+      "path": "tools/file-audit/PROVENANCE.md",
+      "bytes": 2001,
+      "sha256": "4a15e9bf08a9058c9c1c9aefaddab7d5e862bce9df244148ac02a8090849fe28"
+    },
+    {
+      "path": "tools/file-audit/README.md",
+      "bytes": 10501,
+      "sha256": "5ad8684f5153f45dda4bab74ae3afe743c1c41dc3fbe5f180f4123557fc64eac"
+    },
+    {
+      "path": "tools/file-audit/tests/FileAuditTests.java",
+      "bytes": 21185,
+      "sha256": "c4e4a300f26e319a780d8c972289bd4fa62a4346a1b87eb100259e3d7319baa8"
+    },
+    {
+      "path": "tools/file-audit/VALIDATION.md",
+      "bytes": 3223,
+      "sha256": "8837c0f91ff18b7fa32db7bf28798f817f4217edcd06acafee422f592aabcd37"
     },
     {
       "path": "tools/game-session-evidence-auditor/EVIDENCE-FORMAT.md",
@@ -1129,8 +1179,8 @@
     },
     {
       "path": "tools/source-release-builder/source_release.py",
-      "bytes": 19178,
-      "sha256": "73febfb0f1a3f2bd09b3418f48be51888a8462c4220ff620e35cf40f8338078b"
+      "bytes": 19797,
+      "sha256": "a1a7f6100c6133c0a5a2a6cfcad40d707bcb4a5979688ff76aa16ecfef557e17"
     },
     {
       "path": "tools/source-release-builder/tests/test_source_release.py",
@@ -1174,8 +1224,8 @@
     },
     {
       "path": "tools/verify_source_release.py",
-      "bytes": 5555,
-      "sha256": "d85e6bf173ff1332d88cf17d7dfe116ba45fa4d7bae9b05f41e061f851bf3f9a"
+      "bytes": 5856,
+      "sha256": "31a4c7de5d120afc2ceab3d463b7ebea9a65ad06a91b180fa10b7fea7543e7a9"
     },
     {
       "path": "tools/webcam-diagnostic/diagnostic_core.py",
@@ -1294,8 +1344,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 25201,
-      "sha256": "ec70b37e274244e7156f865b6d09df31f03053882cdd2809de715bc3bf14d6a2"
+      "bytes": 26275,
+      "sha256": "cecb898fa63cffc47e3ee37fe8583ece33ae1e6b285b375611c0e8a21a5678c2"
     }
   ]
 }

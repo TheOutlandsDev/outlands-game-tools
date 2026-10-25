@@ -258,3 +258,13 @@ their upstream and bundled-component terms. Python/Tcl/Tk are supplied separatel
 No native library, decoder, driver, real capture/log, device-instance identifier,
 private path, virtual-camera bridge or third-party implementation is included.
 See the [app provenance and dependency references](tools/webcam-diagnostic/PROVENANCE.md).
+
+
+## File Audit application
+
+The original File Audit replacement, tests and fictional examples are MIT.
+It uses only the Java standard library, including Swing. It does not incorporate
+Gson or the old prototype's filename/security labels or placeholder digest.
+No JDK, third-party implementation, personal scan or compiled class is bundled.
+Obtain a JDK separately under its distributor's terms. See
+[provenance](tools/file-audit/PROVENANCE.md) for the boundaries.
