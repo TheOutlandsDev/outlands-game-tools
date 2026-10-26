@@ -1,3 +1,12 @@
+<p align="center"><img src="https://raw.githubusercontent.com/TheOutlandsDev/TheOutlandsDev/main/assets/outlands-dev-lab.svg" alt="OUTLANDS Dev Lab — tools, games and systems" width="100%"></p>
+
+<p align="center">
+  <a href="https://github.com/TheOutlandsDev">OUTLANDS profile</a> ·
+  <a href="https://github.com/TheOutlandsDev/outlands-public-tools">Public Tools</a> ·
+  <a href="https://github.com/TheOutlandsDev/outlands-game-tools">Game Tools</a> ·
+  <a href="https://github.com/TheOutlandsDev/outlands-public-tools/blob/main/docs/PROJECT-MAP.md">Project map</a>
+</p>
+
 # Outlands Game Tools
 
 Original SPT mods, diagnostic applications and local game utilities from
@@ -21,6 +30,16 @@ For a versioned download, use the [v0.1.0 source pre-release](https://github.com
 and [download quick start](docs/QUICK-START.md). The custom ZIP and SHA-256 asset
 contain reviewed source; games, compiled plugins and dependency binaries are
 obtained separately. Maintainers can read [the source release process](docs/RELEASING.md).
+
+## Choose your starting point
+
+| I want to… | Start here |
+| --- | --- |
+| Try a utility without installing a game | [LTX Definition Inspector](tools/ltx-definition-inspector/README.md) |
+| Compare mod setups or preserve a baseline | [MO2 Profile Change Report](tools/mo2-profile-change-report/README.md) · [Save Snapshot Verifier](tools/save-snapshot-verifier/README.md) |
+| Explore SPT mod source | [SPT modules](#spt-modules) · [Getting started](docs/GETTING-STARTED.md) |
+| Find the Outlands SPT player setup | [Outlands SPT](https://github.com/TheOutlandsDev/outlands-spt-modpack) — a separate project with its own compatibility and access requirements. |
+| Find GAMMA, BO2, IW4x or other projects | [Public project map](https://github.com/TheOutlandsDev/outlands-public-tools/blob/main/docs/PROJECT-MAP.md) |
 
 ## SPT modules
 
