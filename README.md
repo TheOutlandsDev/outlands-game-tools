@@ -13,6 +13,15 @@ Original SPT mods, diagnostic applications and local game utilities from
 TheOutlandsDev / Connor O'Shea. Original contributions are available under the
 [MIT license](LICENSE). See [dependency and provenance boundaries](THIRD-PARTY.md).
 
+## At a glance
+
+| What to know | Details |
+| --- | --- |
+| Try it first | [Run the game-free LTX example](#try-a-tool-without-a-game-installation) with fictional input and a JSON report. |
+| Requirements | The LTX demo needs Python 3.12+ and no extra packages. SPT builds need the .NET 9 SDK, matching game/dependency assemblies and each module's documented runtime. |
+| Setup | [Choose and build one module](docs/GETTING-STARTED.md), or use the [download quick start](docs/QUICK-START.md). |
+| Current status | Experimental source collection. [Validation notes](VALIDATION.md) separate source/compile/synthetic checks from gameplay and multiplayer acceptance. |
+
 Suggestions, questions, bug reports and contributions are welcome. Explain the
 problem you want solved, the setup you tried, and what a useful result would
 look like. You do not need to submit code to help improve the tools.
