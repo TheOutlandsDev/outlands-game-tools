@@ -23,6 +23,11 @@
       "sha256": "8db1b2f667dfc42b4bcf12ddb3d5a9b9e3b62dae1c9b7fa45654bfe9dd848236"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/fika_repair.yml",
+      "bytes": 1716,
+      "sha256": "95c37d7b18028bc2d0bf04edb63df9957ad42a11bb20a6a26e4510310b820278"
+    },
+    {
       "path": ".github/ISSUE_TEMPLATE/file_audit.yml",
       "bytes": 1516,
       "sha256": "9b28ac11a8a075c5995c70d5151445688111883f632584515a022db5686cc54b"
@@ -34,8 +39,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 10996,
-      "sha256": "1a97655e3f9ea9d2dc6e92fcefd931b13f94ced8c722cbd985328826c8d4fcf5"
+      "bytes": 11508,
+      "sha256": "cc87b1fb2ebcdaecf6c74972d60e431eb6c7999bd4c37c7c02d0f9660a72c454"
     },
     {
       "path": ".gitignore",
@@ -44,8 +49,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 16214,
-      "sha256": "38e274f2af6c6626392b2de04a9e5c170ab1811efc8b851cd8fccd5a9fa7643a"
+      "bytes": 16692,
+      "sha256": "273860b4b0181441e87f241368aea36ed0c9bdfc03a60294100fbdd99e3eecb0"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -56,6 +61,11 @@
       "path": "docs/FAQ.md",
       "bytes": 12780,
       "sha256": "42c7be0101dacd8de7e71eb0ed82f27b3106c92687c27bc0e39871f2e2281194"
+    },
+    {
+      "path": "docs/FIKA-REPAIR-2026-10-26.md",
+      "bytes": 5061,
+      "sha256": "f79640f89035414d7771664b9a1c2320c4f324350f6991d81c8ccb464b40a2c6"
     },
     {
       "path": "docs/GETTING-STARTED.md",
@@ -89,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14415,
-      "sha256": "72f87ec20998bcad112fa222c97563925bdd9a627f0fcc10e87a0b876c8d0ac0"
+      "bytes": 14479,
+      "sha256": "07f6cf9ee149f6eba01b437e2b497ac9398754d0eaeb73a39130d5024bb1f81d"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
@@ -218,14 +228,29 @@
       "sha256": "bdc718873c853aabe657f8336985bc2e21e2146c1fd2d96bd7877d1bcfea06a3"
     },
     {
+      "path": "spt/FikaHeadless/Create-FikaRepairDemo.ps1",
+      "bytes": 1343,
+      "sha256": "69e0814ed7d824824988782a05ca73a80f4c549b162309ab966fabd080118c1f"
+    },
+    {
       "path": "spt/FikaHeadless/FikaHeadless.Common.ps1",
       "bytes": 2267,
       "sha256": "e6346c3d2440e8a512217fa1b090bec2040735687058b80c9d68aeee03ccc691"
     },
     {
+      "path": "spt/FikaHeadless/FikaRepair.Engine.ps1",
+      "bytes": 20126,
+      "sha256": "6b4080d2d012bb5445280336d6b850d80ca275be6b491b520710d276a94bab67"
+    },
+    {
       "path": "spt/FikaHeadless/Install-FikaHeadless.ps1",
       "bytes": 1896,
       "sha256": "32317646c6e9120e24b0d1423785d97c683c533193c8dbe04e78184acf08bccf"
+    },
+    {
+      "path": "spt/FikaHeadless/PROVENANCE.md",
+      "bytes": 1752,
+      "sha256": "766841c1efc338db2288162c4b0c3618d6c982d916a14306a7443a0d53651a8a"
     },
     {
       "path": "spt/FikaHeadless/Prune-FikaHeadlessClient.ps1",
@@ -234,18 +259,28 @@
     },
     {
       "path": "spt/FikaHeadless/README.md",
-      "bytes": 4146,
-      "sha256": "9e1406ffab6259ec360333774e4febb0fcbd421ff436692325d1b7918655980d"
+      "bytes": 11022,
+      "sha256": "cd11112c872afdc563e4aad9ad1b426030288fb0f272d2b7b0bb9a4c1c352398"
     },
     {
       "path": "spt/FikaHeadless/Repair-FikaHeadlessConfig.ps1",
-      "bytes": 4037,
-      "sha256": "acd642b089dcb2a993f535c842d38f966e4b1cb2f2eb938ef0d22d1e2f9b3d5c"
+      "bytes": 1598,
+      "sha256": "f1dd1c72b20653345423c4cb66e1b41c1c6641ea71ba4d3801a04ce52f20ca4b"
+    },
+    {
+      "path": "spt/FikaHeadless/Restore-FikaHeadlessConfig.ps1",
+      "bytes": 1224,
+      "sha256": "112724d9b2165c93b869edda480d9edd8b7132728797f6e18a0602f059b74238"
     },
     {
       "path": "spt/FikaHeadless/Test-FikaHeadless.ps1",
-      "bytes": 5820,
-      "sha256": "d2fdb91694f95815381ada24a4855d738f680d5d2377983cc3018d804e6465b2"
+      "bytes": 5811,
+      "sha256": "413973fb49b3d7a620d909f4dc28d2f1582d65fbe85ca8eeb5bddbe79a5a109c"
+    },
+    {
+      "path": "spt/FikaHeadless/Test-FikaRepair.ps1",
+      "bytes": 13868,
+      "sha256": "7868ebda6bdc0a17620c8dd0814cd1504e36e2d7213cc76a6a9af0a9b9c58c12"
     },
     {
       "path": "spt/FpvDroneParentCachePreload/.gitignore",
@@ -569,8 +604,8 @@
     },
     {
       "path": "THIRD-PARTY.md",
-      "bytes": 18423,
-      "sha256": "874bc6077b4e7bbeef45b8a54fb10ca7a9ac51085bd6f12a7ba524f276d0e918"
+      "bytes": 18940,
+      "sha256": "b8d2480081d09c21a08602031c642bd459625551b73ef08ec669f3c4053ecac9"
     },
     {
       "path": "tools/audio-integrity-checker/audio_integrity.py",
@@ -1344,8 +1379,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 26275,
-      "sha256": "cecb898fa63cffc47e3ee37fe8583ece33ae1e6b285b375611c0e8a21a5678c2"
+      "bytes": 26808,
+      "sha256": "5e04f59964b413018719fdbe8d8b1609a51d5e5d2c39d88bf2b1a0c2db7c3b73"
     }
   ]
 }

@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Improved the existing Fika Headless Helpers configuration repair under MIT:
+  preserve unrelated JSON text and preferences, optionally update the main
+  client's selected network settings, verify backups and writes, and preview or
+  restore original bytes with changed-file guards. Adds fictional examples,
+  Windows PowerShell 5.1/7 tests, detailed recovery/provenance documentation and
+  a dedicated public bug/suggestion form. No game or multiplayer qualification.
+
 - Added File Audit 1.0.0 under MIT: a Java 17 desktop and CLI app for chosen-folder
   inventory, SHA-256 and nonempty duplicate candidates. Includes cooperative Stop,
   scan limits, JSON export outside the input, fictional examples, 44 test cases,

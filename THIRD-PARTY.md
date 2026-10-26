@@ -268,3 +268,11 @@ Gson or the old prototype's filename/security labels or placeholder digest.
 No JDK, third-party implementation, personal scan or compiled class is bundled.
 Obtain a JDK separately under its distributor's terms. See
 [provenance](tools/file-audit/PROVENANCE.md) for the boundaries.
+## Fika repair follow-up
+
+The Fika repair/restoration update is original local integration code, including
+AI assistance confirmed by the owner, under this collection's MIT license.
+It includes original fictional tests/examples and no Fika/SPT/EFT implementation,
+installer, AI mod templates or game files. Windows, PowerShell and .NET are
+separately supplied runtimes. Interoperable filenames/settings do not grant
+rights to inspected configurations. See [module provenance](spt/FikaHeadless/PROVENANCE.md).

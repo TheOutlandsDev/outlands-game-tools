@@ -364,3 +364,12 @@ fictional demo were visually checked. Windows/Ubuntu JDK 17/21 CI requires Swing
 tests (Xvfb on Ubuntu). No private scan or actual user file was used in fixtures.
 Cooperative filesystem timeouts, file identity and race limitations remain:
 see [app validation](tools/file-audit/VALIDATION.md).
+
+## Fika configuration repair and recovery — 2026-10-26
+
+The existing Game Tools module now preserves unrelated JSON settings and provides
+verified backup/restore with changed-file guards. All 37 new fictional-file checks
+passed in Windows PowerShell 5.1 and PowerShell 7 (74 total, no skips), including
+real hard-link/junction rejection. The original wrapper suite passed in both.
+See [scope and limits](docs/FIKA-REPAIR-2026-10-26.md). No live installation,
+installer, VPN, headless launch or multiplayer acceptance was tested.

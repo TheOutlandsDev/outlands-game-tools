@@ -64,7 +64,7 @@ obtained separately. Maintainers can read [the source release process](docs/RELE
 | [FPV Parent Cache Preload](spt/FpvDroneParentCachePreload/README.md) | Small compatibility preload for a separately obtained FPV mod. |
 | [Vagabond Scav Access](spt/VagabondScavAccess/README.md) | Focused client compatibility adjustment for a separately obtained Vagabond setup. |
 | [Text Branding](spt/EscapeFromConnorBranding/README.md) | Configurable server title text; no artwork. |
-| [Fika Headless Helpers](spt/FikaHeadless/README.md) | Explicit-input, preview-first setup/configuration/plugin helpers. |
+| [Fika Headless Helpers](spt/FikaHeadless/README.md) | Preview-first setup, selected configuration repair, verified backup/restore and plugin helpers; fictional demo and feedback form. |
 
 The compile baseline is SPT 4.0.13, EFT 0.16.9.40087 and BepInEx 5.4.23.2, where
 applicable. These identify the references used locally; they are not a blanket

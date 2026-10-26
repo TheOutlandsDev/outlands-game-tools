@@ -41,7 +41,7 @@ try {
     Assert-True ($launch.ProfileId -eq $profile -and $launch.BackendUrl -eq 'https://127.0.0.1:6969') 'Launch config mismatch.'
     $serverLaunch = Join-Path $main "SPT\user\mods\fika-server\assets\scripts\$profile\HeadlessConfig.json"
     Assert-True ((Get-FileHash -LiteralPath $serverLaunch).Hash -eq (Get-FileHash -LiteralPath (Join-Path $headless 'HeadlessConfig.json')).Hash) 'Server launch differs.'
-    $backup = @(Get-ChildItem -LiteralPath (Join-Path $headless '_outlands_backups') -Recurse -File -Filter '0-com.fika.core.cfg')
+    $backup = @(Get-ChildItem -LiteralPath (Join-Path $headless '_outlands_backups') -Recurse -File -Filter '0.original')
     Assert-True ($backup.Count -eq 1 -and (Get-FileHash -LiteralPath $backup[0].FullName).Hash -eq $originalHash) 'Backup does not preserve original bytes.'
     $plugin = Join-Path $headless 'BepInEx\plugins\SyntheticPlugin.dll'
     Set-Content -LiteralPath $plugin -Value 'synthetic text fixture, not a DLL'

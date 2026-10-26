@@ -3,6 +3,21 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
+  fika-repair:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        shell: [pwsh, powershell]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Check existing Fika wrapper contracts
+        shell: ${{ matrix.shell }}
+        run: ./spt/FikaHeadless/Test-FikaHeadless.ps1
+      - name: Check repair and verified recovery on fictional files
+        shell: ${{ matrix.shell }}
+        run: ./spt/FikaHeadless/Test-FikaRepair.ps1
   source:
     runs-on: windows-latest
     steps:
