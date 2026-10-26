@@ -39,8 +39,8 @@
     },
     {
       "path": ".github/workflows/source-checks.yml",
-      "bytes": 11508,
-      "sha256": "cc87b1fb2ebcdaecf6c74972d60e431eb6c7999bd4c37c7c02d0f9660a72c454"
+      "bytes": 11752,
+      "sha256": "db759f673ad98108b28a985f513c6e97d2d9efd611a21fb3c2469994e67bf01b"
     },
     {
       "path": ".gitignore",

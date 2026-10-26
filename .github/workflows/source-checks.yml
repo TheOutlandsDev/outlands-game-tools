@@ -13,11 +13,15 @@ jobs:
         with:
           persist-credentials: false
       - name: Check existing Fika wrapper contracts
-        shell: ${{ matrix.shell }}
-        run: ./spt/FikaHeadless/Test-FikaHeadless.ps1
+        shell: pwsh
+        run: |
+          & '${{ matrix.shell }}' -NoProfile -ExecutionPolicy Bypass -File ./spt/FikaHeadless/Test-FikaHeadless.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Check repair and verified recovery on fictional files
-        shell: ${{ matrix.shell }}
-        run: ./spt/FikaHeadless/Test-FikaRepair.ps1
+        shell: pwsh
+        run: |
+          & '${{ matrix.shell }}' -NoProfile -ExecutionPolicy Bypass -File ./spt/FikaHeadless/Test-FikaRepair.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
   source:
     runs-on: windows-latest
     steps:
