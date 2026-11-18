@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/TheOutlandsDev/TheOutlandsDev/main/assets/outlands-dev-lab.svg" alt="OUTLANDS Dev Lab — tools, games and systems" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/TheOutlandsDev/TheOutlandsDev/main/assets/outlands-dev-lab-banner.jpg" alt="OUTLANDS Dev Lab. A netrunner stands at the foot of a red digital wall." width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/TheOutlandsDev">OUTLANDS profile</a> ·
