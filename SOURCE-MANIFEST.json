@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14479,
-      "sha256": "07f6cf9ee149f6eba01b437e2b497ac9398754d0eaeb73a39130d5024bb1f81d"
+      "bytes": 14512,
+      "sha256": "21c1578fd2a7b498f6eb266a2fefe2f9f42c50fa0b3dfd220f65c0e8c3bd7fb8"
     },
     {
       "path": "spt/AiPopulationTuning/Build-AiPopulationTuning.ps1",
